@@ -15,5 +15,5 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         style="@style/Text"
-        android:text="This is techfest\nhello\nNolan <is|is not> coming to Mood Indigo"/>
+        android:text="This is techfest\nhello\nNolan (is|is not) coming to Mood Indigo"/>
 </LinearLayout>
