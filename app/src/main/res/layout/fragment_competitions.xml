@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    style="@style/Fragment">
-
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
@@ -18,9 +15,4 @@
             android:layout_height="wrap_content"
             style="@style/Text"
             android:text="competitons are cool... \n blah \n k.\nsome more description..."/>
-
-        <include layout="@layout/container_event_description"></include>
-        <include layout="@layout/container_event_description"></include>
-        <include layout="@layout/container_event_description"></include>
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>
