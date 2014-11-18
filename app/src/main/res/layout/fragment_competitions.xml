@@ -11,17 +11,16 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="@style/Text"
-            android:text="compi 1"/>
+            style="@style/Heading"
+            android:text="Competitions"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             style="@style/Text"
-            android:text="compi 2"/>
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            style="@style/Text"
-            android:text="compi 3"/>
+            android:text="competitons are cool... \n blah \n k.\nsome more description..."/>
+
+        <include layout="@layout/container_event_description"></include>
+        <include layout="@layout/container_event_description"></include>
+        <include layout="@layout/container_event_description"></include>
     </LinearLayout>
 </ScrollView>
