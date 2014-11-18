@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class MainActivity extends ActionBarActivity
@@ -54,9 +53,14 @@ public class MainActivity extends ActionBarActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if(position==1){
-            String[] compis={"compi 1","compi 2","compi 3"};
+            ArrayList<EventSummary> compis = new ArrayList<EventSummary>();
+
+            compis.add(new EventSummary(R.drawable.tf_icon, "Compi 1", "Arbit desc 1"));
+            compis.add(new EventSummary(R.drawable.tf_icon, "Compi 2", "Arbit desc 2"));
+            compis.add(new EventSummary(R.drawable.tf_icon, "Compi 3", "Arbit desc 3"));
+
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, EventListFragment.newInstance(position+1,R.drawable.competitions,R.layout.fragment_competitions, new ArrayList<String>(Arrays.asList(compis))))
+                    .replace(R.id.container, EventListFragment.newInstance(position+1,R.drawable.competitions,R.layout.fragment_competitions, compis))
                     .commit();
             return;
         }

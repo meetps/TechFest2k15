@@ -17,14 +17,14 @@ public class EventListFragment extends Fragment {
     public EventListFragment(){
     }
 
-    public static final EventListFragment newInstance(int section_number, int image_id, int description_layout, ArrayList<String> event_list){ // TODO change String arraylist to EventSummary arraylist
+    public static final EventListFragment newInstance(int section_number, int image_id, int description_layout, ArrayList<EventSummary> event_list){
         EventListFragment el = new EventListFragment();
         Bundle args = new Bundle();
 
         args.putInt("section_number", section_number);
         args.putInt("image_id", image_id);
         args.putInt("description_layout", description_layout);
-        args.putStringArrayList("event_list", event_list);
+        args.putParcelableArrayList("event_list", event_list);
 
         el.setArguments(args);
         return el;
@@ -42,14 +42,16 @@ public class EventListFragment extends Fragment {
         ViewGroup content = (LinearLayout) rootView.findViewById(R.id.content);
         View descriptionLayout = inflater.inflate(args.getInt("description_layout"), content, false);
 
-        ArrayList<String> event_list = args.getStringArrayList("event_list");
+        ArrayList<EventSummary> event_list = args.getParcelableArrayList("event_list");
 
         content.addView(descriptionLayout);
 
-        for(String s: event_list){
-            TextView tv = new TextView(container.getContext());
-            tv.setText(s);
-            content.addView(tv);
+        for(EventSummary es: event_list){
+            LinearLayout summary_container = (LinearLayout)inflater.inflate(R.layout.container_event_summary, null);
+            ((ImageView)summary_container.findViewById(R.id.event_image)).setImageResource(es.image_id);
+            ((TextView)summary_container.findViewById(R.id.event_title)).setText(es.title);
+            ((TextView)summary_container.findViewById(R.id.event_description)).setText(es.description);
+            content.addView(summary_container);
         }
         return rootView;
     }

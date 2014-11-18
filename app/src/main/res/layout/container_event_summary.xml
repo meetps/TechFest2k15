@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="Summary"
             style="@style/Text"
-            android:id="@+id/event_summary" />
+            android:id="@+id/event_description" />
     </LinearLayout>
 
 </LinearLayout>
