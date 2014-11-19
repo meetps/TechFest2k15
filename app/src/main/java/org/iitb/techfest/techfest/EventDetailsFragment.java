@@ -15,16 +15,11 @@ public class EventDetailsFragment extends Fragment {
     public EventDetailsFragment(){
     }
 
-    public static final EventDetailsFragment newInstance(int section_number, int image_id, int description_layout, String venue, String time, String date){
+    public static final EventDetailsFragment newInstance(EventSummary es){
         EventDetailsFragment el = new EventDetailsFragment();
         Bundle args = new Bundle();
 
-        args.putInt("section_number", section_number);
-        args.putInt("image_id", image_id);
-        args.putInt("description_layout", description_layout);
-        args.putString("venue",venue);
-        args.putString("time",time);
-        args.putString("date",date);
+        args.putParcelable("eventSummary",es);
 
         el.setArguments(args);
         return el;
@@ -33,20 +28,20 @@ public class EventDetailsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Bundle args=getArguments();
+        EventSummary es=getArguments().getParcelable("eventSummary");
 
-        int layout=R.layout.template_event_list;
+        int layout=R.layout.template_event_details;
 
         View rootView = inflater.inflate(layout, container, false);
-        ((ImageView) rootView.findViewById(R.id.header_image)).setImageResource(args.getInt("image_id"));
+        ((ImageView) rootView.findViewById(R.id.header_image)).setImageResource(es.image_id);
         ViewGroup content = (LinearLayout) rootView.findViewById(R.id.content);
-        View descriptionLayout = inflater.inflate(args.getInt("description_layout"), content, false);
+        View descriptionLayout = inflater.inflate(es.description_layout, content, false);
 
         content.addView(descriptionLayout);
 
-        ((TextView)rootView.findViewById(R.id.venue)).setText(args.getString("venue"));
-        ((TextView)rootView.findViewById(R.id.time)).setText(args.getString("time"));
-        ((TextView)rootView.findViewById(R.id.date)).setText(args.getString("date"));
+        ((TextView)rootView.findViewById(R.id.venue)).setText(es.venue);
+        ((TextView)rootView.findViewById(R.id.time)).setText(es.time);
+        ((TextView)rootView.findViewById(R.id.date)).setText(es.date);
 
         return rootView;
     }

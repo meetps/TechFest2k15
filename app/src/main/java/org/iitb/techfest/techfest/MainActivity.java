@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -16,6 +17,8 @@ public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     ImageView tf_logo;
+
+    ArrayList<EventSummary> events = new ArrayList<EventSummary>();
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -44,6 +47,10 @@ public class MainActivity extends ActionBarActivity
         tf_logo = new ImageView(this);
         tf_logo.setImageResource(R.drawable.tf_logo);
 
+        events.add(new EventSummary(0, R.drawable.tf_icon, R.layout.details_robowars, "Robowars", "Frickin' epic","SOM","5:00 PM","3/01/2015"));
+        events.add(new EventSummary(1, R.drawable.tf_icon, R.layout.details_robowars, "Compi 2", "Arbit desc 2","","",""));
+        events.add(new EventSummary(2, R.drawable.tf_icon, R.layout.details_robowars, "Compi 3", "Arbit desc 3","","",""));
+
         restoreActionBar();
     }
 
@@ -53,19 +60,21 @@ public class MainActivity extends ActionBarActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if(position==1){
-            ArrayList<EventSummary> compis = new ArrayList<EventSummary>();
-
-            compis.add(new EventSummary(R.drawable.tf_icon, "Compi 1", "Arbit desc 1"));
-            compis.add(new EventSummary(R.drawable.tf_icon, "Compi 2", "Arbit desc 2"));
-            compis.add(new EventSummary(R.drawable.tf_icon, "Compi 3", "Arbit desc 3"));
-
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, EventListFragment.newInstance(position+1,R.drawable.competitions,R.layout.fragment_competitions, compis))
+                    .replace(R.id.container, EventListFragment.newInstance(position+1,R.drawable.competitions,R.layout.fragment_competitions, events))
                     .commit();
             return;
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .commit();
+    }
+
+    public void loadDetails(View v){
+        EventDetailsFragment eventDetails = EventDetailsFragment.newInstance(events.get(v.getId()));
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, eventDetails)
                 .commit();
     }
 
