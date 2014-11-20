@@ -1,6 +1,8 @@
 package org.iitb.techfest.techfest;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -50,7 +52,7 @@ public class MainActivity extends ActionBarActivity
         tf_logo = new ImageView(this);
         tf_logo.setImageResource(R.drawable.tf_logo);
 
-        events.add(new EventSummary(0, R.drawable.tf_icon, R.layout.details_robowars, "Robowars", "Frickin' epic","SOM","5:00 PM","3/01/2015"));
+        events.add(new EventSummary(0, R.drawable.tf_icon, R.layout.details_robowars, "Robowars", "Frickin' epic","SOM","17:00","3/01/2015"));
         events.add(new EventSummary(1, R.drawable.tf_icon, R.layout.details_robowars, "Compi 2", "Arbit desc 2","","",""));
         events.add(new EventSummary(2, R.drawable.tf_icon, R.layout.details_robowars, "Compi 3", "Arbit desc 3","","",""));
 
@@ -83,6 +85,16 @@ public class MainActivity extends ActionBarActivity
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, eventDetails)
                 .commit();
+    }
+
+    public void setAlarm(View v){
+        EventSummary es = events.get((Integer) v.getTag());
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, es.title+" @ "+es.venue);
+        i.putExtra(AlarmClock.EXTRA_HOUR, Integer.valueOf(es.time.split(":")[0]));
+        i.putExtra(AlarmClock.EXTRA_MINUTES, Integer.valueOf(es.time.split(":")[1]));
+        startActivity(i);
     }
 
     public void onSectionAttached(int number) {

@@ -39,9 +39,8 @@ public class EventDetailsFragment extends Fragment {
 
         content.addView(descriptionLayout);
 
-        ((TextView)rootView.findViewById(R.id.venue)).setText(es.venue);
-        ((TextView)rootView.findViewById(R.id.time)).setText(es.time);
-        ((TextView)rootView.findViewById(R.id.date)).setText(es.date);
+        ((TextView)rootView.findViewById(R.id.info)).setText(String.format("Venue: %s\nTime: %s\nDate: %s",es.venue,es.time,es.date));
+        rootView.findViewById(R.id.set_alarm).setTag(es.id);
 
         return rootView;
     }

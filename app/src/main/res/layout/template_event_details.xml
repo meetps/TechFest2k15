@@ -9,6 +9,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/header_image"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text"
+        android:id="@+id/info"
+        android:text="Venue: \nTime: \nDate: \n"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,26 +30,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Venue"
-            android:id="@+id/venue"
-            style="@style/Text"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Time"
-            android:id="@+id/time"
-            style="@style/Text"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/date"
-            android:text="Date (set alarm)"
+            android:id="@+id/set_alarm"
+            android:text="Set Alarm"
+            android:onClick="setAlarm"
             style="@style/Text"/>
         <Button
             android:layout_width="0dp"
