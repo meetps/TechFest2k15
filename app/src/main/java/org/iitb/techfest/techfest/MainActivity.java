@@ -1,6 +1,7 @@
 package org.iitb.techfest.techfest;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 
 public class MainActivity extends ActionBarActivity
@@ -19,6 +21,7 @@ public class MainActivity extends ActionBarActivity
     ImageView tf_logo;
 
     ArrayList<EventSummary> events = new ArrayList<EventSummary>();
+    Stack<Fragment> fragStack = new Stack<Fragment>();
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -58,20 +61,24 @@ public class MainActivity extends ActionBarActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment frag;
 
-        if(position==1){
-            fragmentManager.beginTransaction()
-                    .replace(R.id.container, EventListFragment.newInstance(position+1,R.drawable.competitions,R.layout.fragment_competitions, events))
-                    .commit();
-            return;
-        }
+        if(position==1)
+            frag= EventListFragment.newInstance(position+1,R.drawable.competitions,R.layout.fragment_competitions, events);
+        else
+            frag= PlaceholderFragment.newInstance(position + 1);
+
+        fragStack.push(frag);
+
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, frag)
                 .commit();
     }
 
     public void loadDetails(View v){
         EventDetailsFragment eventDetails = EventDetailsFragment.newInstance(events.get(v.getId()));
+
+        fragStack.push(eventDetails);
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, eventDetails)
@@ -123,5 +130,21 @@ public class MainActivity extends ActionBarActivity
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed(){
+        fragStack.pop();
+
+        if(fragStack.empty())
+            super.onBackPressed();
+        else
+        {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, fragStack.peek())
+                    .commit();
+            onSectionAttached(fragStack.peek().getArguments().getInt("section_number"));
+            restoreActionBar();
+        }
     }
 }
