@@ -17,12 +17,12 @@ public class EventListFragment extends Fragment {
     public EventListFragment(){
     }
 
-    public static final EventListFragment newInstance(int section_number, int image_id, int description_layout, ArrayList<EventSummary> event_list){
+    public static final EventListFragment newInstance(String title, int actionbar_color, int description_layout, ArrayList<EventSummary> event_list){
         EventListFragment el = new EventListFragment();
         Bundle args = new Bundle();
 
-        args.putInt("section_number", section_number);
-        args.putInt("image_id", image_id);
+        args.putString("title", title);
+        args.putInt("actionbar_color", actionbar_color);
         args.putInt("description_layout", description_layout);
         args.putParcelableArrayList("event_list", event_list);
 
@@ -38,7 +38,6 @@ public class EventListFragment extends Fragment {
         int layout=R.layout.template_event_list;
 
         View rootView = inflater.inflate(layout, container, false);
-        ((ImageView) rootView.findViewById(R.id.header_image)).setImageResource(args.getInt("image_id"));
         ViewGroup content = (LinearLayout) rootView.findViewById(R.id.content);
         View descriptionLayout = inflater.inflate(args.getInt("description_layout"), content, false);
 
@@ -63,6 +62,7 @@ public class EventListFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         ((MainActivity) activity).onSectionAttached(
-                getArguments().getInt("section_number"));
+                getArguments().getString("title"),
+                getArguments().getInt("actionbar_color"));
     }
 }

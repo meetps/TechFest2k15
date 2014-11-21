@@ -48,7 +48,8 @@ public class EventDetailsFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        ((MainActivity) activity).onSectionAttached(
-                getArguments().getInt("section_number"));
+        EventSummary es = getArguments().getParcelable("eventSummary");
+        ((MainActivity) activity).onSectionAttached(es.title,
+                R.color.actionbar_competitons);
     }
 }

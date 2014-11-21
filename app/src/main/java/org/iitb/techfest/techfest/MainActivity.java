@@ -1,6 +1,7 @@
 package org.iitb.techfest.techfest;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.support.v4.app.Fragment;
@@ -34,6 +35,7 @@ public class MainActivity extends ActionBarActivity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+    private int mActionBarColor=R.color.actionbar_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +69,7 @@ public class MainActivity extends ActionBarActivity
         Fragment frag;
 
         if(position==1)
-            frag= EventListFragment.newInstance(position+1,R.drawable.competitions,R.layout.fragment_competitions, events);
+            frag= EventListFragment.newInstance("Competitions",R.color.actionbar_competitons,R.layout.fragment_competitions, events);
         else
             frag= PlaceholderFragment.newInstance(position + 1);
 
@@ -98,18 +100,9 @@ public class MainActivity extends ActionBarActivity
         startActivity(i);
     }
 
-    public void onSectionAttached(int number) {
-        switch (number) {
-            case 1:
-                mTitle = getString(R.string.title_section1);
-                break;
-            case 2:
-                mTitle = getString(R.string.title_section2);
-                break;
-            case 3:
-                mTitle = getString(R.string.title_section3);
-                break;
-        }
+    public void onSectionAttached(String title, int actionbar_color) {
+        mTitle=title;
+        mActionBarColor=actionbar_color;
     }
 
     public void restoreActionBar() {
@@ -117,6 +110,7 @@ public class MainActivity extends ActionBarActivity
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(mTitle);
+        actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(mActionBarColor)));
     }
 
 
@@ -156,7 +150,7 @@ public class MainActivity extends ActionBarActivity
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, fragStack.peek())
                     .commit();
-            onSectionAttached(fragStack.peek().getArguments().getInt("section_number"));
+            onSectionAttached(fragStack.peek().getArguments().getString("title"), fragStack.peek().getArguments().getInt("actionbar_color"));
             restoreActionBar();
         }
     }

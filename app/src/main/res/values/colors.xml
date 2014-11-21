@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="actionbar_background">#111111</color>
     <color name="menu_background">#222255</color>
+
+    <color name="actionbar_competitons">#223374</color>
+    <color name="actionbar_technoholix">#005500</color>
+    <color name="actionbar_home">#111111</color>
 </resources>
