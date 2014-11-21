@@ -45,15 +45,17 @@ public class EventListFragment extends Fragment {
 
         content.addView(descriptionLayout);
 
-        for(EventSummary es: event_list){
-            LinearLayout summary_container = (LinearLayout)inflater.inflate(R.layout.container_event_summary, null);
+        if(event_list !=null){
+            for(EventSummary es: event_list){
+                LinearLayout summary_container = (LinearLayout)inflater.inflate(R.layout.container_event_summary, null);
 
-            ((ImageView)summary_container.findViewById(R.id.event_image)).setImageResource(es.image_id);
-            ((TextView)summary_container.findViewById(R.id.event_title)).setText(es.title);
-            ((TextView)summary_container.findViewById(R.id.event_description)).setText(es.description);
-            summary_container.setId(es.id);
+                ((ImageView)summary_container.findViewById(R.id.event_image)).setImageResource(es.image_id);
+                ((TextView)summary_container.findViewById(R.id.event_title)).setText(es.title);
+                ((TextView)summary_container.findViewById(R.id.event_description)).setText(es.description);
+                summary_container.setId(es.id);
 
-            content.addView(summary_container);
+                content.addView(summary_container);
+            }
         }
         return rootView;
     }

@@ -71,7 +71,7 @@ public class MainActivity extends ActionBarActivity
         if(position==1)
             frag= EventListFragment.newInstance("Competitions",R.color.actionbar_competitons,R.layout.fragment_competitions, events);
         else
-            frag= PlaceholderFragment.newInstance(position + 1);
+            frag= EventListFragment.newInstance("Home",R.color.actionbar_home,R.layout.fragment_main, null);
 
         fragStack.push(frag);
 
