@@ -5,9 +5,8 @@
     android:onClick="loadDetails">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:id="@+id/event_image" />
+        android:id="@+id/event_image"
+        style="@style/SummaryImage"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -18,14 +17,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Title"
-            style="@style/Heading"
-            android:id="@+id/event_title" />
+            style="@style/SummaryTitle"
+            android:id="@+id/event_title"
+            android:autoText="false" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Summary"
-            style="@style/Text"
+            style="@style/SummaryText"
             android:id="@+id/event_description" />
     </LinearLayout>
 

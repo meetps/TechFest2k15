@@ -8,7 +8,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="@style/Heading"
+            style="@style/HeadingText"
             android:text="Competitions"/>
         <TextView
             android:layout_width="fill_parent"
