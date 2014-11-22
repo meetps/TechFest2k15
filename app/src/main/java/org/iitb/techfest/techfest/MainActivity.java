@@ -3,7 +3,6 @@ package org.iitb.techfest.techfest;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.provider.AlarmClock;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -15,6 +14,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Stack;
 
 
@@ -90,14 +90,26 @@ public class MainActivity extends ActionBarActivity
                 .commit();
     }
 
-    public void setAlarm(View v){
+    public void setReminder(View v){
         EventSummary es = events.get((Integer) v.getTag());
 
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, es.title+" @ "+es.venue);
-        i.putExtra(AlarmClock.EXTRA_HOUR, Integer.valueOf(es.time.split(":")[0]));
-        i.putExtra(AlarmClock.EXTRA_MINUTES, Integer.valueOf(es.time.split(":")[1]));
-        startActivity(i);
+        int hours=Integer.valueOf(es.time.split(":")[0]);
+        int minutes=Integer.valueOf(es.time.split(":")[1]);
+        int year=Integer.valueOf(es.date.split("/")[2]);
+        int month=Integer.valueOf(es.date.split("/")[1])-1;
+        int day=Integer.valueOf(es.date.split("/")[0]);
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(year, month, day, hours, minutes);
+
+        Intent intent = new Intent(Intent.ACTION_EDIT);
+        intent.setType("vnd.android.cursor.item/event");
+        intent.putExtra("beginTime", cal.getTimeInMillis());
+        intent.putExtra("allDay", false);
+        intent.putExtra("endTime", cal.getTimeInMillis()+60*60*1000);
+        intent.putExtra("title", es.title + " @ "+ es.venue);
+        intent.putExtra("description",es.description);
+        startActivity(intent);
     }
 
     public void onSectionAttached(String title, int actionbar_color) {

@@ -36,8 +36,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/set_alarm"
-            android:text="Set Alarm"
-            android:onClick="setAlarm"
+            android:text="Add to Calender"
+            android:onClick="setReminder"
             style="@style/Text"/>
         <Button
             android:layout_width="0dp"
