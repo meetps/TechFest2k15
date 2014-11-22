@@ -12,9 +12,10 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        style="@style/Text"
+        style="@style/SummaryTitle"
         android:id="@+id/info"
         android:text="Venue: \nTime: \nDate: \n"/>
+    <View style="@style/HorizontalDivider"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
