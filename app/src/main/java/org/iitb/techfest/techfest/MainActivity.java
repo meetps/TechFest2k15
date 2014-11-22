@@ -103,6 +103,8 @@ public class MainActivity extends ActionBarActivity
     public void onSectionAttached(String title, int actionbar_color) {
         mTitle=title;
         mActionBarColor=actionbar_color;
+
+        restoreActionBar();
     }
 
     public void restoreActionBar() {
@@ -151,7 +153,6 @@ public class MainActivity extends ActionBarActivity
                     .replace(R.id.container, fragStack.peek())
                     .commit();
             onSectionAttached(fragStack.peek().getArguments().getString("title"), fragStack.peek().getArguments().getInt("actionbar_color"));
-            restoreActionBar();
         }
     }
 }
