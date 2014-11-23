@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context="com.iitb.moodi.gmap_fest_scheduler.MainActivity">
+    tools:context="org.iitb.techfest.techfest.Navigation">
 
     <RadioGroup
         android:layout_width="fill_parent"

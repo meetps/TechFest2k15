@@ -141,11 +141,11 @@ public class MainActivity extends ActionBarActivity
 
         String venue = es.venue;
 //        int radioButtonID = list.getCheckedRadioButtonId();
-        String latlang=getLatLangVersion(venue);
+        String latlang=getLatLangVersion(venue.toString());
 
-        Intent intent = new Intent(Intent.ACTION_VIEW,
+        Intent intentMap = new Intent(Intent.ACTION_VIEW,
                 Uri.parse("http://maps.google.com/maps?daddr=" + latlang));
-        startActivity(intent);
+        startActivity(intentMap);
     }
 
     public void onSectionAttached(String title, int actionbar_color) {
