@@ -49,6 +49,8 @@ public class Navigation extends Activity {
             return "19.133731,72.911319";
         else if(place.equals("KV Grounds"))
             return "19.129144,72.918190";
+        else if(place.equals("SOM"))
+            return "19.1317237,72.9157796";
         else
             return "19,72";
     }

@@ -128,6 +128,10 @@ public class MainActivity extends ActionBarActivity
             return "19.133731,72.911319";
         else if(place.equals("KV Grounds"))
             return "19.129144,72.918190";
+        else if(place.equals("SOM"))
+            return "19.1317237,72.9157796";
+        else if(place.equals("Convo"))
+            return "19.1319587,72.914763";
         else
             return "19,72";
     }
