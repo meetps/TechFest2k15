@@ -33,7 +33,6 @@ public class EventListFragment extends EventFragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Bundle args=getArguments();
-
         int layout=R.layout.template_event_list;
 
         View rootView = inflater.inflate(layout, container, false);

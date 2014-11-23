@@ -11,6 +11,6 @@
         android:layout_width="230dp"
         android:layout_height="255dp"
         android:id="@+id/logo_animation"
-        android:src="@drawable/TFlogo"
+        android:src="@drawable/tflogo"
         android:background="#ff000000" />
 </LinearLayout>
