@@ -1,6 +1,7 @@
 package org.iitb.techfest.techfest;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -19,7 +20,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
@@ -96,15 +102,13 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
-        mDrawerListView.setAdapter(new ArrayAdapter<String>(
-                getActionBar().getThemedContext(),
-                android.R.layout.simple_list_item_1,
-                android.R.id.text1,
-                new String[]{
-                        getString(R.string.title_section1),
-                        getString(R.string.title_section2),
-                        getString(R.string.title_section3),
-                }));
+
+        ArrayList<IconItem> itemList = new ArrayList<IconItem>();
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_section1)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_section2)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_section3)));
+        mDrawerListView.setAdapter(new IconAdapter(getActionBar().getThemedContext(),R.layout.menu_item,itemList));
+
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         mDrawerListView.setBackgroundResource(R.color.menu_background);
         return mDrawerListView;
@@ -278,5 +282,43 @@ public class NavigationDrawerFragment extends Fragment {
          * Called when an item in the navigation drawer is selected.
          */
         void onNavigationDrawerItemSelected(int position);
+    }
+
+    public class IconAdapter extends ArrayAdapter<IconItem> {
+
+        public IconAdapter(Context context, int resource, List<IconItem> objects) {
+            super(context, resource, objects);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+
+            View v = convertView;
+
+            if (v == null) {
+
+                LayoutInflater vi;
+                vi = LayoutInflater.from(getContext());
+                v = vi.inflate(R.layout.menu_item, null);
+
+            }
+
+            IconItem item = getItem(position);
+
+            ((ImageView)v.findViewById(R.id.menu_item_icon)).setImageResource(item.icon_id);
+            ((TextView)v.findViewById(R.id.menu_item_text)).setText(item.text);
+
+            return v;
+        }
+    }
+
+    public class IconItem {
+        int icon_id;
+        String text;
+
+        public IconItem(int icon_id, String text){
+            this.icon_id=icon_id;
+            this.text=text;
+        }
     }
 }
