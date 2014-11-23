@@ -321,4 +321,8 @@ public class NavigationDrawerFragment extends Fragment {
             this.text=text;
         }
     }
+
+    public void closeDrawer(){
+        mDrawerLayout.closeDrawers();
+    }
 }

@@ -155,18 +155,22 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onBackPressed(){
-        fragStack.pop();
+        if (mNavigationDrawerFragment.isDrawerOpen()) {
+            mNavigationDrawerFragment.closeDrawer();
+        } else {
+            fragStack.pop();
 
-        if(fragStack.empty())
-            super.onBackPressed();
-        else
-        {
-            EventFragment currFrag = (EventFragment)fragStack.peek();
+            if(fragStack.empty())
+                super.onBackPressed();
+            else
+            {
+                EventFragment currFrag = (EventFragment)fragStack.peek();
 
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, currFrag)
-                    .commit();
-            onSectionAttached(currFrag.getTitle(), currFrag.getActionBarColor());
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, currFrag)
+                        .commit();
+                onSectionAttached(currFrag.getTitle(), currFrag.getActionBarColor());
+            }
         }
     }
 }
