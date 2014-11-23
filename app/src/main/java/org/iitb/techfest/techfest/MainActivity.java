@@ -3,6 +3,7 @@ package org.iitb.techfest.techfest;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -109,6 +110,37 @@ public class MainActivity extends ActionBarActivity
         intent.putExtra("endTime", cal.getTimeInMillis()+60*60*1000);
         intent.putExtra("title", es.title + " @ "+ es.venue);
         intent.putExtra("description",es.description);
+        startActivity(intent);
+    }
+
+    public String getLatLangVersion(String place){
+        if(place.equals("LCH"))
+            return "19.130739,72.917208";
+        else if(place.equals("SAC"))
+            return "19.135369,72.913769";
+        else if(place.equals("Footer Field"))
+            return "19.134354,72.912133";
+        else if(place.equals("VMCC"))
+            return "19.132506,72.917260";
+        else if(place.equals("FCK"))
+            return "19.130484,72.915719";
+        else if(place.equals("H8 Road"))
+            return "19.133731,72.911319";
+        else if(place.equals("KV Grounds"))
+            return "19.129144,72.918190";
+        else
+            return "19,72";
+    }
+
+    public void getDirections(View v){
+        EventSummary es = events.get((Integer) v.getTag());
+
+        String venue = es.venue;
+//        int radioButtonID = list.getCheckedRadioButtonId();
+        String latlang=getLatLangVersion(venue);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://maps.google.com/maps?daddr=" + latlang));
         startActivity(intent);
     }
 

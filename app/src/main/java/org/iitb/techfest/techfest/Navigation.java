@@ -2,9 +2,9 @@ package org.iitb.techfest.techfest;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.net.Uri;
 import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
@@ -34,16 +34,7 @@ public class Navigation extends Activity {
         new ReadTask().execute("https://drive.google.com/uc?execute=download&id=0B_6rvZNWXShpV0t0ZWxlNkQ5UE0");
     }
 
-    public void onClick(View v){
-        int radioButtonID = list.getCheckedRadioButtonId();
-        String latlang=getLatLang(data.get(radioButtonID)[4]);
-
-        Intent intent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("http://maps.google.com/maps?daddr=" + latlang));
-        startActivity(intent);
-    }
-
-    private String getLatLang(String place){
+   private String getLatLang(String place){
         if(place.equals("LCH"))
             return "19.130739,72.917208";
         else if(place.equals("SAC"))
@@ -61,6 +52,17 @@ public class Navigation extends Activity {
         else
             return "19,72";
     }
+
+    public void onClick(View v){
+        int radioButtonID = list.getCheckedRadioButtonId();
+        String latlang=getLatLang(data.get(radioButtonID)[4]);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://maps.google.com/maps?daddr=" + latlang));
+        startActivity(intent);
+    }
+
+
 
     private class ReadTask extends AsyncTask<String, Integer, List<String[]>> {
         @Override
