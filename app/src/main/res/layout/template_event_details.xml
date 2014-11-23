@@ -36,14 +36,16 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/set_alarm"
-            android:text="Add to Calender"
+            android:text="Remind Me"
             android:onClick="setReminder"
             style="@style/Text"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Get direction"
+            android:text="Get Directions"
+            android:id="@+id/get_directions"
+            android:onClick="getDirections"
             style="@style/Text"/>
     </LinearLayout>
 </LinearLayout>
