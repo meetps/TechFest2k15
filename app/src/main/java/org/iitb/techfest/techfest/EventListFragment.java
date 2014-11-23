@@ -2,7 +2,6 @@ package org.iitb.techfest.techfest;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class EventListFragment extends Fragment {
+public class EventListFragment extends EventFragment{
 
     public EventListFragment(){
     }
@@ -66,5 +65,15 @@ public class EventListFragment extends Fragment {
         ((MainActivity) activity).onSectionAttached(
                 getArguments().getString("title"),
                 getArguments().getInt("actionbar_color"));
+    }
+
+    @Override
+    public String getTitle() {
+        return getArguments().getString("title");
+    }
+
+    @Override
+    public int getActionBarColor() {
+        return getArguments().getInt("actionbar_color");
     }
 }

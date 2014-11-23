@@ -2,7 +2,6 @@ package org.iitb.techfest.techfest;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class EventDetailsFragment extends Fragment {
+public class EventDetailsFragment extends EventFragment {
 
     public EventDetailsFragment(){
     }
@@ -50,8 +49,16 @@ public class EventDetailsFragment extends Fragment {
     public void onAttach(Activity activity) {
         Log.d("DetailsFragment", "onAttach");
         super.onAttach(activity);
-        EventSummary es = getArguments().getParcelable("eventSummary");
-        ((MainActivity) activity).onSectionAttached(es.title,
-                R.color.actionbar_competitons);
+        ((MainActivity) activity).onSectionAttached(getTitle(),getActionBarColor());
+    }
+
+    @Override
+    public String getTitle() {
+        return ((EventSummary)getArguments().getParcelable("eventSummary")).title;
+    }
+
+    @Override
+    public int getActionBarColor() {
+        return R.color.actionbar_competitons;
     }
 }

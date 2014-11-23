@@ -161,10 +161,12 @@ public class MainActivity extends ActionBarActivity
             super.onBackPressed();
         else
         {
+            EventFragment currFrag = (EventFragment)fragStack.peek();
+
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, fragStack.peek())
+                    .replace(R.id.container, currFrag)
                     .commit();
-            onSectionAttached(fragStack.peek().getArguments().getString("title"), fragStack.peek().getArguments().getInt("actionbar_color"));
+            onSectionAttached(currFrag.getTitle(), currFrag.getActionBarColor());
         }
     }
 }
