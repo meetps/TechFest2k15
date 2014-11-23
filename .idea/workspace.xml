@@ -12,9 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/Navigation.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/Navigation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_navigation.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_navigation.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apk/tf-v-1.8.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apk/app-debug.apk" afterPath="$PROJECT_DIR$/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apk/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/apk/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Techfest.iws" />
