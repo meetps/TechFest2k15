@@ -133,7 +133,7 @@ public class MainActivity extends ActionBarActivity
         else if(place.equals("Convo"))
             return "19.1319587,72.914763";
         else
-            return "19,72";
+            return "19.1279852,72.914763";
     }
 
     public void getDirections(View v){
