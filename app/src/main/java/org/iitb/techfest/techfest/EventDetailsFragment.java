@@ -41,6 +41,7 @@ public class EventDetailsFragment extends EventFragment {
 
         ((TextView)rootView.findViewById(R.id.info)).setText(String.format("Venue: %s\nTime: %s\nDate: %s",es.venue,es.time,es.date));
         rootView.findViewById(R.id.set_alarm).setTag(es.id);
+        rootView.findViewById(R.id.get_directions).setTag(es.id);
 
         return rootView;
     }
