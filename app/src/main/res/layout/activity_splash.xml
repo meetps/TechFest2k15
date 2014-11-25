@@ -4,8 +4,8 @@
     android:background="@color/black_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="230dp"
@@ -13,4 +13,9 @@
         android:id="@+id/logo_animation"
         android:src="@drawable/tflogo"
         android:background="#ff000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading events..."
+        style="@style/Text"/>
 </LinearLayout>

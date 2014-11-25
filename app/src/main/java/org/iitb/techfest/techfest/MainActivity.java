@@ -56,9 +56,7 @@ public class MainActivity extends ActionBarActivity
         tf_logo = new ImageView(this);
         tf_logo.setImageResource(R.drawable.tf_logo);
 
-        events.add(new EventSummary(0, R.drawable.tf_icon, R.layout.details_robowars, "Robowars", "Frickin' epic","SOM","17:00","3/01/2015"));
-        events.add(new EventSummary(1, R.drawable.tf_icon, R.layout.details_robowars, "Compi 2", "Arbit desc 2","","",""));
-        events.add(new EventSummary(2, R.drawable.tf_icon, R.layout.details_robowars, "Compi 3", "Arbit desc 3","","",""));
+        events = (ArrayList<EventSummary>) getIntent().getSerializableExtra("events");
 
         restoreActionBar();
     }
@@ -130,7 +128,7 @@ public class MainActivity extends ActionBarActivity
             return "19.129144,72.918190";
         else if(place.equals("SOM"))
             return "19.1317237,72.9157796";
-        else if(place.equals("Convo"))
+        else if(place.equals("Convocation Hall"))
             return "19.1319587,72.914763";
         else
             return "19.1279852,72.914763";
@@ -144,7 +142,7 @@ public class MainActivity extends ActionBarActivity
         String latlang=getLatLangVersion(venue.toString());
 
         Intent intentMap = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("http://maps.google.com/maps?daddr=" + latlang));
+                Uri.parse("http://maps.google.com/maps?mode=walking&daddr=" + latlang));
         startActivity(intentMap);
     }
 

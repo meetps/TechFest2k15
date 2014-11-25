@@ -25,14 +25,14 @@ public class EventSummary implements Parcelable{
     }
 
     private EventSummary(Parcel in){
-        date=in.readString();
-        time=in.readString();
-        venue=in.readString();
-        description=in.readString();
-        title=in.readString();
-        description_layout=in.readInt();
-        image_id=in.readInt();
         id=in.readInt();
+        image_id=in.readInt();
+        description_layout=in.readInt();
+        title=in.readString();
+        description=in.readString();
+        venue=in.readString();
+        time=in.readString();
+        date=in.readString();
     }
 
     @Override
