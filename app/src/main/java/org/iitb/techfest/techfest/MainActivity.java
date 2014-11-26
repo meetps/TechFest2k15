@@ -70,15 +70,27 @@ public class MainActivity extends ActionBarActivity
         position++;
 
         if(position==2)
-            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section2),R.color.actionbar_section2,R.layout.fragment_competitions,null);
+            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section2),R.color.actionbar_section2,R.layout.fragment_competitions,filterEvents(getString(R.string.title_section2)));
         else
-            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section1),R.color.actionbar_section1,R.layout.fragment_main,null);
+            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section1),R.color.actionbar_section1,R.layout.fragment_main,filterEvents(getString(R.string.title_section2)));
 
         fragStack.push(frag);
 
         fragmentManager.beginTransaction()
                 .replace(R.id.container, frag)
                 .commit();
+    }
+
+    public ArrayList<EventSummary> filterEvents(String title){
+        ArrayList<EventSummary> temp = new ArrayList<EventSummary>();
+
+        for(EventSummary es : events){
+            if(es.title.equals(title)){
+                temp.add(es);
+            }
+        }
+
+        return temp;
     }
 
     public void loadDetails(View v){
@@ -92,7 +104,18 @@ public class MainActivity extends ActionBarActivity
     }
 
     public void loadList(View v){
+        EventListFragment eventList = EventListFragment.newInstance(
+                EventListFragment.TYPE_LIST,
+                (String)v.getTag(),
+                ((EventFragment)fragStack.peek()).getActionBarColor(),
+                R.layout.details_robowars,
+                filterEvents((String)v.getTag()));
 
+        fragStack.push(eventList);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, eventList)
+                .commit();
     }
 
     public void setReminder(View v){
