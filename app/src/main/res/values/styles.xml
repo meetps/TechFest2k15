@@ -26,13 +26,20 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="ParagraphText" parent="Text">
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
     <style name="SummaryText" parent="Text">
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="SummaryTitle" parent="HeadingText">
         <item name="android:textSize">22sp</item>
         <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:gravity">left</item>
     </style>
 
     <!-- Layout styles -->
@@ -40,6 +47,7 @@
         <item name="android:padding">5dp</item>
         <item name="android:layout_width">70dp</item>
         <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
     </style>
 
     <style name="HorizontalDivider">
@@ -50,6 +58,12 @@
         <item name="android:paddingRight">5dp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="container">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
 </resources>

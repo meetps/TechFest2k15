@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+style="@style/Fragment">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content">
+        <TextView   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ParagraphText"
+            android:text="Anybody can hold the helm when the sea is calm but at this Techfest, you will witness a sea full of competitions, which polishes and brings out knowledge, skills and determination within you. With the fields for competitions this year ranging from sustainability and design to advanced robotics to events based on pure sciences, Techfest has something in store for everyone."/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ParagraphText"
+            android:text="Yes, the time has come when you can prove to the world that you have it in you. No legacy is as rich as that of Competitions at Techfest and we invite all of you to be a part of it. Get ready for the ultimate challenges awaiting you!"/>
+
+        <LinearLayout style="@style/container"
+                android:onClick="loadList"
+                android:tag="Technocalypse">
+
+                <ImageView
+                    style="@style/SummaryImage"
+                    android:src="@drawable/tf_icon"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Technocalypse"
+                        style="@style/SummaryTitle"
+                        android:autoText="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The gruelling mission aimed at the apocalypse of attacking machines"
+                        style="@style/SummaryText" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout style="@style/container"
+            android:onClick="loadList"
+            android:tag="Xtreme Machines">
+
+            <ImageView
+                style="@style/SummaryImage"
+                android:src="@drawable/tf_icon"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xtreme Machines"
+                    style="@style/SummaryTitle"
+                    android:autoText="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Give your machines a chance to bring victory to you in this battle!"
+                    style="@style/SummaryText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container"
+            android:onClick="loadList"
+            android:tag="Robotron">
+
+            <ImageView
+                style="@style/SummaryImage"
+                android:src="@drawable/tf_icon"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Robotron"
+                    style="@style/SummaryTitle"
+                    android:autoText="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Come up with a robust robot that would follow the will of the humankind"
+                    style="@style/SummaryText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container"
+            android:onClick="loadList"
+            android:tag="Dimension">
+
+            <ImageView
+                style="@style/SummaryImage"
+                android:src="@drawable/tf_icon"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dimension"
+                    style="@style/SummaryTitle"
+                    android:autoText="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Here its your chance to think and play with the already existing artefact"
+                    style="@style/SummaryText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container"
+            android:onClick="loadList"
+            android:tag="International Challenge">
+
+            <ImageView
+                style="@style/SummaryImage"
+                android:src="@drawable/tf_icon"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="International Challenge"
+                    style="@style/SummaryTitle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="An international platform for proving your skills and make your name"
+                    style="@style/SummaryText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container"
+            android:onClick="loadList"
+            android:tag="Moneyball">
+
+            <ImageView
+                style="@style/SummaryImage"
+                android:src="@drawable/tf_icon"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moneyball"
+                    style="@style/SummaryTitle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The ultimate aim of predicting the future"
+                    style="@style/SummaryText"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container"
+            android:onClick="loadList"
+            android:tag="Algorythm">
+
+            <ImageView
+                style="@style/SummaryImage"
+                android:src="@drawable/tf_icon"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Algorythm"
+                    style="@style/SummaryTitle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your chance to experiment with one of the oldest talent of mankind"
+                    style="@style/SummaryText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -12,11 +12,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class EventListFragment extends EventFragment{
+    public static final int TYPE_LIST=1,
+                            TYPE_LIST_GROUP=2;
 
     public EventListFragment(){
     }
 
-    public static final EventListFragment newInstance(String title, int actionbar_color, int description_layout, ArrayList<EventSummary> event_list){
+    public static final EventListFragment newInstance(int type, String title, int actionbar_color, int description_layout, ArrayList<EventSummary> event_list){
         EventListFragment el = new EventListFragment();
         Bundle args = new Bundle();
 

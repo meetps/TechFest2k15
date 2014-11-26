@@ -36,7 +36,7 @@ public class MainActivity extends ActionBarActivity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
-    private int mActionBarColor=R.color.actionbar_home;
+    private int mActionBarColor=R.color.actionbar_section1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +67,12 @@ public class MainActivity extends ActionBarActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment frag;
 
-        if(position==1)
-            frag= EventListFragment.newInstance("Competitions",R.color.actionbar_competitons,R.layout.details_competitions, events);
+        position++;
+
+        if(position==2)
+            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section2),R.color.actionbar_section2,R.layout.fragment_competitions,null);
         else
-            frag= EventListFragment.newInstance("Home",R.color.actionbar_home,R.layout.fragment_main, null);
+            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section1),R.color.actionbar_section1,R.layout.fragment_main,null);
 
         fragStack.push(frag);
 
@@ -87,6 +89,10 @@ public class MainActivity extends ActionBarActivity
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, eventDetails)
                 .commit();
+    }
+
+    public void loadList(View v){
+
     }
 
     public void setReminder(View v){

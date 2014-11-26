@@ -8,6 +8,6 @@ public class EventFragment extends Fragment{
     }
 
     public int getActionBarColor(){
-        return R.color.actionbar_home;
+        return R.color.actionbar_section1;
     }
 }
