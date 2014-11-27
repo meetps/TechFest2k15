@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal" >
+        <TextView
+            style="@style/ParagraphText"
+            android:text="In the 22nd century, the human race is celebrating the birth of artificial intelligence when the machines created by them explode a war against the mankind. They destroy all the inhabitants on surface of the planet Earth leaving behind a ravaged wasteland."/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Zion has been built beneath the ground for the purpose of inhabiting the last of the remaining humans following the cataclysmic nuclear war against the armies of Zero One. It is the only human city to survive the facade created by malevolent intelligence. Zion has a multitude of defensive systems that is collectively known as the Zion Defence Grid. The city is governed by the Zion Council which makes all the administrative decisions for the city and the war."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Thousands of sentient machines are all set to attack Zion and snuff out the entire human civilization residing over there. The Zion Council has a herculean task ahead of them for the survival. The council recruits Morpheus and his crew of free humans to set out for the rebellion. Techfest brings you the gruelling mission aimed at the apocalypse of attacking machines."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The quest has begun and the time is running out. Gear yourself up!"/>
+
+</LinearLayout>

@@ -29,6 +29,8 @@
     <style name="ParagraphText" parent="Text">
         <item name="android:textSize">17sp</item>
         <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="SummaryText" parent="Text">
@@ -48,6 +50,13 @@
         <item name="android:layout_width">70dp</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="DetailsImage">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
     <style name="HorizontalDivider">

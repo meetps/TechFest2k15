@@ -55,7 +55,7 @@ public class SplashActivity extends Activity {
         data.remove(0);
 
         for(String[] row : data){
-            EventSummary es = new EventSummary(i,R.drawable.tf_icon,R.layout.details_robowars,row[0],"arbit desc",row[4],row[2],row[3]);
+            EventSummary es = new EventSummary(i,R.drawable.tf_icon,0,row[0],"arbit desc",row[4],row[2],row[3]);
 
             converted.add(es);
 

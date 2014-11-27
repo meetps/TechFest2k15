@@ -16,6 +16,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.Stack;
 
 
@@ -26,6 +27,8 @@ public class MainActivity extends ActionBarActivity
 
     ArrayList<EventSummary> events = new ArrayList<EventSummary>();
     Stack<Fragment> fragStack = new Stack<Fragment>();
+
+    HashMap<String,Integer> layout_id = new HashMap<String, Integer>();
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -58,6 +61,13 @@ public class MainActivity extends ActionBarActivity
 
         events = (ArrayList<EventSummary>) getIntent().getSerializableExtra("events");
 
+        layout_id.put("Technocalypse", R.layout.details_technocalypse);
+        layout_id.put("Robowars",R.layout.details_robowars);
+        layout_id.put("Codeblitz",R.layout.details_codeblitz);
+        layout_id.put("Vortex",R.layout.details_codeblitz);
+
+        addLayoutIDs();
+
         restoreActionBar();
     }
 
@@ -72,7 +82,7 @@ public class MainActivity extends ActionBarActivity
         if(position==2)
             frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section2),R.color.actionbar_section2,R.layout.fragment_competitions,filterEvents(getString(R.string.title_section2)));
         else
-            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section1),R.color.actionbar_section1,R.layout.fragment_main,filterEvents(getString(R.string.title_section2)));
+            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section1),R.color.actionbar_section1,R.layout.fragment_main,filterEvents(getString(R.string.title_section1)));
 
         fragStack.push(frag);
 
@@ -104,18 +114,26 @@ public class MainActivity extends ActionBarActivity
     }
 
     public void loadList(View v){
+        String title = (String)v.getTag();
+
         EventListFragment eventList = EventListFragment.newInstance(
                 EventListFragment.TYPE_LIST,
-                (String)v.getTag(),
+                title,
                 ((EventFragment)fragStack.peek()).getActionBarColor(),
-                R.layout.details_robowars,
-                filterEvents((String)v.getTag()));
+                layout_id.get(title),
+                filterEvents(title));
 
         fragStack.push(eventList);
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, eventList)
                 .commit();
+    }
+
+    public void addLayoutIDs(){
+        for(EventSummary es: events){
+            es.description_layout = layout_id.get(es.title);
+        }
     }
 
     public void setReminder(View v){

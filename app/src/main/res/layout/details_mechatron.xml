@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal" >
+        <TextView
+            style="@style/ParagraphText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Neo, Morpheus and Trinity successfully transplant the EMP’s weapon at their enemy base. But the sentinel machines detect the weapon through their super-powerful abilities of diagnosing."/>
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/codeblitz"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text=" They seek to end the group of free humans along with them and therefore destroy the bridge that connects Zion city with the outside world."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The task of the competition is to establish the broken bridge within the stipulated period of time to enter the Zion city safely and complete the mission. "/>
+</LinearLayout>
