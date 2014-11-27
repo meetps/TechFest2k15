@@ -4,16 +4,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/Fragment">
-    <TextView
+    <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome to TechFest"
-        style="@style/HeadingText"
-        android:gravity="center"
-        android:textSize="30dp"/>
+        style="@style/DetailsImage"
+        android:src="@drawable/tf_logo"/>
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        style="@style/Text"
-        android:text="This is techfest\nhello\nNolan (is|is not) coming to Mood Indigo"/>
+        style="@style/ParagraphText"
+        android:text="Techfest is the annual science and technology festival of IIT Bombay. Techfest is known for hosting a variety of events that include competitions, exhibitions, lectures as well as workshops."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Started in 1998 with the aim of providing a platform for the Indian student community to develop and showcase their technical prowess, it has now grown into Asia's largest college Science and Technology festival. The activities culminate in a grand three day festival event in the month of January on the campus of IIT Bombay which attracts people from all over India and abroad, including students, academia, corporates and the general public."/>
 </LinearLayout>
