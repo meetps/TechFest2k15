@@ -58,7 +58,7 @@ public class HttpConnection {
                     iStream));
             String line = "";
             while ((line = br.readLine()) != null) {
-                String[] next = line.split(",");
+                String[] next = line.split(";");
                 Log.i("Download Debug","row recieved : "+next[0]);
                 data.add(next);
             }

@@ -8,20 +8,22 @@ public class EventSummary implements Parcelable{
         image_id,
         description_layout;
     String title,
+           category,
            description,
            venue,
            time,
            date;
 
-    public EventSummary(int id, int image_id, int description_layout, String title, String description, String venue, String time, String date){
+    public EventSummary(int id, int image_id, int description_layout, String title, String category, String description, String time, String date, String venue){
         this.id=id;
         this.image_id=image_id;
         this.description_layout=description_layout;
+        this.category=category;
         this.title=title;
         this.description=description;
-        this.venue=venue;
         this.time=time;
         this.date=date;
+        this.venue=venue;
     }
 
     private EventSummary(Parcel in){
@@ -29,10 +31,11 @@ public class EventSummary implements Parcelable{
         image_id=in.readInt();
         description_layout=in.readInt();
         title=in.readString();
+        category=in.readString();
         description=in.readString();
-        venue=in.readString();
         time=in.readString();
         date=in.readString();
+        venue=in.readString();
     }
 
     @Override
@@ -46,10 +49,11 @@ public class EventSummary implements Parcelable{
         out.writeInt(image_id);
         out.writeInt(description_layout);
         out.writeString(title);
+        out.writeString(category);
         out.writeString(description);
-        out.writeString(venue);
         out.writeString(time);
         out.writeString(date);
+        out.writeString(venue);
     }
 
     public static final Parcelable.Creator<EventSummary> CREATOR

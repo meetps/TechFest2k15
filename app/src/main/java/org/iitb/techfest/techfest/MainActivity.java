@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -59,7 +60,7 @@ public class MainActivity extends ActionBarActivity
         tf_logo = new ImageView(this);
         tf_logo.setImageResource(R.drawable.tf_logo);
 
-        events = (ArrayList<EventSummary>) getIntent().getSerializableExtra("events");
+        events = getIntent().getParcelableArrayListExtra("events");
 
         layout_id.put("Technocalypse", R.layout.details_technocalypse);
         layout_id.put("Robowars",R.layout.details_robowars);
@@ -95,7 +96,7 @@ public class MainActivity extends ActionBarActivity
         ArrayList<EventSummary> temp = new ArrayList<EventSummary>();
 
         for(EventSummary es : events){
-            if(es.title.equals(title)){
+            if(es.category.equals(title)){
                 temp.add(es);
             }
         }
@@ -132,7 +133,12 @@ public class MainActivity extends ActionBarActivity
 
     public void addLayoutIDs(){
         for(EventSummary es: events){
-            es.description_layout = layout_id.get(es.title);
+            Integer temp_id = layout_id.get(es.title);
+            if(temp_id!=null){
+                es.description_layout=temp_id;
+            } else {
+                es.description_layout=R.layout.details_robowars;
+            }
         }
     }
 

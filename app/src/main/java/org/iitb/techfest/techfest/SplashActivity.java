@@ -55,7 +55,7 @@ public class SplashActivity extends Activity {
         data.remove(0);
 
         for(String[] row : data){
-            EventSummary es = new EventSummary(i,R.drawable.tf_icon,0,row[0],"arbit desc",row[4],row[2],row[3]);
+            EventSummary es = new EventSummary(i,R.drawable.tf_icon,0,row[0],row[1],row[2],row[3],row[4],row[5]);
 
             converted.add(es);
 
@@ -64,7 +64,7 @@ public class SplashActivity extends Activity {
 
         Intent intent = new Intent();
         intent.setClass(this,MainActivity.class);
-        intent.putExtra("events",converted);
+        intent.putParcelableArrayListExtra("events",converted);
         startActivity(intent);
 
         finish();
