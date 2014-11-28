@@ -1,12 +1,20 @@
 package org.iitb.techfest.techfest;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,10 +37,43 @@ public class SplashActivity extends Activity {
             List<String[]> data = new ArrayList<String[]>();
             try {
                 HttpConnection http = new HttpConnection();
-                data = http.getCSV(url[0]);
-            } catch (Exception e) {
+                data = http.downloadCSV(url[0]);
+
+                if(data!=null){
+                    try {
+                        PrintWriter out=new PrintWriter(openFileOutput("events.csv", Context.MODE_PRIVATE));
+                        for(String[]  row : data){
+                            for(int i=0; i<row.length; i++){
+                                out.write(row[i]);
+                            }
+                            out.write('\n');
+                        }
+
+                        out.flush();
+                        out.close();
+                    } catch (FileNotFoundException e) {
+                        Log.e("Cache Save",e.getMessage());
+                    }
+                } else {
+                    try {
+                        FileInputStream in = openFileInput("events.csv");
+                        data=HttpConnection.parseCSV(in);
+                        Log.d("Cache Load","Loaded from app cache");
+                    } catch (Exception e) {
+                        Log.e("Cache Load",e.getMessage());
+
+                        try {
+                            data=HttpConnection.parseCSV(getAssets().open("events.csv"));
+                            Log.d("Cache Load","Loaded from assets");
+                        } catch (IOException e1) {
+                            Log.e("Cache Load", e1.getMessage());
+                        }
+                    }
+                }
+            } catch (IOException e) {
                 Log.d("Background Task", e.toString());
             }
+
             return data;
         }
 

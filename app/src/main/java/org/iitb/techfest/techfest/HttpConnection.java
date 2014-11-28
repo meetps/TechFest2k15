@@ -41,9 +41,8 @@ public class HttpConnection {
         return data;
     }
 
-    public List<String[]> getCSV(String csvUrl) throws IOException {
-
-        List<String[]> data=new ArrayList<String[]>();
+    public List<String[]> downloadCSV(String csvUrl) throws IOException {
+        List<String[]> data=null;
         InputStream iStream = null;
         HttpURLConnection urlConnection = null;
         try {
@@ -54,21 +53,32 @@ public class HttpConnection {
 
             Log.d("Download Debug","response: " + urlConnection.getResponseCode()+" -> "+urlConnection.getResponseMessage());
             iStream = urlConnection.getInputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(
-                    iStream));
-            String line = "";
-            while ((line = br.readLine()) != null) {
-                String[] next = line.split(";");
-                Log.i("Download Debug","row recieved : "+next[0]);
-                data.add(next);
-            }
-            Log.i("Download Debug","data size : "+data.size());
+
+            data=parseCSV(iStream);
         } catch (Exception e) {
             Log.d("Exception while reading url", e.toString());
         } finally {
-            iStream.close();
+            if(iStream!=null) iStream.close();
             urlConnection.disconnect();
+
+            return data;
         }
+    }
+
+    public static List<String[]> parseCSV(InputStream in) throws IOException{
+        List<String[]> data=new ArrayList<String[]>();
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(
+                in));
+        String line = "";
+        while ((line = br.readLine()) != null) {
+            String[] next = line.split(";");
+            Log.i("Download Debug","row recieved : "+next[0]);
+            data.add(next);
+        }
+        Log.i("Download Debug","data size : "+data.size());
+
+        in.close();
 
         return data;
     }
