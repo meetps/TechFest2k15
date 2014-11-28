@@ -63,9 +63,13 @@ public class MainActivity extends ActionBarActivity
         events = getIntent().getParcelableArrayListExtra("events");
 
         layout_id.put("Technocalypse", R.layout.details_technocalypse);
-        layout_id.put("Robowars",R.layout.details_robowars);
         layout_id.put("Codeblitz",R.layout.details_codeblitz);
-        layout_id.put("Vortex",R.layout.details_codeblitz);
+        layout_id.put("Vortex",R.layout.details_vortex);
+        layout_id.put("Mechatron",R.layout.details_mechatron);
+
+        layout_id.put("International Challenge", R.layout.details_international_challenge);
+        layout_id.put("Robowars",R.layout.details_robowars);
+        layout_id.put("International Robotics Competition",R.layout.details_irc);
 
         addLayoutIDs();
 

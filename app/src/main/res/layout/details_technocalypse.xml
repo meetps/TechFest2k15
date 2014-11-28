@@ -8,10 +8,12 @@
         android:orientation="horizontal" >
         <TextView
             style="@style/ParagraphText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:text="In the 22nd century, the human race is celebrating the birth of artificial intelligence when the machines created by them explode a war against the mankind. They destroy all the inhabitants on surface of the planet Earth leaving behind a ravaged wasteland."/>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            style="@style/DetailsImage"
+            android:src="@drawable/robowars"/>
     </LinearLayout>
     <TextView
         style="@style/ParagraphText"

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        style="@style/Text"
-        android:text="Robowars is just frickin' epic. Period."/>
+        android:orientation="horizontal" >
+        <TextView
+            style="@style/ParagraphText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="It will be savage. It will be treacherous. It is a game of style, control, damage and aggression with the robots pitting each other in deadly combat."/>
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/robowars"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text=" These warriors will duel for honour and fraternity in arena of destructions with their pneumatic spikes, flipping tusks, angel grinders, hurling maces, hydraulic pincers and loads more."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+It is time to concentrate on the hacking and slashing of the robots. Now it is time to rumble. It's the Grand Finale of war. Get ready to feel the chills and shivers down your spine and become a part of Robowars, Techfest 2015. "/>
+</LinearLayout>
