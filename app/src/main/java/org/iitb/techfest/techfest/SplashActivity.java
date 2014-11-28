@@ -44,7 +44,7 @@ public class SplashActivity extends Activity {
                         PrintWriter out=new PrintWriter(openFileOutput("events.csv", Context.MODE_PRIVATE));
                         for(String[]  row : data){
                             for(int i=0; i<row.length; i++){
-                                out.write(row[i]);
+                                out.write(row[i]+(i+1==row.length?"":";"));
                             }
                             out.write('\n');
                         }
