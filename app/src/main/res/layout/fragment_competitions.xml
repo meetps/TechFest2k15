@@ -108,7 +108,7 @@ style="@style/Fragment">
 
         <LinearLayout style="@style/container"
             android:onClick="loadList"
-            android:tag="Dimension">
+            android:tag="Dimensions">
 
             <ImageView
                 style="@style/SummaryImage"
@@ -122,7 +122,7 @@ style="@style/Fragment">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dimension"
+                    android:text="Dimensions"
                     style="@style/SummaryTitle"
                     android:autoText="false" />
 

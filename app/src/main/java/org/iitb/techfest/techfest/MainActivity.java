@@ -73,6 +73,11 @@ public class MainActivity extends ActionBarActivity
         layout_id.put("Techfest International Coding Challenge",R.layout.details_ticc);
         layout_id.put("Techfest International Student Conference", R.layout.details_tisc);
 
+        layout_id.put("Dimensions",R.layout.details_dimensions);
+        layout_id.put("Hydranoid",R.layout.details_hydranoid);
+        layout_id.put("Cantilivo",R.layout.details_cantilivo);
+        layout_id.put("Technocrane",R.layout.details_technocrane);
+
         addLayoutIDs();
 
         restoreActionBar();

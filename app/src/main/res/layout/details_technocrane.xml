@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The rise of machinery and automation in the past century has revolutionised industrial activities. In the coming few decades, it is predicted that the human civilization will rely more and more on machines and substitute humans in daily life. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Technocrane brings forth the intersection of man and machine, how machines swiftly finish jobs under directions of man. The ever increasing demand on construction sector has made it imperative to involve machines for building. Techfest invites you to design bots to build the skyscraper of the future. "/>
+
+</LinearLayout>
