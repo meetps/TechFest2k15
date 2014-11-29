@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Look at the piece of metal you are working at, you perhaps can’t feel the heat flowing but certainly you see its impact on humans. These circuits, these gears are calling you to play with them. Robotics, a technology which has no such limits and your age which has no limit to learn, unleash your potential to think, to build, to beat every complex tasks which comes in your way through robotics. Here Techfest presents Scholastic to boost up your enthusiasm about technology which awaits desperately for a pinch of your hand to roar to life. "/>
+</LinearLayout>

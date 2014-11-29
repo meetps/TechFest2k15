@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            style="@style/ParagraphText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="'Don't blame you,' said Marvin and counted five hundred and ninety-seven thousand million sheep before falling asleep again a second later. - Douglas Adams"/>
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/robowars"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Robots, the species which does not fight to evolve. Still they come up with more power, more complexity, more adaptability and everything cooler to nip one off. A world is thought of being operated by robotics and robots then would perhaps be like Iron Man or terminator when they could think or to be little less damaging like Atom. The era is yet to come, and for more simplification of the complications we proceed to build it."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Robotron, a twisting unit of competitions is brought to you by Techfest who aspire to feel invisible elemental power. Grab your mettle, act on metal, juggle up the ideas to come up with a robust robot that would follow the will of the humankind. "/>
+</LinearLayout>

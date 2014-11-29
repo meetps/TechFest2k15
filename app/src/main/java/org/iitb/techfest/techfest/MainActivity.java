@@ -78,6 +78,11 @@ public class MainActivity extends ActionBarActivity
         layout_id.put("Cantilivo",R.layout.details_cantilivo);
         layout_id.put("Technocrane",R.layout.details_technocrane);
 
+        layout_id.put("Robotron",R.layout.details_robotron);
+        layout_id.put("Pixelate",R.layout.details_pixelate);
+        layout_id.put("Magneto",R.layout.details_magneto);
+        layout_id.put("Scholastic",R.layout.details_scholastic);
+
         addLayoutIDs();
 
         restoreActionBar();

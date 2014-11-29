@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The arcade game no longer remains arcane , as Techfest invites teams to blend their intellect and their fighter's instinct. Incorporating both technical and gadget controlling skills the gaming freaks can no longer stay away from this great challenge coming down your way. Brace yourself for unlimited fun while emulating the powers of X-Men’s greatest character ‘Magneto’ as the balls go downhill and ramps become steeper."/>
+</LinearLayout>
