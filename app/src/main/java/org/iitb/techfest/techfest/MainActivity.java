@@ -70,6 +70,8 @@ public class MainActivity extends ActionBarActivity
         layout_id.put("International Challenge", R.layout.details_international_challenge);
         layout_id.put("Robowars",R.layout.details_robowars);
         layout_id.put("International Robotics Competition",R.layout.details_irc);
+        layout_id.put("Techfest International Coding Challenge",R.layout.details_ticc);
+        layout_id.put("Techfest International Student Conference", R.layout.details_tisc);
 
         addLayoutIDs();
 
