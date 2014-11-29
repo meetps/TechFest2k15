@@ -107,8 +107,12 @@ public class MainActivity extends ActionBarActivity
         ArrayList<EventSummary> temp = new ArrayList<EventSummary>();
 
         for(EventSummary es : events){
-            if(es.category.equals(title)){
-                temp.add(es);
+            String[] categories = es.category.split("\\+");
+            for(String cat : categories){
+                if(cat.equals(title)) {
+                    temp.add(es);
+                    break;
+                }
             }
         }
 
