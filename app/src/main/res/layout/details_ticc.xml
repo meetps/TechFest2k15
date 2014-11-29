@@ -2,19 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Feeling nostalgic about the first echo “Hello World!” ? Well, the human race has come a long way since then."/>
 
-    <LinearLayout android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:orientation="horizontal" >
-        <TextView
-            style="@style/ParagraphText"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:text="Feeling nostalgic about the first echo “Hello World!” ? Well, the human race has come a long way since then."/>
-        <ImageView
-            style="@style/DetailsImage"
-            android:src="@drawable/robowars"/>
-    </LinearLayout>
     <TextView
         style="@style/ParagraphText"
         android:text="It has been astonishing to see how those ravishing bits of zeros and ones put in a stipulated order can do such great marvels in the computer industry. It is the mastery in coding that has reduced even the most ambiguous and impossible looking tasks to a mere program asking the obedient computer to solve it. "/>

@@ -3,18 +3,10 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:orientation="horizontal" >
-        <TextView
-            style="@style/ParagraphText"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:text="Morpheus and Trinity find Neo, the One they had been searching for years. They believe that Neo is the man prophesied to end the war between humans and machines."/>
-        <ImageView
-            style="@style/DetailsImage"
-            android:src="@drawable/codeblitz"/>
-    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Morpheus and Trinity find Neo, the One they had been searching for years. They believe that Neo is the man prophesied to end the war between humans and machines."/>
+
     <TextView
         style="@style/ParagraphText"
         android:text="He is rescued by Morpheus and brought aboard a levitating ship. As the troop prepares to leave the Matrix, they are ambushed by agents and tactical police. Agent Smith draws Neo back into simulated reality to avert him from going into the real world."/>

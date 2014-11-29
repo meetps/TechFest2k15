@@ -2,19 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Techfest International Student Conference is an initiative to bring together the student community and professors with a common research background."/>
 
-    <LinearLayout android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:orientation="horizontal" >
-        <TextView
-            style="@style/ParagraphText"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:text="Techfest International Student Conference is an initiative to bring together the student community and professors with a common research background."/>
-        <ImageView
-            style="@style/DetailsImage"
-            android:src="@drawable/robowars"/>
-    </LinearLayout>
     <TextView
         style="@style/ParagraphText"
         android:text="TISC marks a step further in our endeavor to promote science and technology among the students by facilitating the exchange of knowledge between academia and industry."/>
