@@ -96,7 +96,7 @@ public class SplashActivity extends Activity {
         data.remove(0);
 
         for(String[] row : data){
-            EventSummary es = new EventSummary(i,R.drawable.tf_icon,0,row[0],row[1],row[2],row[3],row[4],row[5]);
+            EventSummary es = new EventSummary(i,0,0,0,row[0],row[1],row[2],row[3],row[4],row[5]);
 
             converted.add(es);
 

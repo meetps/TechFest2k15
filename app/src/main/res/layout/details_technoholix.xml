@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:text="After the day filled with action-packed events, thousands of people await when the spotlight shifts to the magnificent Open Air Theatre which hosts some of the most captivating shows from around the world, enthralling the 10,000 strong audience beyond expectations."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Just when you thought Techfest had offered the best of technology during the day, we bring to you the illusions that shall spin your heads into a dilemma. Technoholix is a perfect blend of science technology with the additive ingredient of entertainment. It seeks to blast the myth that science and technology is all about boring equations and numbers. Justifying its name, 'Technoholix' promises to leave you addicted to technology and entertainment."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Technoholix brings you entertainment sector from around the globe. In the past we have had the honor to host few of the world's most renowned artists like Mark Nizer from USA, Pep Bou from Spain, Copenhagen Drummers from Denmark, Double Dutch Force from Belgium, Freestyl Air from France, Pyroterra from Czech Republic, Cait Lin from Zambia."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:textStyle="bold"
+        android:text="Policy for attending Technoholix"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="There is no registration or fees required to attend the technoholix at Techfest. You are required to carry a valid photo ID card along with you."/>
+</LinearLayout>

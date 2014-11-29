@@ -60,6 +60,6 @@ public class EventDetailsFragment extends EventFragment {
 
     @Override
     public int getActionBarColor() {
-        return R.color.actionbar_section2;
+        return ((EventSummary)getArguments().getParcelable("eventSummary")).actionbar_color;
     }
 }

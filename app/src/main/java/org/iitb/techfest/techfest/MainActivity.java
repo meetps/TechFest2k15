@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity
     ArrayList<EventSummary> events = new ArrayList<EventSummary>();
     Stack<Fragment> fragStack = new Stack<Fragment>();
 
-    HashMap<String,Integer> layout_id = new HashMap<String, Integer>();
+    HashMap<String,Integer[]> layout_desc = new HashMap<String, Integer[]>();
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -61,39 +61,41 @@ public class MainActivity extends ActionBarActivity
 
         events = getIntent().getParcelableArrayListExtra("events");
 
-        layout_id.put("Technocalypse", R.layout.details_technocalypse);
-        layout_id.put("Codeblitz",R.layout.details_codeblitz);
-        layout_id.put("Vortex",R.layout.details_vortex);
-        layout_id.put("Mechatron",R.layout.details_mechatron);
+        layout_desc.put("Technocalypse", new Integer[]{R.layout.details_technocalypse,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Codeblitz",new Integer[]{R.layout.details_codeblitz,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Vortex",new Integer[]{R.layout.details_vortex,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Mechatron",new Integer[]{R.layout.details_mechatron,R.drawable.tf_icon,R.color.actionbar_section2});
 
-        layout_id.put("International Challenge", R.layout.details_international_challenge);
-        layout_id.put("Robowars",R.layout.details_robowars);
-        layout_id.put("International Robotics Competition",R.layout.details_irc);
-        layout_id.put("Techfest International Coding Challenge",R.layout.details_ticc);
-        layout_id.put("Techfest International Student Conference", R.layout.details_tisc);
+        layout_desc.put("International Challenge", new Integer[]{R.layout.details_international_challenge,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Robowars",new Integer[]{R.layout.details_robowars,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("International Robotics Competition",new Integer[]{R.layout.details_irc,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Techfest International Coding Challenge",new Integer[]{R.layout.details_ticc,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Techfest International Student Conference", new Integer[]{R.layout.details_tisc,R.drawable.tf_icon,R.color.actionbar_section2});
 
-        layout_id.put("Dimensions",R.layout.details_dimensions);
-        layout_id.put("Hydranoid",R.layout.details_hydranoid);
-        layout_id.put("Cantilivo",R.layout.details_cantilivo);
-        layout_id.put("Technocrane",R.layout.details_technocrane);
+        layout_desc.put("Dimensions",new Integer[]{R.layout.details_dimensions,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Hydranoid",new Integer[]{R.layout.details_hydranoid,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Cantilivo",new Integer[]{R.layout.details_cantilivo,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Technocrane",new Integer[]{R.layout.details_technocrane,R.drawable.tf_icon,R.color.actionbar_section2});
 
-        layout_id.put("Robotron",R.layout.details_robotron);
-        layout_id.put("Pixelate",R.layout.details_pixelate);
-        layout_id.put("Magneto",R.layout.details_magneto);
-        layout_id.put("Scholastic",R.layout.details_scholastic);
+        layout_desc.put("Robotron",new Integer[]{R.layout.details_robotron,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Pixelate",new Integer[]{R.layout.details_pixelate,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Magneto",new Integer[]{R.layout.details_magneto,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Scholastic",new Integer[]{R.layout.details_scholastic,R.drawable.tf_icon,R.color.actionbar_section2});
 
-        layout_id.put("Xtreme Machines",R.layout.details_xtreme_machines);
-        layout_id.put("Full Throttle",R.layout.details_full_throttle);
-        layout_id.put("Combat Nautica", R.layout.details_combat_nautica);
-        layout_id.put("Aviator Design Challenge", R.layout.details_aviator_design);
-        layout_id.put("Aviator Flying Challenge", R.layout.details_aviator_flying);
+        layout_desc.put("Xtreme Machines",new Integer[]{R.layout.details_xtreme_machines,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Full Throttle",new Integer[]{R.layout.details_full_throttle,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Combat Nautica", new Integer[]{R.layout.details_combat_nautica,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Aviator Design Challenge", new Integer[]{R.layout.details_aviator_design,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Aviator Flying Challenge", new Integer[]{R.layout.details_aviator_flying,R.drawable.tf_icon,R.color.actionbar_section2});
 
-        layout_id.put("Moneyball", R.layout.details_moneyball);
-        layout_id.put("The 23rd Yard", R.layout.details_23_yard);
-        layout_id.put("Striker",R.layout.details_striker);
+        layout_desc.put("Moneyball", new Integer[]{R.layout.details_moneyball,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("The 23rd Yard", new Integer[]{R.layout.details_23_yard,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Striker",new Integer[]{R.layout.details_striker,R.drawable.tf_icon,R.color.actionbar_section2});
 
-        layout_id.put("Algorhythm", R.layout.details_algorhythm);
-        layout_id.put("Fermat", R.layout.details_fermat);
+        layout_desc.put("Algorhythm", new Integer[]{R.layout.details_algorhythm,R.drawable.tf_icon,R.color.actionbar_section2});
+        layout_desc.put("Fermat", new Integer[]{R.layout.details_fermat,R.drawable.tf_icon,R.color.actionbar_section2});
+
+        layout_desc.put("Technoholix", new Integer[]{R.layout.details_technoholix,R.drawable.tf_icon,R.color.actionbar_section3});
 
         addLayoutIDs();
 
@@ -104,14 +106,24 @@ public class MainActivity extends ActionBarActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment frag;
+        Fragment frag=null;
 
         position++;
 
-        if(position==2)
-            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section2),R.color.actionbar_section2,R.layout.fragment_competitions,filterEvents(getString(R.string.title_section2)));
-        else
-            frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section1),R.color.actionbar_section1,R.layout.fragment_main,filterEvents(getString(R.string.title_section1)));
+        switch (position){
+            case 2:
+                frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section2),R.color.actionbar_section2,R.layout.fragment_competitions,filterEvents(getString(R.string.title_section2)));
+                break;
+            case 3:
+                for(EventSummary es : events)
+                    if(es.title.equals(getString(R.string.title_section3))) {
+                        frag = EventDetailsFragment.newInstance(es);
+                    }
+                break;
+            default:
+                frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_section1),R.color.actionbar_section1,R.layout.fragment_main,null);
+                break;
+        }
 
         fragStack.push(frag);
 
@@ -152,8 +164,8 @@ public class MainActivity extends ActionBarActivity
         EventListFragment eventList = EventListFragment.newInstance(
                 EventListFragment.TYPE_LIST,
                 title,
-                ((EventFragment)fragStack.peek()).getActionBarColor(),
-                layout_id.get(title),
+                layout_desc.get(title)[2],
+                layout_desc.get(title)[0],
                 filterEvents(title));
 
         fragStack.push(eventList);
@@ -165,9 +177,11 @@ public class MainActivity extends ActionBarActivity
 
     public void addLayoutIDs(){
         for(EventSummary es: events){
-            Integer temp_id = layout_id.get(es.title);
-            if(temp_id!=null){
-                es.description_layout=temp_id;
+            Integer[] temp_desc = layout_desc.get(es.title);
+            if(temp_desc!=null){
+                es.description_layout=temp_desc[0];
+                es.image_id=temp_desc[1];
+                es.actionbar_color=temp_desc[2];
             } else {
                 es.description_layout=R.layout.details_robowars;
             }

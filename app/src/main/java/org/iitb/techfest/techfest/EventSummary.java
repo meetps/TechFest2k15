@@ -6,7 +6,8 @@ import android.os.Parcelable;
 public class EventSummary implements Parcelable{
     int id,
         image_id,
-        description_layout;
+        description_layout,
+        actionbar_color;
     String title,
            category,
            description,
@@ -14,10 +15,11 @@ public class EventSummary implements Parcelable{
            time,
            date;
 
-    public EventSummary(int id, int image_id, int description_layout, String title, String category, String description, String time, String date, String venue){
+    public EventSummary(int id, int image_id, int description_layout, int actionbar_color, String title, String category, String description, String time, String date, String venue){
         this.id=id;
         this.image_id=image_id;
         this.description_layout=description_layout;
+        this.actionbar_color=actionbar_color;
         this.category=category;
         this.title=title;
         this.description=description;
@@ -30,6 +32,7 @@ public class EventSummary implements Parcelable{
         id=in.readInt();
         image_id=in.readInt();
         description_layout=in.readInt();
+        actionbar_color=in.readInt();
         title=in.readString();
         category=in.readString();
         description=in.readString();
@@ -48,6 +51,7 @@ public class EventSummary implements Parcelable{
         out.writeInt(id);
         out.writeInt(image_id);
         out.writeInt(description_layout);
+        out.writeInt(actionbar_color);
         out.writeString(title);
         out.writeString(category);
         out.writeString(description);
