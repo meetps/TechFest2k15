@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/robowars"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="'The fundamental nature of coding is that our task, as programmers, is to recognize that every decision we make is a trade-off. To be a master programmer is to understand the nature of these trade-offs, and be conscious of them in everything we write.' - Wil Shipley "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Proliferation of logic in human mind marks the birth of Algorithms in the universe. Although things evolved and algorithm has become an integral part of computers and codes but it roots to time immemorial."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Here, its your chance to experiment with one of the oldest talent of mankind; but in its latest form and use your talent to evolve it a bit more!"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            style="@style/ParagraphText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="“Data is the new oil” - It’s valuable; but unrefined. The power of data is truly amazing. They are silos of information at first place, but all that one requires is a useful tool to mine them to deliver the real insights for effective decision making. "/>
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/robowars"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Data analytics is considered to be the most reliable asset in managing the haystack of information and achieving strategic growth today, whatever field it may be."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Over the time the analysis of data has made deep inroads into the arena of sports and is becoming widespread thick and fast. Teams have started to hire statistics gurus on board, fans are tracking the movements of each player, and corporate owners are busy collecting data on the optimal stadium experience. More than ever before, we know which variables matter in determining who wins and who loses. Everyday the way the data is being consumed and how the game is played is changing the face of the sports industry. "/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="This edition of Techfest brings you the latest addition to our Xtreme Machines segment, Combat Nautica set on the challenging territory of water."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Start your engines and gear up for a one-on-one with your opponent, too fast and you might crash and too slow and you might lose! Get ready to witness the never seen before battle of the boats with sound of engines revving and split second turns, a must participate for adrenaline junkies."/>
+</LinearLayout>

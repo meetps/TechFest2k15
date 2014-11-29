@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Ever wanted to feel the power of the driving force of the F1 cars and the monster trucks? Does your adrenaline level rush up after hearing the voice of an IC engine? Come and build your own beast machine at Full Throttle. Techfest 2015 gives you an opportunity to build your own IC car and prove your mettle against other racers on the track at Full Throttle."/>
+</LinearLayout>

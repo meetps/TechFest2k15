@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The English Premier League is the most followed soccer league in the world. However, goals being the sole criterion to decide the outcome of a match, have led to many disputes and arguments on who deserved to be the winner. You have set out to change this system and based upon the data given predict the ‘rightful’ king of the Premier League. "/>
+</LinearLayout>

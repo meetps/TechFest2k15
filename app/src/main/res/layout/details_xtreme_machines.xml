@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/robowars"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="'In a properly automated and educated world, then, machines may prove to be the true humanizing influence. It may be that machines will do the work that makes life possible and that human beings will do all the other things that make life pleasant and worthwhile.' - Isaac Asimov"/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Competition took birth as soon as humankind came into existence on earth. Competition amongst humans led to what we define as development of technology. Evolution of machines went hand in hand with the technological and human development and brought us where we are today."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Techfest brings to you an opportunity to prove your competitive spirit with your roboteer skills, fight and win with anything and everything possible with your fascinating machines.
+
+Give your machines a chance to bring victory to you in this battle!"/>
+</LinearLayout>

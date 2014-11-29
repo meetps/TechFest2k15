@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Mathematics expresses itself everywhere, in almost every facet of life-in nature all around us, and in the technologies in our hands. Mathematics is the language of science and engineering-describing our understanding of all that we observe."/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Mathematics has been around since the beginning of time and it most probably began with counting. Counting various quantities is one of the activities that people engage in from young right from calculating the bank's interest at hands to using giant electronic calculators."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Many, if not all puzzles and games require mathematical logic, computing and deduction. Presenting intriguing problems in mathematics and computing, brace yourself to be awed by numbers that you can relate in your daily life like the number of heartbeats in a typical lifetime."/>
+</LinearLayout>

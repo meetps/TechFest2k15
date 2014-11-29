@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -82,6 +81,19 @@ public class MainActivity extends ActionBarActivity
         layout_id.put("Pixelate",R.layout.details_pixelate);
         layout_id.put("Magneto",R.layout.details_magneto);
         layout_id.put("Scholastic",R.layout.details_scholastic);
+
+        layout_id.put("Xtreme Machines",R.layout.details_xtreme_machines);
+        layout_id.put("Full Throttle",R.layout.details_full_throttle);
+        layout_id.put("Combat Nautica", R.layout.details_combat_nautica);
+        layout_id.put("Aviator Design Challenge", R.layout.details_aviator_design);
+        layout_id.put("Aviator Flying Challenge", R.layout.details_aviator_flying);
+
+        layout_id.put("Moneyball", R.layout.details_moneyball);
+        layout_id.put("The 23rd Yard", R.layout.details_23_yard);
+        layout_id.put("Striker",R.layout.details_striker);
+
+        layout_id.put("Algorhythm", R.layout.details_algorhythm);
+        layout_id.put("Fermat", R.layout.details_fermat);
 
         addLayoutIDs();
 
