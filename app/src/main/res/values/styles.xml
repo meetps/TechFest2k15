@@ -6,7 +6,6 @@
     </style>
 
     <style name="Fragment">
-        <item name="android:background">#334</item>
         <item name="android:padding">10dp</item>
     </style>
 
