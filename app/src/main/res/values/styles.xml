@@ -35,6 +35,7 @@
 
     <style name="SummaryText" parent="Text">
         <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dp</item>
     </style>
 
     <style name="SummaryTitle" parent="HeadingText">
