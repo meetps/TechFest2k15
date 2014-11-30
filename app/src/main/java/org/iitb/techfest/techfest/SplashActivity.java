@@ -28,7 +28,7 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        new ReadTask().execute("http://home.iitb.ac.in/~mudeshi1209/includes/tf-event-2014.csv");
+        new ReadTask().execute("https://drive.google.com/uc?execute=download&id=0B_6rvZNWXShpMi03TkR1MWxwUGM");
     }
 
     private class ReadTask extends AsyncTask<String, Integer, List<String[]>> {
