@@ -104,10 +104,10 @@ public class NavigationDrawerFragment extends Fragment {
         });
 
         ArrayList<IconItem> itemList = new ArrayList<IconItem>();
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_section1)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_section2)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_section3)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_section4)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_home)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_competitions)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_technoholix)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_initiatives)));
         mDrawerListView.setAdapter(new IconAdapter(getActionBar().getThemedContext(),R.layout.menu_item,itemList));
 
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);

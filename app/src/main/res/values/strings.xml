@@ -2,10 +2,10 @@
 <resources>
 
     <string name="app_name">Techfest</string>
-    <string name="title_section1">Home</string>
-    <string name="title_section2">Competitions</string>
-    <string name="title_section3">Technoholix</string>
-    <string name="title_section4">Navigate</string>
+    <string name="title_home">Home</string>
+    <string name="title_competitions">Competitions</string>
+    <string name="title_technoholix">Technoholix</string>
+    <string name="title_initiatives">Initiatives</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>

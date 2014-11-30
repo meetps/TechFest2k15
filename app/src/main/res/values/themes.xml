@@ -10,9 +10,9 @@
     <!-- ActionBar styles -->
     <style name="MyActionBar"
         parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/actionbar_section1</item>
+        <item name="android:background">@color/actionbar_home</item>
 
         <!-- Support library compatibility -->
-        <item name="background">@color/actionbar_section1</item>
+        <item name="background">@color/actionbar_home</item>
     </style>
 </resources>

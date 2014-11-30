@@ -2,9 +2,10 @@
 <resources>
     <color name="menu_background">#222255</color>
 
-    <color name="actionbar_section1">#111111</color>
-    <color name="actionbar_section2">#223374</color>
-    <color name="actionbar_section3">#005500</color>
+    <color name="actionbar_home">#111111</color>
+    <color name="actionbar_competitions">#223374</color>
+    <color name="actionbar_technoholix">#005500</color>
+    <color name="actionbar_initiatives">#7700FF</color>
     <color name="black_logo">#000000</color>
 
 </resources>

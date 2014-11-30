@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Fragment">
+    <ImageView
+        android:layout_width="fill_parent"
+        style="@style/DetailsImage"
+        android:src="@drawable/tf_logo"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Techfest, IIT Bombay has branched out to every genre aiming at concentrating the power of youth towards innovation and development of different sectors. It takes neither armies nor riches to change the world. Over the 17 years of its growth, it has gone through a long way to achieve this glory through its various initiatives."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Previous editions of Techfest witnessed a grand success in raising initiatives like I SMOKE (I Support Movement tO Kill cancEr), Give-A-Coin (Financial Child Adoption Campaign), Techfest Green Campus Challenge, Ummeed-e-Milaap (Initiative for peace between India and Pakistan) and Reform'n'ation (Competition to address social problems in India) etc. With an aim to empower the people technologically and creating a better tomorrow, Techfest brings to you its initiatives for this year."/>
+
+    <LinearLayout style="@style/container"
+        android:onClick="loadList"
+        android:tag="Sportstech">
+
+        <ImageView
+            style="@style/SummaryImage"
+            android:src="@drawable/tf_icon"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sportstech"
+                style="@style/SummaryTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A unique initiative combining passion in sport with knowledge, creativity and innovation"
+                style="@style/SummaryText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/container"
+        android:onClick="loadList"
+        android:tag="Smart City Challenge">
+
+        <ImageView
+            style="@style/SummaryImage"
+            android:src="@drawable/tf_icon"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart City Challenge"
+                style="@style/SummaryTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="the vision of bringing together technology, government and the student fraternity to make the cities more efficient"
+                style="@style/SummaryText" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/container"
+        android:onClick="loadList"
+        android:tag="ROAR">
+
+        <ImageView
+            style="@style/SummaryImage"
+            android:src="@drawable/tf_icon"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROAR"
+                style="@style/SummaryTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An initiative that aims at upliftment and empowerment of women"
+                style="@style/SummaryText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
