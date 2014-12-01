@@ -6,6 +6,8 @@
     <color name="actionbar_competitions">#223374</color>
     <color name="actionbar_technoholix">#005500</color>
     <color name="actionbar_initiatives">#7700FF</color>
+    <color name="actionbar_lectures">#812314</color>
+    <color name="actionbar_exhibitions">#ABCDEF</color>
     <color name="black_logo">#000000</color>
 
 </resources>

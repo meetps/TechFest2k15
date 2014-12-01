@@ -96,6 +96,8 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Fermat", new Integer[]{R.layout.details_fermat,R.drawable.tf_icon,R.color.actionbar_competitions});
 
         layout_desc.put("Technoholix", new Integer[]{R.layout.details_technoholix,R.drawable.tf_icon,R.color.actionbar_technoholix});
+        layout_desc.put("Lectures",new Integer[]{R.layout.details_lectures,R.drawable.tf_icon,R.color.actionbar_lectures});
+        layout_desc.put("Exhibitions",new Integer[]{R.layout.details_exhibitions,R.drawable.tf_icon,R.color.actionbar_exhibitions});
 
         addLayoutIDs();
 
