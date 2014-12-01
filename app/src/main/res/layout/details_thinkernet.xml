@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The Internet of things is a concept that aims to extend the benefits of the regular Internet—constant connectivity, remote control ability, data sharing, and so on—to goods in the physical world. Foodstuffs, electronics, appliances, collectibles: All would be tied to local and global networks through embedded sensors that are 'always on.'"/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Sometimes called the 'Internet of everything,' the term Internet of things was coined in 1999 by Kevin Ashton, a British technology pioneer who helped develop the concept. "/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Techfest invites all the enthusiasts for developing ideas in one of the hottest sectors in technology of our times."/>
+</LinearLayout>

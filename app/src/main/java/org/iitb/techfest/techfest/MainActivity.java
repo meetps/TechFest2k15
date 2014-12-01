@@ -99,6 +99,9 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Lectures",new Integer[]{R.layout.details_lectures,R.drawable.tf_icon,R.color.actionbar_lectures});
         layout_desc.put("Exhibitions",new Integer[]{R.layout.details_exhibitions,R.drawable.tf_icon,R.color.actionbar_exhibitions});
 
+        layout_desc.put("ThinkerNet", new Integer[]{R.layout.details_thinkernet,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("NextGen TV", new Integer[]{R.layout.details_nextgen_tv,R.drawable.tf_icon,R.color.actionbar_competitions});
+
         addLayoutIDs();
 
         restoreActionBar();
