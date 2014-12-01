@@ -61,6 +61,9 @@ public class MainActivity extends ActionBarActivity
 
         events = getIntent().getParcelableArrayListExtra("events");
 
+        layout_desc.put("ThinkerNet", new Integer[]{R.layout.details_thinkernet,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("NextGen TV", new Integer[]{R.layout.details_nextgen_tv,R.drawable.tf_icon,R.color.actionbar_competitions});
+
         layout_desc.put("Technocalypse", new Integer[]{R.layout.details_technocalypse,R.drawable.tf_icon,R.color.actionbar_competitions});
         layout_desc.put("Codeblitz",new Integer[]{R.layout.details_codeblitz,R.drawable.tf_icon,R.color.actionbar_competitions});
         layout_desc.put("Vortex",new Integer[]{R.layout.details_vortex,R.drawable.tf_icon,R.color.actionbar_competitions});
@@ -98,9 +101,7 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Technoholix", new Integer[]{R.layout.details_technoholix,R.drawable.tf_icon,R.color.actionbar_technoholix});
         layout_desc.put("Lectures",new Integer[]{R.layout.details_lectures,R.drawable.tf_icon,R.color.actionbar_lectures});
         layout_desc.put("Exhibitions",new Integer[]{R.layout.details_exhibitions,R.drawable.tf_icon,R.color.actionbar_exhibitions});
-
-        layout_desc.put("ThinkerNet", new Integer[]{R.layout.details_thinkernet,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("NextGen TV", new Integer[]{R.layout.details_nextgen_tv,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("Ozone",new Integer[]{R.layout.details_ozone,R.drawable.tf_icon,R.color.actionbar_ozone});
 
         addLayoutIDs();
 
@@ -127,6 +128,24 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 4:
                 frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_initiatives),R.color.actionbar_initiatives,R.layout.fragment_initiatives,filterEvents(getString(R.string.title_initiatives)));
+                break;
+            case 5:
+                for(EventSummary es : events)
+                    if(es.title.equals(getString(R.string.title_lectures))) {
+                        frag = EventDetailsFragment.newInstance(es);
+                    }
+                break;
+            case 6:
+                for(EventSummary es : events)
+                    if(es.title.equals(getString(R.string.title_exhibitions))) {
+                        frag = EventDetailsFragment.newInstance(es);
+                    }
+                break;
+            case 7:
+                for(EventSummary es : events)
+                    if(es.title.equals(getString(R.string.title_ozone))) {
+                        frag = EventDetailsFragment.newInstance(es);
+                    }
                 break;
             default:
                 frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_home),R.color.actionbar_home,R.layout.fragment_main,null);
