@@ -193,7 +193,7 @@ style="@style/Fragment">
 
         <LinearLayout style="@style/container"
             android:onClick="loadList"
-            android:tag="Algorythm">
+            android:tag="Algorhythm">
 
             <ImageView
                 style="@style/SummaryImage"
@@ -207,7 +207,7 @@ style="@style/Fragment">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Algorythm"
+                    android:text="Algorhythm"
                     style="@style/SummaryTitle"/>
 
                 <TextView
