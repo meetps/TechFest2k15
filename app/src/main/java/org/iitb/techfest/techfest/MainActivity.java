@@ -147,6 +147,12 @@ public class MainActivity extends ActionBarActivity
                         frag = EventDetailsFragment.newInstance(es);
                     }
                 break;
+            case 8:
+                for(EventSummary es : events)
+                    if(es.title.equals("Techfest International Student Conference")) {
+                        frag = EventDetailsFragment.newInstance(es);
+                    }
+                break;
             default:
                 frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_home),R.color.actionbar_home,R.layout.fragment_main,null);
                 break;
