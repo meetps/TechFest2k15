@@ -61,47 +61,47 @@ public class MainActivity extends ActionBarActivity
 
         events = getIntent().getParcelableArrayListExtra("events");
 
-        layout_desc.put("ThinkerNet", new Integer[]{R.layout.details_thinkernet,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("NextGen TV", new Integer[]{R.layout.details_nextgen_tv,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("ThinkerNet", new Integer[]{R.layout.details_thinkernet,R.drawable.thinkernet,R.color.actionbar_competitions});
+        layout_desc.put("NextGen TV", new Integer[]{R.layout.details_nextgen_tv,R.drawable.nextgentv,R.color.actionbar_competitions});
 
-        layout_desc.put("Technocalypse", new Integer[]{R.layout.details_technocalypse,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Codeblitz",new Integer[]{R.layout.details_codeblitz,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Vortex",new Integer[]{R.layout.details_vortex,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Mechatron",new Integer[]{R.layout.details_mechatron,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("Technocalypse", new Integer[]{R.layout.details_technocalypse,R.drawable.technocalypse,R.color.actionbar_competitions});
+        layout_desc.put("Codeblitz",new Integer[]{R.layout.details_codeblitz,R.drawable.codeblitz,R.color.actionbar_competitions});
+        layout_desc.put("Vortex",new Integer[]{R.layout.details_vortex,R.drawable.vortex,R.color.actionbar_competitions});
+        layout_desc.put("Mechatron",new Integer[]{R.layout.details_mechatron,R.drawable.mechatron,R.color.actionbar_competitions});
 
-        layout_desc.put("International Challenge", new Integer[]{R.layout.details_international_challenge,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Robowars",new Integer[]{R.layout.details_robowars,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("International Robotics Competition",new Integer[]{R.layout.details_irc,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Techfest International Coding Challenge",new Integer[]{R.layout.details_ticc,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Techfest International Student Conference", new Integer[]{R.layout.details_tisc,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("International Challenge", new Integer[]{R.layout.details_international_challenge,R.drawable.international_challenge,R.color.actionbar_competitions});
+        layout_desc.put("Robowars",new Integer[]{R.layout.details_robowars,R.drawable.robowars,R.color.actionbar_competitions});
+        layout_desc.put("International Robotics Competition",new Integer[]{R.layout.details_irc,R.drawable.irc,R.color.actionbar_competitions});
+        layout_desc.put("Techfest International Coding Challenge",new Integer[]{R.layout.details_ticc,R.drawable.ticc,R.color.actionbar_competitions});
+        layout_desc.put("Techfest International Student Conference", new Integer[]{R.layout.details_tisc,R.drawable.tisc,R.color.actionbar_competitions});
 
-        layout_desc.put("Dimensions",new Integer[]{R.layout.details_dimensions,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Hydranoid",new Integer[]{R.layout.details_hydranoid,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Cantilivo",new Integer[]{R.layout.details_cantilivo,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Technocrane",new Integer[]{R.layout.details_technocrane,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("Dimensions",new Integer[]{R.layout.details_dimensions,R.drawable.dimensions,R.color.actionbar_competitions});
+        layout_desc.put("Hydranoid",new Integer[]{R.layout.details_hydranoid,R.drawable.hydranoid,R.color.actionbar_competitions});
+        layout_desc.put("Cantilivo",new Integer[]{R.layout.details_cantilivo,R.drawable.cantilivo,R.color.actionbar_competitions});
+        layout_desc.put("Technocrane",new Integer[]{R.layout.details_technocrane,R.drawable.technocrane,R.color.actionbar_competitions});
 
-        layout_desc.put("Robotron",new Integer[]{R.layout.details_robotron,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Pixelate",new Integer[]{R.layout.details_pixelate,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Magneto",new Integer[]{R.layout.details_magneto,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Scholastic",new Integer[]{R.layout.details_scholastic,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("Robotron",new Integer[]{R.layout.details_robotron,R.drawable.robotron,R.color.actionbar_competitions});
+        layout_desc.put("Pixelate",new Integer[]{R.layout.details_pixelate,R.drawable.pixelate,R.color.actionbar_competitions});
+        layout_desc.put("Magneto",new Integer[]{R.layout.details_magneto,R.drawable.magneto,R.color.actionbar_competitions});
+        layout_desc.put("Scholastic",new Integer[]{R.layout.details_scholastic,R.drawable.scholastic,R.color.actionbar_competitions});
 
-        layout_desc.put("Xtreme Machines",new Integer[]{R.layout.details_xtreme_machines,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Full Throttle",new Integer[]{R.layout.details_full_throttle,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Combat Nautica", new Integer[]{R.layout.details_combat_nautica,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Aviator Design Challenge", new Integer[]{R.layout.details_aviator_design,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Aviator Flying Challenge", new Integer[]{R.layout.details_aviator_flying,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("Xtreme Machines",new Integer[]{R.layout.details_xtreme_machines,R.drawable.xtrememachines,R.color.actionbar_competitions});
+        layout_desc.put("Full Throttle",new Integer[]{R.layout.details_full_throttle,R.drawable.fullthrottle,R.color.actionbar_competitions});
+        layout_desc.put("Combat Nautica", new Integer[]{R.layout.details_combat_nautica,R.drawable.combatnautica,R.color.actionbar_competitions});
+        layout_desc.put("Aviator Design Challenge", new Integer[]{R.layout.details_aviator_design,R.drawable.aviatordesign,R.color.actionbar_competitions});
+        layout_desc.put("Aviator Flying Challenge", new Integer[]{R.layout.details_aviator_flying,R.drawable.aviatorflying,R.color.actionbar_competitions});
 
-        layout_desc.put("Moneyball", new Integer[]{R.layout.details_moneyball,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("The 23rd Yard", new Integer[]{R.layout.details_23_yard,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Striker",new Integer[]{R.layout.details_striker,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("Moneyball", new Integer[]{R.layout.details_moneyball,R.drawable.moneyball,R.color.actionbar_competitions});
+        layout_desc.put("The 23rd Yard", new Integer[]{R.layout.details_23_yard,R.drawable.the_23rd_yard,R.color.actionbar_competitions});
+        layout_desc.put("Striker",new Integer[]{R.layout.details_striker,R.drawable.striker,R.color.actionbar_competitions});
 
-        layout_desc.put("Algorhythm", new Integer[]{R.layout.details_algorhythm,R.drawable.tf_icon,R.color.actionbar_competitions});
-        layout_desc.put("Fermat", new Integer[]{R.layout.details_fermat,R.drawable.tf_icon,R.color.actionbar_competitions});
+        layout_desc.put("Algorhythm", new Integer[]{R.layout.details_algorhythm,R.drawable.algorhythm,R.color.actionbar_competitions});
+        layout_desc.put("Fermat", new Integer[]{R.layout.details_fermat,R.drawable.fermat,R.color.actionbar_competitions});
 
-        layout_desc.put("Technoholix", new Integer[]{R.layout.details_technoholix,R.drawable.tf_icon,R.color.actionbar_technoholix});
-        layout_desc.put("Lectures",new Integer[]{R.layout.details_lectures,R.drawable.tf_icon,R.color.actionbar_lectures});
-        layout_desc.put("Exhibitions",new Integer[]{R.layout.details_exhibitions,R.drawable.tf_icon,R.color.actionbar_exhibitions});
-        layout_desc.put("Ozone",new Integer[]{R.layout.details_ozone,R.drawable.tf_icon,R.color.actionbar_ozone});
+        layout_desc.put("Technoholix", new Integer[]{R.layout.details_technoholix,R.drawable.technoholix,R.color.actionbar_technoholix});
+        layout_desc.put("Lectures",new Integer[]{R.layout.details_lectures,R.drawable.lectures,R.color.actionbar_lectures});
+        layout_desc.put("Exhibitions",new Integer[]{R.layout.details_exhibitions,R.drawable.exhibitions,R.color.actionbar_exhibitions});
+        layout_desc.put("Ozone",new Integer[]{R.layout.details_ozone,R.drawable.ozone,R.color.actionbar_ozone});
 
         addLayoutIDs();
 
