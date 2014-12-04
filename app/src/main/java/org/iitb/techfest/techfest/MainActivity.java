@@ -153,6 +153,9 @@ public class MainActivity extends ActionBarActivity
                         frag = EventDetailsFragment.newInstance(es);
                     }
                 break;
+            case 9:
+                frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST,getString(R.string.title_ideate),R.color.actionbar_ideate,R.layout.details_ideate, filterEvents(getString(R.string.title_ideate)));
+                break;
             default:
                 frag= EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP,getString(R.string.title_home),R.color.actionbar_home,R.layout.fragment_main,null);
                 break;

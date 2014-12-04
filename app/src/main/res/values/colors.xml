@@ -9,6 +9,8 @@
     <color name="actionbar_lectures">#812314</color>
     <color name="actionbar_exhibitions">#ABCDEF</color>
     <color name="actionbar_ozone">#FEDCBA</color>
+    <color name="actionbar_ideate">#BADAFF</color>
+
     <color name="black_logo">#000000</color>
 
 </resources>

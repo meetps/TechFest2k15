@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="fill_parent"
         style="@style/DetailsImage"
-        android:src="@drawable/tf_logo"/>
+        android:src="@drawable/initiatives"/>
     <TextView
         style="@style/ParagraphText"
         android:text="Techfest, IIT Bombay has branched out to every genre aiming at concentrating the power of youth towards innovation and development of different sectors. It takes neither armies nor riches to change the world. Over the 17 years of its growth, it has gone through a long way to achieve this glory through its various initiatives."/>
@@ -21,7 +21,7 @@
 
         <ImageView
             style="@style/SummaryImage"
-            android:src="@drawable/tf_icon"/>
+            android:src="@drawable/initiatives"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -74,7 +74,7 @@
 
         <ImageView
             style="@style/SummaryImage"
-            android:src="@drawable/tf_icon"/>
+            android:src="@drawable/icon_roar"/>
 
         <LinearLayout
             android:orientation="vertical"

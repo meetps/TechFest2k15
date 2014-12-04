@@ -10,6 +10,7 @@
     <string name="title_exhibitions">Exhibitions</string>
     <string name="title_ozone">Ozone</string>
     <string name="title_conference">Conference</string>
+    <string name="title_ideate">Ideate</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
