@@ -25,7 +25,7 @@ style="@style/Fragment">
 
                 <ImageView
                     style="@style/SummaryImage"
-                    android:src="@drawable/tf_icon"/>
+                    android:src="@drawable/technocalypse"/>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -54,7 +54,7 @@ style="@style/Fragment">
 
             <ImageView
                 style="@style/SummaryImage"
-                android:src="@drawable/tf_icon"/>
+                android:src="@drawable/xtrememachines"/>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -83,7 +83,7 @@ style="@style/Fragment">
 
             <ImageView
                 style="@style/SummaryImage"
-                android:src="@drawable/tf_icon"/>
+                android:src="@drawable/robotron"/>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -112,7 +112,7 @@ style="@style/Fragment">
 
             <ImageView
                 style="@style/SummaryImage"
-                android:src="@drawable/tf_icon"/>
+                android:src="@drawable/dimensions"/>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -141,7 +141,7 @@ style="@style/Fragment">
 
             <ImageView
                 style="@style/SummaryImage"
-                android:src="@drawable/tf_icon"/>
+                android:src="@drawable/international_challenge"/>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -169,7 +169,7 @@ style="@style/Fragment">
 
             <ImageView
                 style="@style/SummaryImage"
-                android:src="@drawable/tf_icon"/>
+                android:src="@drawable/moneyball"/>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -197,7 +197,7 @@ style="@style/Fragment">
 
             <ImageView
                 style="@style/SummaryImage"
-                android:src="@drawable/tf_icon"/>
+                android:src="@drawable/algorhythm"/>
 
             <LinearLayout
                 android:orientation="vertical"

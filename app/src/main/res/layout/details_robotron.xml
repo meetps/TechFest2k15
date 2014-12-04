@@ -14,7 +14,7 @@
             android:text="'Don't blame you,' said Marvin and counted five hundred and ninety-seven thousand million sheep before falling asleep again a second later. - Douglas Adams"/>
         <ImageView
             style="@style/DetailsImage"
-            android:src="@drawable/robowars"/>
+            android:src="@drawable/robotron"/>
     </LinearLayout>
     <TextView
         style="@style/ParagraphText"

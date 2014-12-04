@@ -21,7 +21,7 @@
 
         <ImageView
             style="@style/SummaryImage"
-            android:src="@drawable/initiatives"/>
+            android:src="@drawable/sportstech"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -48,7 +48,7 @@
 
         <ImageView
             style="@style/SummaryImage"
-            android:src="@drawable/tf_icon"/>
+            android:src="@drawable/smart_city"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="the vision of bringing together technology, government and the student fraternity to make the cities more efficient"
+                android:text="The vision to make the cities more efficient using technology"
                 style="@style/SummaryText" />
         </LinearLayout>
     </LinearLayout>

@@ -14,7 +14,7 @@
             android:text="“Data is the new oil” - It’s valuable; but unrefined. The power of data is truly amazing. They are silos of information at first place, but all that one requires is a useful tool to mine them to deliver the real insights for effective decision making. "/>
         <ImageView
             style="@style/DetailsImage"
-            android:src="@drawable/robowars"/>
+            android:src="@drawable/moneyball"/>
     </LinearLayout>
     <TextView
         style="@style/ParagraphText"

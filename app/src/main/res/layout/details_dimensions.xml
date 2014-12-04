@@ -14,7 +14,7 @@
             android:text="None is chronic in technology, there is always a chance to ameliorate. None bother, but those who bother are the ones we bother to ponder upon."/>
         <ImageView
             style="@style/DetailsImage"
-            android:src="@drawable/robowars"/>
+            android:src="@drawable/dimensions"/>
     </LinearLayout>
     <TextView
         style="@style/ParagraphText"
