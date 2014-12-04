@@ -17,8 +17,7 @@
             android:id="@+id/info"
             android:text="Venue: \nTime: \nDate: \n"/>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/DetailsImage"
             android:id="@+id/header_image"/>
     </LinearLayout>
     <View style="@style/HorizontalDivider"/>

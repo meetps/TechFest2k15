@@ -45,17 +45,22 @@
     </style>
 
     <!-- Layout styles -->
-    <style name="SummaryImage">
+    <style name="Image">
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="SummaryImage" parent="Image">
         <item name="android:padding">5dp</item>
         <item name="android:layout_width">70dp</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_gravity">center_vertical</item>
     </style>
 
-    <style name="DetailsImage">
+    <style name="DetailsImage" parent="Image">
         <item name="android:padding">5dp</item>
-        <item name="android:layout_width">150dp</item>
-        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
     </style>
 
