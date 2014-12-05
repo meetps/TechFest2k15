@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        The name itself doesn’t need much introduction. Sixth Sense Technology is a revolutionary way to aggrandize the physical world around us and let’s the user to use natural hand gestures to interact with digital information. It involves almost all sections of modern technology. The workshop is a secure platform for students to enter into the field of robotics and work on image processing.The workshop helps the students to learn all the basics and apply them in reality using our kits.The workshop helps the students to fight all the competitions related to robotics, Image processing, Aerial Robotics etc.
+        "/>
+
+        
+    </LinearLayout>
+    

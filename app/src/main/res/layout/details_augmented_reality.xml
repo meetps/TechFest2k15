@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Augmented Reality is a digital layer over the real world that you can't see with the naked eye but you can see with the camera on your smartphone or computer.Augmented Reality technology has matured to a point where organizations can use it as an internal tool to complement and enhance business processes, workflows and employee training. A computer that used to require hardware with size of an arcade case to produce enough processing power for augmented reality, can now fit in the palm of your hand. Google Glass, innovative in its design and features, is simply the next logical step.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        During the workshop students will be introduced to basics of Augmented Reality, its applications and working. Students will work on the AR IDE build modules which include interfacing camera, identifying markers, overlaying text, image, video, 2D and 3D elements on different types of markers.
+        "/>
+
+        
+    </LinearLayout>
+    

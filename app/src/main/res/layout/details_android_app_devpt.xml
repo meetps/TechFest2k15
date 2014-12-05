@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        A lot of us have had ideas for great apps bouncing around in our brains, but lack the skills necessary to bring our ideas to life.Do you have a need for an Android app that does not exist as yet? Would you like to develop that app yourself? Whether you’re a novice techie, an entrepreneur, or just an Android phone owner, in this class you’ll learn about the making apps and games as well as the basic building blocks of making an Android App. Get a chance to learn how to actually publish your app on Google Play Store.
+        "/>
+
+        
+    </LinearLayout>
+    

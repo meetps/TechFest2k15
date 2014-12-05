@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+         This workshop is related to speech processing which will be actuated with the robot
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        wirelessly for controlling its different actions. We will be using MATLAB for speech processing and for wireless communication we will be using Bluetooth module. Whatever voice command you will give, it will react as same.
+        "/>
+
+        
+    </LinearLayout>
+    

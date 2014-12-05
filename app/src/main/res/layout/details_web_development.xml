@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        A good website is a window to the internet world. Creating a website for internet drives a company to embrace the global compatibility. In the future, web development  will certainly spread out to modern horizons with customer oriented strategy as well as cut throat levels of competition. Techfest brings forth 'Web Development' workshop for a solid understanding of the Web Design and Development Techniques to the key design issues and focus your creativity.
+        "/>
+
+        
+    </LinearLayout>
+    

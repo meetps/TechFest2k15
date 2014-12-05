@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        'Break the chains of gravity, sky is the home.'
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        All DOTA lovers, as Aurel gave the schematic for a Gyrocopter, the world's first manned, non-magical flying device, you can also prepare your own RC open cockpit 'Motorbike of the sky'.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Invented by the Spanish engineer Juan de la Cierva to create an aircraft that could fly safely at slow speeds, the gyrocopter was first flown on 9 January 1923, at Cuatro Vientos Airfield in Madrid.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Since rotorblades on a gyrocopter are powered only by the air (autorotation), much like a windmill, there is no need for a tail rotor for anti-torque. The gyrocopter is a stable flying platform unlike a helicopter which pulls the air down through engine powered rotor blades making it possible to hover. Techfest brings you an opportunity make your own gyrocopter adept in surveillance and monitoring.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Date: January 2,3 and 4, 2015
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Duration: 16 hours spread over 2 days and a flying session on third day.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Venue: IIT Bombay
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Cost of workshop: Rs. 17,100 per team
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        For further queries, please contact:
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Vaibhav Kore 
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Manager, Events 
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        vaibhav.kore@techfest.org 
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Ph. +91 976 905 3673 
+        "/>
+
+        
+    </LinearLayout>
+    

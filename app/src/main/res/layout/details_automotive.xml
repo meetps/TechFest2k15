@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Few things have captured the passion, the sometimes obsession, of men like the car. There’s no mystery as to why this is. Cars represent a peculiar combination of several manly elements: danger, speed, singular focus, solitude, mechanics, noise, and physical skill.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Many famous men were motorcycle enthusiasts; they combined their passion for things like acting, music, and adventure, with a love for cars. Cars were a perfect outlet for their zeal for life; riding the open road with the wind in their faces left them invigorated and inspired.
+        "/>
+
+        
+    </LinearLayout>
+    

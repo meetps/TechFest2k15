@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        This workshop will introduce a highly advanced, as well as low cost board. You will learn to digitize analog electrical brainwaves to power the user interface of games, education and research applications. You will ultimately be able to control robots and other devices through your mind! You will also be taught to develop apps using processing. The Brainwave Starter Kit provided analyses and converts the brain waves into electrical signals. You can now translate your brainwaves into action! You can write your own applications, interface with various devices, or choose existing applications to power the world
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        around you with your thoughts!
+        "/>
+
+        
+    </LinearLayout>
+    

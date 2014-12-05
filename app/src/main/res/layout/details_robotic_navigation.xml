@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Navigation is one of the main modules in a mobile robotic system. A large body of research works has been conducted in the field of mobile robot navigation.The most common and popular navigation methods proposed to date rely on dead-reckoning-based, landmark-based, vision-based and behavior based techniques.Common problem pertaining to these techniques is that they depend on complex image processing algorithms, expensive hardware and prior knowledge of environment.      
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        rBot-RFID is a new approach to a robotic navigation through a grid of RFID tags. Workshop will focus on building a navigation system using the RF signal from the RFID tags as a feedback signals to navigate a mobile robot with integrated RFID reader within an unknown or uncertain indoor environment. This method is computationally simpler and more cost-effective than many of its counterparts in the state of the art. It is also modular and easy to implement since it is independent of the robots architecture and its workspace. 
+        "/>
+
+        
+    </LinearLayout>
+    

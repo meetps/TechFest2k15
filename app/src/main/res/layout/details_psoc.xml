@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        PSoC is a true programmable embedded system-on-chip integrating configurable analog and digital peripheral functions, memory and a microcontroller on a single chip.  PSoC is the product of Cypress Semiconductor Corporation (NASDAQ: CY) which is a Silicon Valley-based semiconductor design and manufacturing company.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        The Indian semiconductor and embedded design industry is projected to grow from $3.3 billion in 2005 to $43 billion in 2015. This tremendous rate of growth will require a large number of skilled professionals. Expansion plans by MNCs and NASSCOM suggest embedded systems to be the next sunrise sector. This technical hands on workshop provides hands-on experience with Cypress's industry-leading technology enabling the students to enter the workforce with the skills necessary to be quickly productive in the fast-paced world of electronics engineering disciplines. During the workshop students will be introduced to PSoC technology, architecture, Programmer and Creator. Students will be trained on Embedded C, implementation of analog and digital peripherals with hands-on projects resulting in exploration of fundamentals of Embedded Systems.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Further participants will be awarded with the Cypress Semiconductor Corporation authorized certificate under the Cypress University Alliance initiative after clearing the evaluation test. 
+        "/>
+
+        
+    </LinearLayout>
+    

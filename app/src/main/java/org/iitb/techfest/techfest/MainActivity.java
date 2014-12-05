@@ -109,6 +109,27 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Parishram",new Integer[]{R.layout.details_parishram,R.drawable.parishram,R.color.actionbar_ideate});
         layout_desc.put("Ujjwal",new Integer[]{R.layout.details_ujjwal,R.drawable.ujjwal,R.color.actionbar_ideate});
 
+        layout_desc.put("IRC Workshop",new Integer[]{R.layout.details_irc_workshop,R.drawable.irc,R.color.actionbar_workshops});
+        layout_desc.put("Augmented Reality",new Integer[]{R.layout.details_augmented_reality,R.drawable.augmented,R.color.actionbar_workshops});
+        layout_desc.put("Zero Energy Buildings",new Integer[]{R.layout.details_zero_energy_buildings,R.drawable.zero_energy_buildings,R.color.actionbar_workshops});
+        layout_desc.put("Arduped",new Integer[]{R.layout.details_arduped,R.drawable.arduped,R.color.actionbar_workshops});
+        layout_desc.put("Cloud Computing",new Integer[]{R.layout.details_cloud_computing,R.drawable.cloud_computing,R.color.actionbar_workshops});
+        layout_desc.put("Gyrocopter",new Integer[]{R.layout.details_gyrocopter,R.drawable.gyrocopter,R.color.actionbar_workshops});
+        layout_desc.put("Hacktricks Level 1",new Integer[]{R.layout.details_hacktricks_level_1,R.drawable.hacktricks,R.color.actionbar_workshops});
+        layout_desc.put("Hacktricks Level 2",new Integer[]{R.layout.details_hacktricks_level_2,R.drawable.hacktricks,R.color.actionbar_workshops});
+        layout_desc.put("Web Development",new Integer[]{R.layout.details_web_development,R.drawable.web_development,R.color.actionbar_workshops});
+        layout_desc.put("Swarm Robotics",new Integer[]{R.layout.details_swarm_robotics,R.drawable.swarm_robotics,R.color.actionbar_workshops});
+        layout_desc.put("PSoC",new Integer[]{R.layout.details_psoc,R.drawable.psoc,R.color.actionbar_workshops});
+        layout_desc.put("Propeller Clock",new Integer[]{R.layout.details_propeller_clock,R.drawable.propeller_clock,R.color.actionbar_workshops});
+        layout_desc.put("Unmanned Vehicle",new Integer[]{R.layout.details_unmanned_vehicle,R.drawable.unmanned_vehicle,R.color.actionbar_workshops});
+        layout_desc.put("Robotic Navigation",new Integer[]{R.layout.details_robotic_navigation,R.drawable.robotic_navigation,R.color.actionbar_workshops});
+        layout_desc.put("Sixth Sense Robotics",new Integer[]{R.layout.details_sixth_sense_robotics,R.drawable.sixthsense,R.color.actionbar_workshops});
+        layout_desc.put("Android App Devpt",new Integer[]{R.layout.details_android_app_devpt,R.drawable.android,R.color.actionbar_workshops});
+        layout_desc.put("Brainwave Robotics",new Integer[]{R.layout.details_brainwave_robotics,R.drawable.brainwave,R.color.actionbar_workshops});
+        layout_desc.put("Robo Speech",new Integer[]{R.layout.details_robo_speech,R.drawable.voice,R.color.actionbar_workshops});
+        layout_desc.put("Automotive",new Integer[]{R.layout.details_automotive,R.drawable.automotive,R.color.actionbar_workshops});
+        layout_desc.put("Click",new Integer[]{R.layout.details_click,R.drawable.click,R.color.actionbar_workshops});
+
         addLayoutIDs();
 
         restoreActionBar();

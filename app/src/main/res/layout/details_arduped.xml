@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Ever dreamt of building a humanoid robot which could perform all the movements that are possible for humans. Various applications of such robots include substitution of legs for handicapped people, design of walking and dancing robots, etc.We provide you with an unique opportunity of making your own Biped Robot comprising of custom lasercut chassis with servo motors, lithium ion batteries and a custom arduino board capable of controlling upto 8 servos.The Arduped Robotics Workshop provides participants with working knowledge on the control and design concepts, and the mechanisms involved in making a Biped Robot.
+        "/>
+
+        
+    </LinearLayout>
+    
