@@ -106,6 +106,9 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Sportstech", new Integer[]{R.layout.details_sportstech,R.drawable.sportstech,R.color.actionbar_initiatives});
         layout_desc.put("Game Changer", new Integer[]{R.layout.details_game_changer,R.drawable.game_changer,R.color.actionbar_initiatives});
 
+        layout_desc.put("Parishram",new Integer[]{R.layout.details_parishram,R.drawable.parishram,R.color.actionbar_ideate});
+        layout_desc.put("Ujjwal",new Integer[]{R.layout.details_ujjwal,R.drawable.ujjwal,R.color.actionbar_ideate});
+
         addLayoutIDs();
 
         restoreActionBar();

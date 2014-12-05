@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="A nation is defined by the people living in it. Development in its entirety is impossible until and unless every stratum of society is a part of it."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="India is a country largely dependent on agriculture for its economic development, but the sad irony is that the very backbone of our agriculture is not rigid. Our feeders themselves are dying for the want of food and are burdened by debt. The farmers have become seeds that rot themselves to give fruits and flowers to others. They are being stepped on by everyone, crushed by the weight of selfishness, oppression, greed and apathy of all around them compelling them to end themselves."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="There is an urgent need to pay heed to their woes and worries. Parishram is born out of the vision of bringing about a change in the lives of farmers by identifying the prevalent problems and finding concrete solutions.
+
+Let your thoughts proliferate, let your ideas consolidate, and let your actions initiate a new form of transformation. "/>
+
+</LinearLayout>
