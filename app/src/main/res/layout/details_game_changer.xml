@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="We are living in the midst of one of those occurrences that come along every few generations and the world of sports does not lag behind. The advances from engineering, material science, biomechanics, communication and information technologies has maximized the training and performance in sports. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="In this unique competition, Techfest 2015 provides a platform as an opportunity to combine passion in sport with ideas and perhaps revolutionize the vast world of sport. "/>
+
+</LinearLayout>

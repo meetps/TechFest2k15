@@ -18,6 +18,13 @@
       <config>
         <devices>
           <device id="Nexus One" />
+          <device id="Nexus 4" />
+          <device id="Nexus 10" />
+          <device id="Nexus 5" />
+          <device id="Nexus S" />
+          <device id="Galaxy Nexus" />
+          <device id="Nexus 7" />
+          <device id="Nexus 7 2013" />
           <device id="Nexus 9" />
         </devices>
       </config>
@@ -33,7 +40,18 @@
           <theme>@style/CustomActionBarTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/details_sportstech.xml">
+        <config>
+          <theme>@style/CustomActionBarTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/details_technocalypse.xml">
+        <config>
+          <state>Portrait</state>
+          <theme>@style/CustomActionBarTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/template_event_details.xml">
         <config>
           <state>Portrait</state>
           <theme>@style/CustomActionBarTheme</theme>
@@ -45,13 +63,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: org.iitb.techfest.techfest" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/details_ideate.xml" />
+    <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="Add sportstech details">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/details_game_changer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/details_sportstech.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/NavigationDrawerFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/NavigationDrawerFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_initiatives.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_initiatives.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/events.csv" afterPath="$PROJECT_DIR$/app/src/main/assets/events.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Techfest.iws" />
@@ -75,21 +91,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
+      <file leaf-file-name="events.csv" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/assets/events.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20373514" vertical-offset="510" max-vertical-offset="5010">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="390">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.3548387" vertical-offset="976" max-vertical-offset="5055">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1078,29 +1094,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/details_international_challenge.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_technocalypse.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_international_challenge.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_robowars.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_codeblitz.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_irc.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_mechatron.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_ticc.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_tisc.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_vortex.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_dimensions.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_hydranoid.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_cantilivo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_technocrane.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_robotron.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_pixelate.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_magneto.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_scholastic.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_xtreme_machines.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_full_throttle.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_combat_nautica.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_aviator_design.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_moneyball.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_23_yard.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_striker.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_algorythm.xml" />
@@ -1114,23 +1121,35 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_competitions.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_lectures.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_exhibitions.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_thinkernet.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_nextgen_tv.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_ozone.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/assets/events.csv" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/template_event_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_initiatives.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_ideate.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/NavigationDrawerFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/template_event_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_competitions.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_initiatives.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_technocalypse.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_algorhythm.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_xtreme_machines.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_international_challenge.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_dimensions.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_moneyball.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_robotron.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_sportstech.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/assets/events.csv" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_game_changer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
@@ -1270,7 +1289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1291,33 +1310,57 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TechFest2k15" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TechFest2k15" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest2k15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="org.iitb.techfest.techfest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest2k15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest2k15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1348,6 +1391,34 @@
       </pane>
       <pane id="AndroidView">
         <subPane />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest2k15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest2k15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.iitb.techfest.techfest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -1668,7 +1739,19 @@
       <created>1417632908179</created>
       <updated>1417632908179</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add ideate details">
+      <created>1417671054484</created>
+      <updated>1417671054484</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Change Image style to fit in available space">
+      <created>1417672397841</created>
+      <updated>1417672397841</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add more images, set them in layouts">
+      <created>1417674400767</created>
+      <updated>1417674400767</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1678,6 +1761,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.89666134" sideWeight="0.49960285" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5516693" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1692,7 +1776,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28038126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1701,7 +1785,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39938557" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1722,9 +1805,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Add home details and change paragraph font size" />
-    <MESSAGE value="Update apk and change gitignore to not ignore *.apk" />
-    <MESSAGE value="Add backups for event list in case of download fail&#10;&#10;first checks app cache then assets folder" />
     <MESSAGE value="Add international competitions details" />
     <MESSAGE value="Fix issue #5 : App cache csv error&#10;&#10;When writing out to app cache, hed forgotten to insert ';'&#10;fixed now" />
     <MESSAGE value="Add TICC and TISC details" />
@@ -1747,7 +1827,10 @@
     <MESSAGE value="Add conference (tisc) to nav drawer list" />
     <MESSAGE value="Change details template layout" />
     <MESSAGE value="Add images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add images" />
+    <MESSAGE value="Add ideate details" />
+    <MESSAGE value="Change Image style to fit in available space" />
+    <MESSAGE value="Add more images, set them in layouts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more images, set them in layouts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1755,66 +1838,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_vortex.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1598579" vertical-offset="0" max-vertical-offset="563">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_technocalypse.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3463588" vertical-offset="0" max-vertical-offset="563">
-          <caret line="13" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_dimensions.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_hydranoid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7307693" vertical-offset="0" max-vertical-offset="210">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_cantilivo.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="300">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_technocrane.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="270">
-          <caret line="10" column="324" selection-start-line="10" selection-start-column="324" selection-end-line="10" selection-end-column="324" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_scholastic.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1822,16 +1845,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18650089" vertical-offset="0" max-vertical-offset="563">
           <caret line="7" column="565" selection-start-line="7" selection-start-column="565" selection-end-line="7" selection-end-column="565" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_robotron.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6127886" vertical-offset="0" max-vertical-offset="563">
-          <caret line="23" column="250" selection-start-line="23" selection-start-column="250" selection-end-line="23" selection-end-column="250" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1842,6 +1856,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26642984" vertical-offset="0" max-vertical-offset="563">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1852,16 +1867,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18650089" vertical-offset="0" max-vertical-offset="563">
           <caret line="7" column="445" selection-start-line="7" selection-start-column="445" selection-end-line="7" selection-end-column="445" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_xtreme_machines.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58614564" vertical-offset="0" max-vertical-offset="563">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1872,6 +1878,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18650089" vertical-offset="0" max-vertical-offset="563">
           <caret line="7" column="381" selection-start-line="7" selection-start-column="381" selection-end-line="7" selection-end-column="381" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1882,6 +1889,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26642984" vertical-offset="0" max-vertical-offset="563">
           <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1892,6 +1900,7 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="10" column="174" selection-start-line="10" selection-start-column="174" selection-end-line="10" selection-end-column="174" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1902,16 +1911,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_moneyball.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58614564" vertical-offset="0" max-vertical-offset="563">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1922,6 +1922,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18650089" vertical-offset="0" max-vertical-offset="563">
           <caret line="7" column="281" selection-start-line="7" selection-start-column="281" selection-end-line="7" selection-end-column="281" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,16 +1933,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.0384617" vertical-offset="0" max-vertical-offset="210">
           <caret line="7" column="366" selection-start-line="7" selection-start-column="315" selection-end-line="7" selection-end-column="366" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_algorhythm.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42628774" vertical-offset="0" max-vertical-offset="563">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1952,6 +1944,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37300178" vertical-offset="0" max-vertical-offset="563">
           <caret line="14" column="207" selection-start-line="14" selection-start-column="171" selection-end-line="14" selection-end-column="207" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1962,6 +1955,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5062167" vertical-offset="0" max-vertical-offset="563">
           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2005,6 +1999,7 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2048,16 +2043,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23978686" vertical-offset="0" max-vertical-offset="563">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_competitions.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25399646" vertical-offset="202" max-vertical-offset="3405">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2075,6 +2061,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3463588" vertical-offset="0" max-vertical-offset="563">
           <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2085,6 +2072,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.538462" vertical-offset="0" max-vertical-offset="420">
           <caret line="20" column="244" selection-start-line="20" selection-start-column="244" selection-end-line="20" selection-end-column="244" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2095,6 +2083,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39964476" vertical-offset="0" max-vertical-offset="563">
           <caret line="15" column="137" selection-start-line="15" selection-start-column="137" selection-end-line="15" selection-end-column="137" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2105,6 +2094,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29307282" vertical-offset="0" max-vertical-offset="563">
           <caret line="11" column="143" selection-start-line="11" selection-start-column="143" selection-end-line="11" selection-end-column="143" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2120,31 +2110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23978686" vertical-offset="0" max-vertical-offset="563">
           <caret line="9" column="188" selection-start-line="9" selection-start-column="188" selection-end-line="9" selection-end-column="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/events.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45840406" vertical-offset="0" max-vertical-offset="589">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23754153" vertical-offset="472" max-vertical-offset="1260">
-          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/template_event_details.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -2166,16 +2131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5328597" vertical-offset="0" max-vertical-offset="563">
           <caret line="20" column="198" selection-start-line="20" selection-start-column="198" selection-end-line="20" selection-end-column="198" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_initiatives.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5097691" vertical-offset="928" max-vertical-offset="1530">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -2200,16 +2155,166 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.142857" vertical-offset="0" max-vertical-offset="4590">
           <caret line="114" column="88" selection-start-line="114" selection-start-column="88" selection-end-line="114" selection-end-column="88" />
-          <folding>
-            <element signature="e#4680#4712#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37707642" vertical-offset="583" max-vertical-offset="1335">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/template_event_details.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/smart_city.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_technocalypse.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39964476" vertical-offset="0" max-vertical-offset="563">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_algorhythm.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29307282" vertical-offset="0" max-vertical-offset="563">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_initiatives.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41385436" vertical-offset="472" max-vertical-offset="1530">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_competitions.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94671404" vertical-offset="2782" max-vertical-offset="3405">
+          <caret line="221" column="13" selection-start-line="221" selection-start-column="13" selection-end-line="221" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_xtreme_machines.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_international_challenge.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3461537" vertical-offset="0" max-vertical-offset="375">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_dimensions.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_moneyball.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="450">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_robotron.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.115385" vertical-offset="0" max-vertical-offset="450">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_sportstech.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23978686" vertical-offset="0" max-vertical-offset="563">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/events.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_game_changer.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26642984" vertical-offset="0" max-vertical-offset="563">
+          <caret line="10" column="192" selection-start-line="10" selection-start-column="192" selection-end-line="10" selection-end-column="192" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20373514" vertical-offset="510" max-vertical-offset="5010">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.3548387" vertical-offset="976" max-vertical-offset="5055">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding />
         </state>
       </provider>
