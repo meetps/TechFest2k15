@@ -10,7 +10,7 @@
     <color name="actionbar_exhibitions">#ABCDEF</color>
     <color name="actionbar_ozone">#FEDCBA</color>
     <color name="actionbar_ideate">#BADAFF</color>
-
+    <color name="actionbar_workshops">#AAEEFF</color>
     <color name="black_logo">#000000</color>
 
 </resources>
