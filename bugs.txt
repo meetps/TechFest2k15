@@ -2,3 +2,12 @@ Bugs in the app. To be squashed :D.
 <bug>
 The back button hierarchy is not proper
 </bug>
+<bug>
+Workshops Doesn't Open
+</bug>
+<bug>
+ROAR and Smart City Challenge don't open 
+</bug>
+<improvisation>
+For events like Exhibitions,Technolix and Lecture Series the date is only 3rd but not 2 and 4 :( .
+</improvisations>
