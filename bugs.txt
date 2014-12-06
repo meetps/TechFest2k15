@@ -1,0 +1,4 @@
+Bugs in the app. To be squashed :D.
+<bug>
+The back button hierarchy is not proper
+</bug>
