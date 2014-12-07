@@ -44,32 +44,6 @@
 
     <LinearLayout style="@style/container"
         android:onClick="loadList"
-        android:tag="Smart City Challenge">
-
-        <ImageView
-            style="@style/SummaryImage"
-            android:src="@drawable/smart_city"/>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Smart City Challenge"
-                style="@style/SummaryTitle"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="The vision to make the cities more efficient using technology"
-                style="@style/SummaryText" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout style="@style/container"
-        android:onClick="loadList"
         android:tag="ROAR">
 
         <ImageView

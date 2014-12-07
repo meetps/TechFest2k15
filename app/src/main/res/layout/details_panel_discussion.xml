@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="A panel discussion on the theme 'Where men are truly confident, women are valued' which would look into the changing dynamics of Man-woman relationships in the 21st century India. The panel discussion would look into:"/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text=" * Rising crimes against women and the aspirational gap between men and women"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text=" * Need to open up channels of communication with young men"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text=" * Role of media in projecting an alternate image of men who are comfortable and confident enough to allow women their space in their world"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text=" * Role of students organizations and campaigns to address the issue of gender based violence"/>
+        
+    </LinearLayout>
+    
