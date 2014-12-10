@@ -105,15 +105,15 @@ public class NavigationDrawerFragment extends Fragment {
 
         ArrayList<IconItem> itemList = new ArrayList<IconItem>();
         itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_home)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_competitions)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_technoholix)));
         itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_initiatives)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_lectures)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_exhibitions)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_ozone)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_conference)));
         itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_ideate)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_competitions)));
         itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_workshops)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_lectures)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_conference)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_exhibitions)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_technoholix)));
+        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_ozone)));
 
         mDrawerListView.setAdapter(new IconAdapter(getActionBar().getThemedContext(),R.layout.menu_item,itemList));
 
