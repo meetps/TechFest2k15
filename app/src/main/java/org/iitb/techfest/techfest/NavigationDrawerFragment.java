@@ -114,6 +114,7 @@ public class NavigationDrawerFragment extends Fragment {
         itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_exhibitions)));
         itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_technoholix)));
         itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_ozone)));
+        itemList.add(new IconItem(R.drawable.tf_icon,"Map"));
 
         mDrawerListView.setAdapter(new IconAdapter(getActionBar().getThemedContext(),R.layout.menu_item,itemList));
 

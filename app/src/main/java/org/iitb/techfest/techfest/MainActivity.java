@@ -17,9 +17,15 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Stack;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 
 public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks, OnMapReadyCallback{
 
     ImageView tf_logo;
 
@@ -145,47 +151,50 @@ public class MainActivity extends ActionBarActivity
         position++;
 
         switch (position) {
-            case 2:
+            case 4:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_competitions), R.color.actionbar_competitions, R.layout.fragment_competitions, filterEvents(getString(R.string.title_competitions)));
                 break;
-            case 3:
+            case 9:
                 for (EventSummary es : events)
                     if (es.title.equals(getString(R.string.title_technoholix))) {
                         frag = EventDetailsFragment.newInstance(es);
                     }
                 break;
-            case 4:
+            case 2:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_initiatives), R.color.actionbar_initiatives, R.layout.fragment_initiatives, filterEvents(getString(R.string.title_initiatives)));
                 break;
-            case 5:
+            case 6:
                 for (EventSummary es : events)
                     if (es.title.equals(getString(R.string.title_lectures))) {
                         frag = EventDetailsFragment.newInstance(es);
                     }
                 break;
-            case 6:
+            case 8:
                 for (EventSummary es : events)
                     if (es.title.equals(getString(R.string.title_exhibitions))) {
                         frag = EventDetailsFragment.newInstance(es);
                     }
                 break;
-            case 7:
+            case 10:
                 for (EventSummary es : events)
                     if (es.title.equals(getString(R.string.title_ozone))) {
                         frag = EventDetailsFragment.newInstance(es);
                     }
                 break;
-            case 8:
+            case 7:
                 for (EventSummary es : events)
                     if (es.title.equals("Techfest International Student Conference")) {
                         frag = EventDetailsFragment.newInstance(es);
                     }
                 break;
-            case 9:
+            case 3:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST, getString(R.string.title_ideate), R.color.actionbar_ideate, R.layout.details_ideate, filterEvents(getString(R.string.title_ideate)));
                 break;
-            case 10:
+            case 5:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST, getString(R.string.title_workshops), R.color.actionbar_workshops, R.layout.details_workshops, filterEvents(getString(R.string.title_workshops)));
+                break;
+            case 11:
+                frag = loadMapFragment();
                 break;
             default:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_home), R.color.actionbar_home, R.layout.fragment_main, null);
@@ -242,6 +251,12 @@ public class MainActivity extends ActionBarActivity
                 .commit();
     }
 
+    public SupportMapFragment loadMapFragment(){
+        SupportMapFragment mapFrag = SupportMapFragment.newInstance();
+
+        return mapFrag;
+    }
+
     public void addLayoutIDs() {
         for (EventSummary es : events) {
             Integer[] temp_desc = layout_desc.get(es.title);
@@ -277,7 +292,7 @@ public class MainActivity extends ActionBarActivity
         startActivity(intent);
     }
 
-    public String getLatLangVersion(String place) {
+    public String getLatLangString(String place) {
         if (place.equals("LCH"))
             return "19.130739,72.917208";
         else if (place.equals("SAC"))
@@ -300,12 +315,18 @@ public class MainActivity extends ActionBarActivity
             return "19.1279852,72.914763";
     }
 
+    public LatLng getLatLng(String place){
+        String str=getLatLangString(place);
+
+        return new LatLng(Float.valueOf(str.split(",")[0]),Float.valueOf(str.split(",")[1]));
+    }
+
     public void getDirections(View v) {
         EventSummary es = events.get((Integer) v.getTag());
 
         String venue = es.venue;
 //        int radioButtonID = list.getCheckedRadioButtonId();
-        String latlang = getLatLangVersion(venue.toString());
+        String latlang = getLatLangString(venue.toString());
 
         Intent intentMap = new Intent(Intent.ACTION_VIEW,
                 Uri.parse("http://maps.google.com/maps?mode=walking&daddr=" + latlang));
@@ -347,6 +368,15 @@ public class MainActivity extends ActionBarActivity
                         .commit();
                 onSectionAttached(currFrag.getTitle(), currFrag.getActionBarColor());
             }
+        }
+    }
+
+    @Override
+    public void onMapReady(GoogleMap map) {
+        for(EventSummary es : events){
+            map.addMarker(new MarkerOptions()
+                    .position(getLatLng(es.venue))
+                    .title(es.title));
         }
     }
 }
