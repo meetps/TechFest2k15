@@ -104,17 +104,17 @@ public class NavigationDrawerFragment extends Fragment {
         });
 
         ArrayList<IconItem> itemList = new ArrayList<IconItem>();
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_home)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_initiatives)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_ideate)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_competitions)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_workshops)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_lectures)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_conference)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_exhibitions)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_technoholix)));
-        itemList.add(new IconItem(R.drawable.tf_icon,getString(R.string.title_ozone)));
-        itemList.add(new IconItem(R.drawable.tf_icon,"Map"));
+        itemList.add(new IconItem(R.drawable.icon_wo_bg_1,getString(R.string.title_home)));
+        itemList.add(new IconItem(R.drawable.initiative,getString(R.string.title_initiatives)));
+        itemList.add(new IconItem(R.drawable.idea,getString(R.string.title_ideate)));
+        itemList.add(new IconItem(R.drawable.competition,getString(R.string.title_competitions)));
+        itemList.add(new IconItem(R.drawable.workshop,getString(R.string.title_workshops)));
+        itemList.add(new IconItem(R.drawable.lecture,getString(R.string.title_lectures)));
+        itemList.add(new IconItem(R.drawable.conference,getString(R.string.title_conference)));
+        itemList.add(new IconItem(R.drawable.exhibition,getString(R.string.title_exhibitions)));
+        itemList.add(new IconItem(R.drawable.technoholixs,getString(R.string.title_technoholix)));
+        itemList.add(new IconItem(R.drawable.ozones,getString(R.string.title_ozone)));
+        itemList.add(new IconItem(R.drawable.navigate,"Map"));
 
         mDrawerListView.setAdapter(new IconAdapter(getActionBar().getThemedContext(),R.layout.menu_item,itemList));
 
