@@ -17,6 +17,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Stack;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -254,6 +255,8 @@ public class MainActivity extends ActionBarActivity
     public SupportMapFragment loadMapFragment(){
         SupportMapFragment mapFrag = SupportMapFragment.newInstance();
 
+        mapFrag.getMapAsync(this);
+
         return mapFrag;
     }
 
@@ -378,5 +381,7 @@ public class MainActivity extends ActionBarActivity
                     .position(getLatLng(es.venue))
                     .title(es.title));
         }
+
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(19.133709, 72.913284),15));
     }
 }
