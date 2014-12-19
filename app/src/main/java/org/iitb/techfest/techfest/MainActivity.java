@@ -364,12 +364,16 @@ public class MainActivity extends ActionBarActivity
             if (fragStack.empty())
                 super.onBackPressed();
             else {
-                EventFragment currFrag = (EventFragment) fragStack.peek();
+                Fragment currFrag = fragStack.peek();
 
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container, currFrag)
                         .commit();
-                onSectionAttached(currFrag.getTitle(), currFrag.getActionBarColor());
+                if(currFrag instanceof EventFragment){
+                    onSectionAttached(((EventFragment)currFrag).getTitle(), ((EventFragment)currFrag).getActionBarColor());
+                } else {
+                    onSectionAttached("Techfest",R.color.actionbar_home);
+                }
             }
         }
     }
