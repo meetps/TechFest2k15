@@ -370,9 +370,11 @@ public class MainActivity extends ActionBarActivity
                         .replace(R.id.container, currFrag)
                         .commit();
                 if(currFrag instanceof EventFragment){
-                    onSectionAttached(((EventFragment)currFrag).getTitle(), ((EventFragment)currFrag).getActionBarColor());
-                } else {
-                    onSectionAttached("Techfest",R.color.actionbar_home);
+                    onSectionAttached(((EventFragment) currFrag).getTitle(), ((EventFragment) currFrag).getActionBarColor());
+                } else if(currFrag instanceof SupportMapFragment) {
+                    ((SupportMapFragment) currFrag).getMapAsync(this);
+
+                    onSectionAttached("Techfest", R.color.actionbar_home);
                 }
             }
         }
