@@ -24,6 +24,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -314,7 +316,9 @@ public class NavigationDrawerFragment extends Fragment {
 
             IconItem item = getItem(position);
 
-            ((ImageView)v.findViewById(R.id.menu_item_icon)).setImageResource(item.icon_id);
+            Picasso.with(getActivity()).load(item.icon_id).fit().centerCrop().
+                    into(((ImageView)v.findViewById(R.id.menu_item_icon)));
+
             ((TextView)v.findViewById(R.id.menu_item_text)).setText(item.text);
 
             return v;

@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class EventListFragment extends EventFragment{
@@ -49,7 +51,8 @@ public class EventListFragment extends EventFragment{
             for(EventSummary es: event_list){
                 LinearLayout summary_container = (LinearLayout)inflater.inflate(R.layout.container_event_summary, null);
 
-                ((ImageView)summary_container.findViewById(R.id.event_image)).setImageResource(es.image_id);
+                Picasso.with(getActivity()).load(es.image_id).fit().into(((ImageView)summary_container.findViewById(R.id.event_image)));
+
                 ((TextView)summary_container.findViewById(R.id.event_title)).setText(es.title);
                 ((TextView)summary_container.findViewById(R.id.event_description)).setText(es.description);
                 summary_container.setId(es.id);

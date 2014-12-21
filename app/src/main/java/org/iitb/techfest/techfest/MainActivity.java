@@ -12,17 +12,18 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.ImageView;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Stack;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Stack;
 
 
 public class MainActivity extends ActionBarActivity
@@ -62,7 +63,8 @@ public class MainActivity extends ActionBarActivity
         ((DrawerLayout) findViewById(R.id.drawer_layout)).openDrawer(findViewById(R.id.navigation_drawer));
 
         tf_logo = new ImageView(this);
-        tf_logo.setImageResource(R.drawable.tf_logo);
+
+        Picasso.with(this).load(R.drawable.tf_logo).fit().centerCrop().into((tf_logo));
 
         events = getIntent().getParcelableArrayListExtra("events");
 

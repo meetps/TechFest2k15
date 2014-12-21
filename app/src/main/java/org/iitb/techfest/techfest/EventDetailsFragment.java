@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 public class EventDetailsFragment extends EventFragment {
 
     public EventDetailsFragment(){
@@ -33,7 +35,7 @@ public class EventDetailsFragment extends EventFragment {
         int layout=R.layout.template_event_details;
 
         View rootView = inflater.inflate(layout, container, false);
-        ((ImageView) rootView.findViewById(R.id.header_image)).setImageResource(es.image_id);
+        Picasso.with(getActivity()).load(es.image_id).fit().centerCrop().into((ImageView) rootView.findViewById(R.id.header_image));
         ViewGroup content = (LinearLayout) rootView.findViewById(R.id.content);
         View descriptionLayout = inflater.inflate(es.description_layout, content, false);
 
