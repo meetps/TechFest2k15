@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="menu_background">#222255</color>
+    <color name="menu_background">#000000</color>
 
-    <color name="actionbar_home">#111111</color>
-    <color name="actionbar_competitions">#223374</color>
-    <color name="actionbar_technoholix">#005500</color>
-    <color name="actionbar_initiatives">#7700FF</color>
-    <color name="actionbar_lectures">#812314</color>
-    <color name="actionbar_exhibitions">#ABCDEF</color>
-    <color name="actionbar_ozone">#FEDCBA</color>
-    <color name="actionbar_ideate">#BADAFF</color>
-    <color name="actionbar_workshops">#AAEEFF</color>
+    <color name="actionbar_home">#000000</color>
+    <color name="actionbar_competitions">#000000</color>
+    <color name="actionbar_technoholix">#000000</color>
+    <color name="actionbar_initiatives">#000000</color>
+    <color name="actionbar_lectures">#000000</color>
+    <color name="actionbar_exhibitions">#000000</color>
+    <color name="actionbar_ozone">#000000</color>
+    <color name="actionbar_ideate">#000000</color>
+    <color name="actionbar_workshops">#000000</color>
     <color name="black_logo">#000000</color>
 
 </resources>
