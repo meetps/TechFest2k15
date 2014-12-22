@@ -1,8 +1,11 @@
 package org.iitb.techfest.techfest;
 
 import android.content.Intent;
+import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
+import android.net.NetworkInfo;
 import android.net.Uri;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -134,7 +137,7 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Unmanned Vehicle", new Integer[]{R.layout.details_unmanned_vehicle, R.drawable.unmanned_vehicle, R.color.actionbar_workshops});
         layout_desc.put("Robotic Navigation", new Integer[]{R.layout.details_robotic_navigation, R.drawable.robotic_navigation, R.color.actionbar_workshops});
         layout_desc.put("Sixth Sense Robotics", new Integer[]{R.layout.details_sixth_sense_robotics, R.drawable.sixthsense, R.color.actionbar_workshops});
-        layout_desc.put("Android App Devpt", new Integer[]{R.layout.details_android_app_devpt, R.drawable.android, R.color.actionbar_workshops});
+        layout_desc.put("Android App Dev", new Integer[]{R.layout.details_android_app_devpt, R.drawable.android, R.color.actionbar_workshops});
         layout_desc.put("Brainwave Robotics", new Integer[]{R.layout.details_brainwave_robotics, R.drawable.brainwave, R.color.actionbar_workshops});
         layout_desc.put("Robo Speech", new Integer[]{R.layout.details_robo_speech, R.drawable.voice, R.color.actionbar_workshops});
         layout_desc.put("Automotive", new Integer[]{R.layout.details_automotive, R.drawable.automotive, R.color.actionbar_workshops});
@@ -275,6 +278,23 @@ public class MainActivity extends ActionBarActivity
         }
     }
 
+    private boolean haveNetworkConnection() {
+        boolean haveConnectedWifi = false;
+        boolean haveConnectedMobile = false;
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo[] netInfo = cm.getAllNetworkInfo();
+        for (NetworkInfo ni : netInfo) {
+            if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+                if (ni.isConnected())
+                    haveConnectedWifi = true;
+            if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
+                if (ni.isConnected())
+                    haveConnectedMobile = true;
+        }
+        return haveConnectedWifi || haveConnectedMobile;
+    }
+
     public void setReminder(View v) {
         EventSummary es = events.get((Integer) v.getTag());
 
@@ -389,7 +409,7 @@ public class MainActivity extends ActionBarActivity
                     .position(getLatLng(es.venue))
                     .title(es.title));
         }
-
+        map.setMyLocationEnabled(true);
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(19.133709, 72.913284),15));
     }
 }

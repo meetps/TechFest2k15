@@ -11,7 +11,7 @@
         android:layout_width="230dp"
         android:layout_height="255dp"
         android:id="@+id/logo_animation"
-        android:src="@drawable/tf_splash"
+        android:src="@drawable/icon_wo_bg_1"
         android:background="#ff000000" />
     <TextView
         android:layout_width="wrap_content"
