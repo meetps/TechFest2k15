@@ -7,15 +7,14 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="230dp"
-        android:layout_height="255dp"
-        android:id="@+id/logo_animation"
-        android:src="@drawable/tf_splash"
-        android:background="#ff000000" />
+    <org.iitb.techfest.techfest.IconProgressBar
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/splash_loader"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/percent_text"
         android:text="Loading events..."
         style="@style/Text"/>
 </LinearLayout>
