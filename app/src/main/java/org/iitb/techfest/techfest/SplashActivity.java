@@ -14,6 +14,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -51,9 +52,14 @@ public class SplashActivity extends Activity {
 
         @Override
         protected List<String[]> doInBackground(String... url) {
-            List<String[]> data = new ArrayList<String[]>();
+            //List<String[]> data = new ArrayList<String[]>();
+            int count;
+            InputStream input = null;
+            OutputStream output = null;
+            HttpURLConnection urlConnection = null;
+
             try {
-                data = downloadCSV(url[0]);
+                /*data = downloadCSV(url[0]);
 
                 if(data!=null){
                     try {
@@ -86,9 +92,43 @@ public class SplashActivity extends Activity {
                             Log.e("Cache Load", e1.getMessage());
                         }
                     }
+                }*/
+                URL csvUrl = new URL(url[0]);
+                urlConnection = (HttpURLConnection) csvUrl.openConnection();
+                urlConnection.setInstanceFollowRedirects(true);
+                urlConnection.connect();
+
+                Log.d("Download Debug","response: " + urlConnection.getResponseCode()+" -> "+urlConnection.getResponseMessage());
+                input = urlConnection.getInputStream();
+
+                output=openFileOutput("events.csv", Context.MODE_PRIVATE);
+
+                byte data[] = new byte[1024];
+
+                long total = 0;
+
+                while ((count = input.read(data)) != -1) {
+                    total += count;
+                    publishProgress((int)((total*100/urlConnection.getContentLength())));
+                    output.write(data, 0, count);
                 }
-            } catch (IOException e) {
-                Log.d("Background Task", e.toString());
+
+                output.flush();
+                output.close();
+                input.close();
+            } catch (Exception e) {}
+
+            try {
+                data = parseCSV(openFileInput("events.csv"));
+            } catch (Exception e){
+                Log.e("Cache Load",e.getMessage());
+
+                try {
+                    data=parseCSV(getAssets().open("events.csv"));
+                    Log.d("Cache Load","Loaded from assets");
+                } catch (IOException e1) {
+                    Log.e("Cache Load", e1.getMessage());
+                }
             }
 
             return data;
@@ -101,7 +141,7 @@ public class SplashActivity extends Activity {
             if(loader!=null)
                 loader.updateProgress(progress[0]);
 
-            text.setText("Loading events "+progress[0]+"%");
+            text.setText("Loading events " + progress[0] + "%");
         }
 
         @Override
@@ -124,7 +164,7 @@ public class SplashActivity extends Activity {
                 Log.d("Download Debug","response: " + urlConnection.getResponseCode()+" -> "+urlConnection.getResponseMessage());
                 iStream = urlConnection.getInputStream();
 
-                data=parseCSV(iStream, urlConnection.getContentLength());
+                data=parseCSV(iStream);
             } catch (Exception e) {
                 Log.d("Exception while reading url", e.toString());
             } finally {
@@ -135,22 +175,17 @@ public class SplashActivity extends Activity {
             }
         }
 
-        public List<String[]> parseCSV(InputStream in, long streamLength) throws IOException{
+        public List<String[]> parseCSV(InputStream in) throws IOException{
             List<String[]> data=new ArrayList<String[]>();
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     in));
 
-            long loaded=0;
-
             String line = "";
             while ((line = br.readLine()) != null) {
-                loaded+=line.length();
                 String[] next = line.split(";");
                 Log.i("Download Debug","row recieved : "+next[0]);
                 data.add(next);
-
-                publishProgress((int)((double)loaded/streamLength*100));
 
             }
             Log.i("Download Debug","data size : "+data.size());
