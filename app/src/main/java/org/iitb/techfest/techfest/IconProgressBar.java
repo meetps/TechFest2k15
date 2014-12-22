@@ -31,6 +31,7 @@ public class IconProgressBar extends View {
     }
 
     public void updateProgress(int progress){
+        if(progress < this.progress) return;
         this.progress = progress;
 
         Log.d("ProgressBar", "updateProgress called "+progress);

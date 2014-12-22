@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -33,7 +34,8 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        loader=(IconProgressBar)findViewById(R.id.splash_loader);
+        loader=new IconProgressBar(this, null);
+        loader.setLayoutParams(new LinearLayout.LayoutParams((int)getResources().getDimension(R.dimen.splash_logo_dimen),(int)getResources().getDimension(R.dimen.splash_logo_dimen)));
         text = (TextView)findViewById(R.id.percent_text);
 
         new ReadTask().execute("https://drive.google.com/uc?execute=download&id=0B_6rvZNWXShpMi03TkR1MWxwUGM");
@@ -44,7 +46,8 @@ public class SplashActivity extends Activity {
         @Override
         protected void onPreExecute(){
             super.onPreExecute();
-            loader = (IconProgressBar)findViewById(R.id.splash_loader);
+
+            ((LinearLayout)findViewById(R.id.splash_container)).addView(loader,0);
             text = (TextView)findViewById(R.id.percent_text);
 
             Log.d("ProgressBar","onPreExecute : "+loader);
@@ -52,47 +55,13 @@ public class SplashActivity extends Activity {
 
         @Override
         protected List<String[]> doInBackground(String... url) {
-            //List<String[]> data = new ArrayList<String[]>();
+            List<String[]> data = new ArrayList<String[]>();
             int count;
             InputStream input = null;
             OutputStream output = null;
             HttpURLConnection urlConnection = null;
 
             try {
-                /*data = downloadCSV(url[0]);
-
-                if(data!=null){
-                    try {
-                        PrintWriter out=new PrintWriter(openFileOutput("events.csv", Context.MODE_PRIVATE));
-                        for(String[]  row : data){
-                            for(int i=0; i<row.length; i++){
-                                out.write(row[i]+(i+1==row.length?"":";"));
-                            }
-                            out.write('\n');
-                        }
-
-                        out.flush();
-                        out.close();
-                    } catch (FileNotFoundException e) {
-                        Log.e("Cache Save",e.getMessage());
-                    }
-                } else {
-                    try {
-                        FileInputStream in = openFileInput("events.csv");
-                        data=parseCSV(in,in.getChannel().size());
-                        Log.d("Cache Load","Loaded from app cache");
-                    } catch (Exception e) {
-                        Log.e("Cache Load",e.getMessage());
-
-                        try {
-                            InputStream asset = getAssets().open("events.csv");
-                            data=parseCSV(asset,asset.available());
-                            Log.d("Cache Load","Loaded from assets");
-                        } catch (IOException e1) {
-                            Log.e("Cache Load", e1.getMessage());
-                        }
-                    }
-                }*/
                 URL csvUrl = new URL(url[0]);
                 urlConnection = (HttpURLConnection) csvUrl.openConnection();
                 urlConnection.setInstanceFollowRedirects(true);
@@ -103,14 +72,14 @@ public class SplashActivity extends Activity {
 
                 output=openFileOutput("events.csv", Context.MODE_PRIVATE);
 
-                byte data[] = new byte[1024];
+                byte downloadData[] = new byte[1024];
 
                 long total = 0;
 
-                while ((count = input.read(data)) != -1) {
+                while ((count = input.read(downloadData)) != -1) {
                     total += count;
                     publishProgress((int)((total*100/urlConnection.getContentLength())));
-                    output.write(data, 0, count);
+                    output.write(downloadData, 0, count);
                 }
 
                 output.flush();
@@ -119,12 +88,16 @@ public class SplashActivity extends Activity {
             } catch (Exception e) {}
 
             try {
+                publishProgress(20);
                 data = parseCSV(openFileInput("events.csv"));
+                publishProgress(100);
             } catch (Exception e){
                 Log.e("Cache Load",e.getMessage());
 
                 try {
+                    publishProgress(20);
                     data=parseCSV(getAssets().open("events.csv"));
+                    publishProgress(100);
                     Log.d("Cache Load","Loaded from assets");
                 } catch (IOException e1) {
                     Log.e("Cache Load", e1.getMessage());
