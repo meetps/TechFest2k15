@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_container"
     android:background="@color/black_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="230dp"
-        android:layout_height="255dp"
-        android:id="@+id/logo_animation"
-        android:src="@drawable/icon_wo_bg_1"
-        android:background="#ff000000" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading events..."
+        android:id="@+id/percent_text"
+        android:text="Loading events 0%"
         style="@style/Text"/>
 </LinearLayout>
