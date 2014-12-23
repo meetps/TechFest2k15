@@ -22,7 +22,12 @@ public class IconProgressBar extends View {
     @Override
     public void onDraw(Canvas canvas){
         try{
-            canvas.drawBitmap(Bitmap.createScaledBitmap(Bitmap.createBitmap(back,0,(100-progress)*back.getHeight()/100,back.getWidth(),progress*back.getHeight()/100),canvas.getWidth(),canvas.getHeight(),true),0,(100-progress)*canvas.getHeight()/100,null);
+            canvas.drawBitmap(
+                    Bitmap.createScaledBitmap(
+                        Bitmap.createBitmap(back,0,(100-progress)*back.getHeight()/100,back.getWidth(),progress*back.getHeight()/100),
+                        canvas.getWidth(),canvas.getHeight()*progress/100,true)
+                    ,0,(100-progress)*canvas.getHeight()/100,null);
+
         } catch (IllegalArgumentException e){
 
         }

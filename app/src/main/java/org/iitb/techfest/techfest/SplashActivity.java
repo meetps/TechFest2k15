@@ -85,7 +85,9 @@ public class SplashActivity extends Activity {
                 output.flush();
                 output.close();
                 input.close();
-            } catch (Exception e) {}
+            } catch (Exception e) {
+                deleteFile("events.csv");
+            }
 
             try {
                 publishProgress(20);
