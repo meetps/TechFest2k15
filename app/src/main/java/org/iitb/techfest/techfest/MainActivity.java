@@ -137,7 +137,7 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Unmanned Vehicle", new Integer[]{R.layout.details_unmanned_vehicle, R.drawable.unmanned_vehicle, R.color.actionbar_workshops});
         layout_desc.put("Robotic Navigation", new Integer[]{R.layout.details_robotic_navigation, R.drawable.robotic_navigation, R.color.actionbar_workshops});
         layout_desc.put("Sixth Sense Robotics", new Integer[]{R.layout.details_sixth_sense_robotics, R.drawable.sixthsense, R.color.actionbar_workshops});
-        layout_desc.put("Android App Dev", new Integer[]{R.layout.details_android_app_devpt, R.drawable.android, R.color.actionbar_workshops});
+        layout_desc.put("Android App Devpt", new Integer[]{R.layout.details_android_app_devpt, R.drawable.android, R.color.actionbar_workshops});
         layout_desc.put("Brainwave Robotics", new Integer[]{R.layout.details_brainwave_robotics, R.drawable.brainwave, R.color.actionbar_workshops});
         layout_desc.put("Robo Speech", new Integer[]{R.layout.details_robo_speech, R.drawable.voice, R.color.actionbar_workshops});
         layout_desc.put("Automotive", new Integer[]{R.layout.details_automotive, R.drawable.automotive, R.color.actionbar_workshops});
@@ -201,6 +201,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 11:
                 frag = loadMapFragment();
+                break;
+            case 12:
+                frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_developers), R.color.actionbar_developers, R.layout.fragment_developers,null);
                 break;
             default:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_home), R.color.actionbar_home, R.layout.fragment_main, null);
@@ -411,5 +414,14 @@ public class MainActivity extends ActionBarActivity
         }
         map.setMyLocationEnabled(true);
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(19.133709, 72.913284),15));
+    }
+
+    public void fblink(View v){
+        String name = (String)v.getTag();
+
+        String url = "http://www.facebook.com/";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url+name));
+        startActivity(i);
     }
 }

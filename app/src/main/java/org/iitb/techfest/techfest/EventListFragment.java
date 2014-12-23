@@ -2,6 +2,7 @@ package org.iitb.techfest.techfest;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +52,7 @@ public class EventListFragment extends EventFragment{
             for(EventSummary es: event_list){
                 LinearLayout summary_container = (LinearLayout)inflater.inflate(R.layout.container_event_summary, null);
 
+                Log.d("Picasso", es.title);
                 Picasso.with(getActivity()).load(es.image_id).fit().into(((ImageView)summary_container.findViewById(R.id.event_image)));
 
                 ((TextView)summary_container.findViewById(R.id.event_title)).setText(es.title);

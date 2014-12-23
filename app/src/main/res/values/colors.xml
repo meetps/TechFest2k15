@@ -11,6 +11,7 @@
     <color name="actionbar_ozone">#000000</color>
     <color name="actionbar_ideate">#000000</color>
     <color name="actionbar_workshops">#000000</color>
+    <color name="actionbar_developers">#000000</color>
     <color name="black_logo">#000000</color>
 
 </resources>

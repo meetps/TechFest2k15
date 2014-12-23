@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Fragment">
+    <TextView
+        style="@style/SummaryTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Meet Udeshi"
+        android:clickable="true"
+        android:onClick="fblink"
+        android:tag="udiboy1209"/>
+    <TextView
+        style="@style/SummaryText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Student of Electrical Engg. Dept., IIT Bombay"
+        android:clickable="true"
+        android:onClick="fblink"
+        android:tag="udiboy1209"/>
+    <TextView
+        style="@style/SummaryTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Meet Shah"
+        android:clickable="true"
+        android:onClick="fblink"
+        android:tag="meetshah1995"/>
+    <TextView
+        style="@style/SummaryText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Student of Electrical Engg. Dept., IIT Bombay"
+        android:clickable="true"
+        android:onClick="fblink"
+        android:tag="meetshah1995"/>
+
+    <View
+        style="@style/HorizontalDivider"></View>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/SummaryText"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:text="Special thanks to"/>
+    <TextView
+        style="@style/SummaryTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Vipul Shah"
+        android:clickable="true"
+        android:onClick="fblink"
+        android:tag="vipulshah2010"/>
+    <TextView
+        style="@style/SummaryTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Faiz Malkani"
+        android:clickable="true"
+        android:onClick="fblink"
+        android:tag="faiz"/>
+</LinearLayout>
