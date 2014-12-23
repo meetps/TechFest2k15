@@ -419,7 +419,7 @@ public class MainActivity extends ActionBarActivity
     public void fblink(View v){
         String name = (String)v.getTag();
 
-        String url = "http://www.facebook.com/";
+        String url = "fb://profile/";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url+name));
         startActivity(i);
