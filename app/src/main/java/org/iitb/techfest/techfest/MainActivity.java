@@ -170,10 +170,7 @@ public class MainActivity extends ActionBarActivity
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_initiatives), R.color.actionbar_initiatives, R.layout.fragment_initiatives, filterEvents(getString(R.string.title_initiatives)));
                 break;
             case 6:
-                for (EventSummary es : events)
-                    if (es.title.equals(getString(R.string.title_lectures))) {
-                        frag = EventDetailsFragment.newInstance(es);
-                    }
+                frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST, getString(R.string.title_lectures),R.color.actionbar_lectures, R.layout.details_lectures, filterEvents(getString(R.string.title_lectures)));
                 break;
             case 8:
                 for (EventSummary es : events)
