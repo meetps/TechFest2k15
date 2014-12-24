@@ -104,7 +104,7 @@
             android:id="@+id/imageView4"
             android:clickable="true"
             android:onClick="fblink"
-            android:src="@drawable/faizm" />
+            android:src="@drawable/faiz" />
         <TextView
             style="@style/SummaryTitle"
             android:layout_weight="1"
