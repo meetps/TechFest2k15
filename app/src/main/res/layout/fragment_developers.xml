@@ -111,7 +111,7 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/container"
-        android:onClick="fblink"
+        android:onClick="ghlink"
         android:tag="FaizMalkani">
 
         <ImageView

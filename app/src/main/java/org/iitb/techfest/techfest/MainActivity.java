@@ -417,6 +417,23 @@ public class MainActivity extends ActionBarActivity
         String name = (String)v.getTag();
 
         String url = "fb://profile/";
+        try{
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url+name));
+            startActivity(i);
+        } catch (Exception e){
+            url = "http://www.facebook.com/";
+
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url+name));
+            startActivity(i);
+        }
+    }
+
+    public void ghlink(View v){
+        String name = (String)v.getTag();
+        String url="http://www.github.com/";
+
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url+name));
         startActivity(i);
