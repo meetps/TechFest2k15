@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/Fragment">
@@ -16,7 +16,7 @@
         style="@style/SummaryText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Student of Electrical Engg. Dept., IIT Bombay"
+        android:text="Electrical Engineering | IIT Bombay"
         android:clickable="true"
         android:onClick="fblink"
         android:tag="1611542573"/>
@@ -32,7 +32,7 @@
         style="@style/SummaryText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Student of Electrical Engg. Dept., IIT Bombay"
+        android:text="Electrical Engineering | IIT Bombay"
         android:clickable="true"
         android:onClick="fblink"
         android:tag="100000708895738"/>
@@ -62,4 +62,166 @@
         android:clickable="true"
         android:onClick="fblink"
         android:tag="faiz"/>
-</LinearLayout>
+</LinearLayout>-->
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_logo">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1" >
+
+        <TextView
+            style="@style/SummaryTitle"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet Shah"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="100000708895738"/>
+
+        <TextView
+            style="@style/SummaryTitle"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet Udeshi"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="1611542573"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.000002">
+              <TextView
+            style="@style/SummaryText"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Electrical Engineering"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="100000708895738"/>
+        <TextView
+            style="@style/SummaryText"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Electrical Engineering"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="1611542573"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".0005">
+
+        <TextView
+            style="@style/SummaryText"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="IIT Bombay"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="100000708895738"/>
+        <TextView
+            style="@style/SummaryText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:text="IIT Bombay"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="1611542573"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:src="@drawable/mps"
+            android:tag="100000708895738"/>
+        <ImageView
+            android:tag="1611542573"
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:src="@drawable/udeshi" />
+    </TableRow>
+
+    <View
+        style="@style/HorizontalDivider"></View>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/SummaryText"
+        android:layout_marginTop="5dp"
+        android:textSize="26sp"
+        android:text="Special thanks to"/>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.004" >
+        <TextView
+            style="@style/SummaryTitle"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Vipul Shah"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="100000557472181"/>
+        <TextView
+            style="@style/SummaryTitle"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Faiz Malkani"
+            android:clickable="true"
+            android:onClick="fblink"
+            android:tag="faiz"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/vipul" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/faiz" />
+    </TableRow>
+</TableLayout>
