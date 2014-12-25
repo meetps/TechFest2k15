@@ -147,6 +147,21 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Automotive", new Integer[]{R.layout.details_automotive, R.drawable.automotive, R.color.actionbar_workshops});
         layout_desc.put("Click", new Integer[]{R.layout.details_click, R.drawable.click, R.color.actionbar_workshops});
 
+        layout_desc.put("Anil Kakodkar", new Integer[]{R.layout.details_lec,R.drawable.anil_kakodkar,R.color.actionbar_lectures});
+        layout_desc.put("Bedabrata Pain", new Integer[]{R.layout.details_lec,R.drawable.bedabrata_pain,R.color.actionbar_lectures});
+        layout_desc.put("Sushanta Mitra", new Integer[]{R.layout.details_lec,R.drawable.sushanta,R.color.actionbar_lectures});
+        layout_desc.put("R. Chidambaram", new Integer[]{R.layout.details_lec,R.drawable.chidambaram,R.color.actionbar_lectures});
+        layout_desc.put("Ada Yonath", new Integer[]{R.layout.details_lec,R.drawable.ada_yonath,R.color.actionbar_lectures});
+        layout_desc.put("CERN panel", new Integer[]{R.layout.details_lec,R.drawable.gazdzicki_g,R.color.actionbar_lectures});
+        layout_desc.put("Bjarne Stroustrup", new Integer[]{R.layout.details_lec,R.drawable.bjarne_stroustrup,R.color.actionbar_lectures});
+        layout_desc.put("Javed Akthar", new Integer[]{R.layout.details_lec,R.drawable.javed_akhtar,R.color.actionbar_lectures});
+        layout_desc.put("R.A. Mashelkar", new Integer[]{R.layout.details_lec,R.drawable.ramesh_mashelkar,R.color.actionbar_lectures});
+        layout_desc.put("Vint Cerf", new Integer[]{R.layout.details_lec,R.drawable.vint_cerf,R.color.actionbar_lectures});
+        layout_desc.put("Silvio Micali", new Integer[]{R.layout.details_lec,R.drawable.micali_1,R.color.actionbar_lectures});
+        layout_desc.put("Ryan Germick", new Integer[]{R.layout.details_lec,R.drawable.ryan_germick,R.color.actionbar_lectures});
+        layout_desc.put("Mathematics Panel", new Integer[]{R.layout.details_lec,R.drawable.lectures,R.color.actionbar_lectures});
+        layout_desc.put("A.P.J. Abdul Kalam", new Integer[]{R.layout.details_lec,R.drawable.abdul_kalam,R.color.actionbar_lectures});
+
         addLayoutIDs();
 
         restoreActionBar();
