@@ -329,20 +329,37 @@ public class MainActivity extends ActionBarActivity
     public void setReminder(View v) {
         EventSummary es = events.get((Integer) v.getTag());
 
-        int hours = Integer.valueOf(es.time.split(":")[0]);
-        int minutes = Integer.valueOf(es.time.split(":")[1]);
+        String beginTime=es.time.split("-")[0];
+        int beginHours = Integer.valueOf(beginTime.split(":")[0]);
+        int beginMinutes = Integer.valueOf(beginTime.split(":")[1]);
+
+        String endTime;
+
+        try{endTime=es.time.split("-")[1];}
+        catch(ArrayIndexOutOfBoundsException e){
+            endTime=beginTime;
+        }
+
+        int endHours = Integer.valueOf(endTime.split(":")[0]);
+        int endMinutes = Integer.valueOf(endTime.split(":")[1]);
+
         int year = Integer.valueOf(es.date.split("/")[2]);
         int month = Integer.valueOf(es.date.split("/")[1]) - 1;
-        int day = Integer.valueOf(es.date.split("/")[0]);
+        int day = Integer.valueOf(es.date.split("/")[0].split("\\+")[0]);
+
+
 
         Calendar cal = Calendar.getInstance();
-        cal.set(year, month, day, hours, minutes);
+        cal.set(year, month, day, beginHours, beginMinutes);
 
         Intent intent = new Intent(Intent.ACTION_EDIT);
         intent.setType("vnd.android.cursor.item/event");
         intent.putExtra("beginTime", cal.getTimeInMillis());
         intent.putExtra("allDay", false);
-        intent.putExtra("endTime", cal.getTimeInMillis() + 60 * 60 * 1000);
+
+        cal.set(year, month, day, endHours, endMinutes);
+
+        intent.putExtra("endTime", cal.getTimeInMillis());
         intent.putExtra("title", es.title + " @ " + es.venue);
         intent.putExtra("description", es.description);
         startActivity(intent);

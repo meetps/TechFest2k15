@@ -44,6 +44,14 @@
         <item name="android:gravity">left</item>
     </style>
 
+    <style name="DetailsSmallTitle" parent="HeadingText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
     <!-- Layout styles -->
     <style name="Image">
         <item name="android:adjustViewBounds">true</item>

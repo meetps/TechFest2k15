@@ -9,13 +9,42 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            style="@style/SummaryTitle"
-            android:id="@+id/info"
-            android:text="Venue: \nTime: \nDate: \n"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/DetailsSmallTitle"
+                android:text="Venue:"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/SummaryText"
+                android:id="@+id/venue"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/DetailsSmallTitle"
+                android:text="Time:"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/SummaryText"
+                android:id="@+id/time"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/DetailsSmallTitle"
+                android:text="Date:"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/SummaryText"
+                android:id="@+id/date"/>
+        </LinearLayout>
         <ImageView
             style="@style/DetailsImage"
             android:id="@+id/header_image"/>
