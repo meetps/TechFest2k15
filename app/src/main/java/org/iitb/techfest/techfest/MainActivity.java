@@ -43,6 +43,7 @@ public class MainActivity extends ActionBarActivity
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    SupportMapFragment mapFrag;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
@@ -55,8 +56,11 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mapFrag = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map_fragment);
+
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
+
         mTitle = getTitle();
 
         // Set up the drawer.
@@ -152,7 +156,9 @@ public class MainActivity extends ActionBarActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
+        mapFrag=(SupportMapFragment) fragmentManager.findFragmentById(R.id.map_fragment);
         Fragment frag = null;
+        boolean show=false;
 
         position++;
 
@@ -204,6 +210,10 @@ public class MainActivity extends ActionBarActivity
                 break;
             default:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_home), R.color.actionbar_home, R.layout.fragment_main, null);
+
+                mapFrag.getMapAsync(this);
+
+                show=true;
                 break;
         }
 
@@ -212,6 +222,11 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.container, frag)
                 .commit();
+
+        if(show)
+            fragmentManager.beginTransaction().show(mapFrag).commit();
+        else if(mapFrag.isVisible())
+            fragmentManager.beginTransaction().hide(mapFrag).commit();
     }
 
     public ArrayList<EventSummary> filterEvents(String title) {
@@ -378,6 +393,8 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onBackPressed() {
+        boolean showMap=false;
+
         if (mNavigationDrawerFragment.isDrawerOpen()) {
             mNavigationDrawerFragment.closeDrawer();
         } else {
@@ -392,12 +409,19 @@ public class MainActivity extends ActionBarActivity
                         .replace(R.id.container, currFrag)
                         .commit();
                 if(currFrag instanceof EventFragment){
+                    if(((EventFragment)currFrag).getTitle().equals("Home"))
+                        showMap=true;
                     onSectionAttached(((EventFragment) currFrag).getTitle(), ((EventFragment) currFrag).getActionBarColor());
                 } else if(currFrag instanceof SupportMapFragment) {
                     ((SupportMapFragment) currFrag).getMapAsync(this);
 
-                    onSectionAttached("Techfest", R.color.actionbar_home);
+                    onSectionAttached("Map", R.color.actionbar_home);
                 }
+
+                if(showMap)
+                    getSupportFragmentManager().beginTransaction().show(mapFrag).commit();
+                else if(mapFrag.isVisible())
+                    getSupportFragmentManager().beginTransaction().hide(mapFrag).commit();
             }
         }
     }
