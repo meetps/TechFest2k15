@@ -19,6 +19,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.squareup.picasso.Picasso;
@@ -444,12 +445,37 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onMapReady(GoogleMap map) {
         for(EventSummary es : events){
+
             map.addMarker(new MarkerOptions()
                     .position(getLatLng(es.venue))
-                    .title(es.title));
+                    .title(es.title)
+                    .icon(BitmapDescriptorFactory.fromResource(getSuperIcon(es.actionbar_color))));
         }
         map.setMyLocationEnabled(true);
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(19.133709, 72.913284),15));
+    }
+
+    public int getSuperIcon(int abcolor){
+        switch(abcolor){
+            case R.color.actionbar_lectures:
+                return R.drawable.lecture;
+            case R.color.actionbar_exhibitions:
+                return R.drawable.exhibition;
+            case R.color.actionbar_technoholix:
+                return R.drawable.technoholixs;
+            case R.color.actionbar_initiatives:
+                return R.drawable.initiative;
+            case R.color.actionbar_competitions:
+                return R.drawable.competition;
+            case R.color.actionbar_ozone:
+                return R.drawable.ozones;
+            case R.color.actionbar_workshops:
+                return R.drawable.workshop;
+            case R.color.actionbar_ideate:
+                return R.drawable.idea;
+            default:
+                return R.drawable.icon_wo_bg_1;
+        }
     }
 
     public void fblink(View v){
