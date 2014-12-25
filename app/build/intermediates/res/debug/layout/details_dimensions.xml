@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            style="@style/ParagraphText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="None is chronic in technology, there is always a chance to ameliorate. None bother, but those who bother are the ones we bother to ponder upon."/>
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/dimensions"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Although its veracious to say, that the path is strenuous but the reward following its success is glorious. Here its your chance to think and play with the already existing artefact. Techfest provides a level playing field to all those who would love to give a new dimension to these artefacts and be the one the world would ponder upon!"/>
+
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_dimensions.xml -->

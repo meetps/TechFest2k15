@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:textStyle="bold"
+        android:text="Policy for attending Lecture Series"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="There is no registration or fees required to attend the lectures at Techfest. All the lectures will be held over a span of three days. You are required to carry a valid Photo ID card along with you for entry into IIT Bombay during Techfest. The entry into lectures is purely based on first come first serve basis."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_lec.xml -->

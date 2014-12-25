@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="From the earliest days of mankind on the Earth, we have cherished a magnificent dream of being able to soar in the heavens. Applying the superb, self-trained knowledge of engineering, man changed the persistent vision of human flight representing a fundamental turning point in human history. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Techfest calls upon the air-zealots to participate in Aviator. Use all your whacky ideas, design and fly aircraft and change the vision of human flight."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_aviator_flying.xml -->

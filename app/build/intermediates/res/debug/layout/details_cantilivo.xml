@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Ever dreamt of building a masterpiece structure?
+Ever wanted to showcase the real structural engineering skill in you?
+Here is your chance to prove your mettle as a successful engineer. Show the world, what a bunch of popsicle sticks and glue can do! "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Cantilever structures have many applications in daily life and there is always a need of a stable and a feasible structure. Techfest 2015 brings to you its most sophisticated structural design competition “Cantilivo”. Come, be a part of this extraordinary competition where you need skill along with your brains. "/>
+
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_cantilivo.xml -->

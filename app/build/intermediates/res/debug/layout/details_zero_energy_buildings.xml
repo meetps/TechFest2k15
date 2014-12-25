@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        A Net Zero Building is a building with zero net energy consumption meaning the total amount of energy used by the building in the annual basis is roughly equal to the amount of  renewable energy created on the site.Its design include some basic elements which should work together like properly oriented windows,thermal mass,distribution mechanisms and control strategies.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Urban areas are responsible for over 70% of global energy consumption and CO2 emissions, mostly from buildings. Over the next two decades,an area roughly equal to 60% of the total building stock of the world is projected to be rebuilt in urban areas worldwide. This provides an unprecedented opportunity to reduce fossil fuel CO2 emissions by setting the global building sector on a path to phase out CO2 emissions by 2050.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Through this workshop you can simulate the details of passive solar home in different configurations until the design fits the site as well as the owner’s budget, aesthetic preferences and performance requirements. Here the analysis capabilities integrate with tools that enable you to visualize and simulate a building’s performance within the context of its environment.
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_zero_energy_buildings.xml -->

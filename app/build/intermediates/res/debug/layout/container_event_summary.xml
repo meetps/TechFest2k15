@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/container"
+    android:onClick="loadDetails">
+
+    <ImageView
+        android:id="@+id/event_image"
+        style="@style/SummaryImage"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            style="@style/SummaryTitle"
+            android:id="@+id/event_title"
+            android:autoText="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            style="@style/SummaryText"
+            android:id="@+id/event_description" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/container_event_summary.xml -->

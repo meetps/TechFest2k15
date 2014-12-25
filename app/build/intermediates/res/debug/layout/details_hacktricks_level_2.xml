@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        “To go forward, you must backup.”      
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Hackers are essential to secure computer systems from intrusion – as increased internet usage has resulted in increased security threats.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        The Hacking Workshop will ready you for the Information Security Industry with technical training on cyber security. Live hacking sessions will allow in-depth understanding of computer server and network systems – which is essential for formulating strategies for improved security.  Techfest brings you Hack-Tricks workshop, teaching you ethical hacking.
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_hacktricks_level_2.xml -->

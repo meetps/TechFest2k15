@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Want to have loads of fun? Walk into the 'Ozone' section - the on the spot zone of Techfest. Undoubtedly this is the place where you would want to be. Ozone is the lighter side of Techfest that keeps the festive spirit at Techfest alive and kicking. A potpourri of awesome games like lazer tag, enchanting street events, mind boggling quizzes, whacky competitions and funky workshops with a tinge of tech, Ozone has something for one and all and this year techfest promises to multiply the fun quotient like never before."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="With no pre-registrations and no pre-requisites, Ozone will certainly ensure that you don't have a moment to spare among all the excitement and thrill at Techfest!"/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_ozone.xml -->

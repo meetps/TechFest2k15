@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Cloud computing has emerged as today's most exciting computing paradigm shift in information technology. With the efficient sharing of abundant computing resources in the cloud, users can economically enjoy the on-demand high quality cloud applications and services without committing large capital outlays locally. It is considered as a style of computing where massively scalable IT-related capabilities are provided 'as a service' across the Internet to multiple customers. This workshop will provide a basic practical understanding of cloud computing and its domains like security, management, virtualization to name a few.
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_cloud_computing.xml -->

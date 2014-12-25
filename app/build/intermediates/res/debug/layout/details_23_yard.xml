@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The ICC Cricket World Cup is the next tournament on the cards to be played. Ever thought if you can predict the winner of the world cup using simple analytics? Armed with the data provided, you sit down and brainstorm on finding to whom the trophy will go."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_23_yard.xml -->

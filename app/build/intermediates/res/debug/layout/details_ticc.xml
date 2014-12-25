@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Feeling nostalgic about the first echo “Hello World!” ? Well, the human race has come a long way since then."/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="It has been astonishing to see how those ravishing bits of zeros and ones put in a stipulated order can do such great marvels in the computer industry. It is the mastery in coding that has reduced even the most ambiguous and impossible looking tasks to a mere program asking the obedient computer to solve it. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Think you have what it takes to develop a code? Techfest brings you an opportunity to unleash your coding skills and outsmart your participants. Sit on your monitors and feel the rush of adrenaline during this coding extravaganza! "/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_ticc.xml -->

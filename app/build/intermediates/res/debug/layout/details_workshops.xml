@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal" >
+        <TextView
+            style="@style/ParagraphText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Have you always been inquisitive of the cutting edge technology and want an enriching experience while learning them? "/>
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/workshops"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Or do you want to interact with the students sharing common interest and dive deep into the subject. If yes, then workshops at Techfest is the best thing that can happen to you. Workshops at Techfest bring you face to face with the latest technology while providing you valuable hands-on experience under the guidance of renowned professionals. Going with the philosophy of learning while you do, workshops promise to be an enjoyable and enriching experience to the participants with significant interaction amongst peers having similar interests."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="In the past, Workshops at Techfest have featured varied topics like Autonomous Robotics, Forensics, Network Security, Ethical Hacking, Swarm Robotics and Haptics amongst many more. As in the past, this year too Workshops promise to open up new horizons for you to explore. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Learn, explore and take back the experience of a lifetime!"/>
+
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_workshops.xml -->

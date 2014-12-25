@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/sportstech"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The world of sport is continually changing over the years, and the use of technology is just one of those areas that has made an impact on many sports in the modern day. In just a matter of decades, technology has fundamentally changed how we analyze, follow and enjoy the sports we all love. Techfest presents SportsTech, a unique initiative combining passion in sport with knowledge, creativity and innovation."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_sportstech.xml -->

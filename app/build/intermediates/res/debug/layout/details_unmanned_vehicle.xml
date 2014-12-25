@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Independent of the direct pressures of current operations, technologies have matured to the point where we can allow remotely controlled,relatively general-purpose platforms to be used for a range of applications that certainly include short-range surveillance and several aspects of combat engineering. Do you want to get a feel of how it works and devise the vehicle solely by you! If yes, this workshop is a secure platform for you to enter into the field of robotics and see how actual things work. In this workshop students learn everything, from basic integration of sensors to microcontrollers to how can they make their robot an unmanned ground vehicle.The Robot can be controlled by Ground Station( Laptop ) using wireless device and relay a video simultaneously.
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_unmanned_vehicle.xml -->

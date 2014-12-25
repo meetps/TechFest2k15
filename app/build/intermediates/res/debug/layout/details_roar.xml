@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/roar"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="ROAR is an initiative that aims at upliftment and empowerment of women to bring about a change and make the world a better place to live in. It serves to convene, unite and strengthen voices speaking out for girls and women around the world. ROAR contributes to making a change for the better of women and their communities."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_roar.xml -->

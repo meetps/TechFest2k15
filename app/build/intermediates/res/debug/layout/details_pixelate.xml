@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Driverless Cars were a matter of great attraction. Reaching the destiny guided by sign board without human control that was seemingly impossible once has now occupied the minds of researchers."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The competition is all about perfection and efficiency. A single wrong move and you may go round in tricky loops. At Techfest 2015, test your bot’s analysing skills against the best of the best."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_pixelate.xml -->

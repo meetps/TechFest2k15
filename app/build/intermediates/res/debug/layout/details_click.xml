@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        If the word 'photography' even remotely interests you, print it out and take it with you everywhere. To work. To school. To bed. Heck, even laminate it and take it into the shower. Drill these concepts into your head, and they will feel as natural to you as brushing your teeth.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        (Note: The workshop will be conducted by experts from 'NIKON')
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_click.xml -->

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/Fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/container"
+        android:onClick="fblink"
+        android:tag="100000708895738">
+
+        <ImageView
+            android:src="@drawable/ms"
+            style="@style/SummaryImage"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet Shah"
+                style="@style/SummaryTitle"
+                
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electrical Engineering | IIT Bombay"
+                style="@style/SummaryText"/>
+                
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/container"
+        android:onClick="fblink"
+        android:tag="1611542573">
+
+        <ImageView
+            android:src="@drawable/udi"
+            style="@style/SummaryImage"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet Udeshi"
+                style="@style/SummaryTitle"
+
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electrical Engineering | IIT Bombay"
+                style="@style/SummaryText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalDivider"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text"
+        android:text="Special Thanks to :"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/container"
+        android:onClick="fblink"
+        android:tag="100000557472181">
+
+        <ImageView
+            android:src="@drawable/vs"
+            style="@style/SummaryImage"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vipul Shah"
+                style="@style/SummaryTitle"
+                
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                style="@style/SummaryText"/>
+                
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/container"
+        android:onClick="ghlink"
+        android:tag="FaizMalkani">
+
+        <ImageView
+            android:src="@drawable/faiz"
+            style="@style/SummaryImage"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faiz Malkani"
+                style="@style/SummaryTitle"
+                
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                style="@style/SummaryText"/>
+                
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/fragment_developers.xml -->

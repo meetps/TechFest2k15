@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Fragment">
+    <ImageView
+        android:layout_width="fill_parent"
+        style="@style/DetailsImage"
+        android:src="@drawable/ideate"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="'For an idea that does not first seem insane, there is no hope.' - Albert Einstein
+
+    The sole motto of Ideate is to discover the best ideas from across the nation that would drive the transformation and empowerment of the society. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="As the saying goes, necessity is the mother of invention. A key problem today is that the society at large still operates with an outdated simile of the mind itself. All that is needed is a newly minted idea, a belief and a vision to spark a revolution. An idea is like a splendid bird that could articulate patterns emerging from chaos. Ideas can evolve and have a life of its own, striving to give the world a small nudge which will set the gears of change in motion on a broad scale."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Techfest invites the ponderers to the platform of Ideate, bring their ideas to the fore and change the way humans interact with the people and earth to create a real impact."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_ideate.xml -->

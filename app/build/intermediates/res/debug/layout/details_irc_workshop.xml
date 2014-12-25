@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        International Robotics Challenge, a unique initiative of Techfest provides a universal and common platform for all the Indian as well as International participants to compete and excel. The IRC workshop aims to provide a platform to Indian students to prove their mettle amongst the International teams from 10 other countries. The participants will learn about technologies like Microcontroller Programming on Arduino architecture in this workshop. Along with this, the participants will also be able to build an Autonomous Maze-solving Robot and Manual bot.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        The workshop is being conducted by our IRC Outreach Partner Robotech Labs Pvt. Ltd. This two day workshop will cover various practical activities along with the theoretical concepts covered throughout the sessions. Practical activities will enrich the development of Autonomous Robots using AVR Atmega8 Micro controllers with the help of a Kit in students, Sensors Array interfacing skills of the participants, understanding the various gripping and sliding mechanisms, various nuances of Grid solving techniques. Attending this workshop will drive your instincts to deliver in the domain of robotics.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        The workshop will be conducted in 30 centers, which will be put up on the website later.
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Cost of the workshop: Rs. 1000/- per participant. The maximum number of participants per team is 5.
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_irc_workshop.xml -->

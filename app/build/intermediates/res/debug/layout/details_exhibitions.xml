@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Exhibitions at Techfest, IIT Bombay is a display of the latest breakthroughs in science and technology with the aim of promoting technology among the masses in India. This segment is one of those rare avenues where you can see and experience a wide spectrum of modern technology with a very unique collection of exhibits from across the world. From the world's most advanced social robot to a cube that can balance itself on it's corner, Exhibitions has the most cutting edge technology on display. This is the ideal platform for the budding technocrats and the tech-savvy, providing them an opportunity to gain exposure and interact with various researchers whose global expertise has brought these breathtaking exhibits into existence."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:textStyle="bold"
+        android:text="Indian Exhibitions"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="This year Techfest, IIT Bombay is launching a public exhibition wherein you can get a chance to exhibit your work to the most diverse and intellectual crowd in India of corporate personnels, students and professors."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:textStyle="bold"
+        android:text="Policy for attending Exhibitions"/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="There is no registration or fees required to attend the exhibitions at Techfest. The Exhibitions will be held on all the three days (2nd to 4th January 2015). You are required to carry a valid photo ID card along with you."/>
+
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_exhibitions.xml -->

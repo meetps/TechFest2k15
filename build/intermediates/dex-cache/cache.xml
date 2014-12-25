@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/tinchuk/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-2bb428aae4d2e9e122430d79c5dd48e350e2de0c.jar" />
+    </item>
+    <item
+        jar="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="95482e7c792a7c0d5a9d5461e97726bd54fe9549">
+        <dex dex="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/pre-dexed/debug/classes-8a546f0e5d21a01bb2f8b457120de10edbbbaef8.jar" />
+    </item>
+    <item
+        jar="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a75b29dc51b364df032af8bcfcad7e54ccfda28d">
+        <dex dex="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/pre-dexed/debug/classes-f28502380bc7394da992f19f862e223e4a82939e.jar" />
+    </item>
+    <item
+        jar="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/pre-dexed/debug/classes-e7d1f3fed3627993a7cd877634410965ad36ea03.jar" />
+    </item>
+    <item
+        jar="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-f097a885b8bc12afce338f674edac9d1f1f7bd90.jar" />
+    </item>
+    <item
+        jar="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/pre-dexed/debug/classes-79058b231fa7cdd8ef5346509f99f2c28998227d.jar" />
+    </item>
+    <item
+        jar="/home/tinchuk/Desktop/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/home/tinchuk/Desktop/Android/TechFest2k15/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-c39446a975bff9f3a30753c0f821a0053579abcf.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Since its inception in 1998, with the motto of promoting science and technology, Techfest has always been the best medium for the young budding minds to get an exposure to the breakthroughs of technology."/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="After attaining the pinnacle of its success in providing a fair playfield for tech-enthusiasts in India to showcase their mettle at the forefront of technical supremacy, Techfest has spread its wings to the international arena, introducing International Robotics Challenge to illustrate a perfect combat between robotic gladiators finally leading to the survival of the fittest. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The zonal qualifying rounds for International Robotics Challenge will be held in Bangladesh, Egypt-Menoufiya University , Egypt-Alexandria University, Ethiopia, France, India,Nepal, Pakistan, Philippines, South Africa and Sri Lanka. Winning entries of these zonal rounds will be invited to compete in the International Robotics Challenge Grand Finale to be held at Techfest 2015, IIT Bombay. The international participants who could not compete in the zonal rounds of IRC are allowed to participate in IRC International Open to be held at Techfest, IIT Bombay during 2nd-4th January 2015. "/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_irc.xml -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Beauty is within a person, not the outward appearance. Only when one knows the talent and capability , the real beauty of the person is revealed. Women should not be judged by their physical appearance but the potential they possess to do something. It is necessary that we uproot the thought from every woman’s mind that outward beauty is everything and make them realise how important and valuable they are to the society. Even the society has to be made aware of this."/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="A nation wide competition for the youth to use their rational and freedom to help in increasing women empowerment. Registered teams have to implement and conduct various activities. Teams are free to choose any number of tasks and conduct them. They will be awarded points on the basis of efforts they have put to bring a change among people."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_take_action.xml -->

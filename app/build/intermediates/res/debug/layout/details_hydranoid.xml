@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="There has been a deadly virus outbreak in the IIT Bombay. The only hope of survival is the five antidotes kept on the top of the five most prominent buildings of the campus. Those must be retrieved without making any physical contact with the buildings. The future is in your hands."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_hydranoid.xml -->

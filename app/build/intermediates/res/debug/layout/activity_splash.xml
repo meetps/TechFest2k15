@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_container"
+    android:background="@color/black_logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percent_text"
+        android:text="Loading events 0%"
+        style="@style/Text"/>
+</LinearLayout>
+<!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/activity_splash.xml -->

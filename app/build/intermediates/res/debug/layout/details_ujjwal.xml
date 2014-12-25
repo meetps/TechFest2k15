@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="'Only when I saw the Earth from space, in all its ineffable beauty and fragility, did I realize that humankind's most urgent task is to cherish and preserve it for future generations.' - Sigmund Jahn "/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Man is a witness to the crime he himself is committing. Couple a high degree environmental degradation with a serious energy crisis and the human generation will have the perfect recipe for a massive catastrophe. The pollution levels in the air are so high that if it weren't for our lungs there'd be no place to put it all. The exploitation rate of fossils is on an all time high. The demand of megawatts is in millions. Today’s generation is in the midst of a population explosion which further stresses on the needs of cleaner basic amenities, effective waste management and demand of green energy. One does not need to see far to conclude that disaster is in the making."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="“Modern Technology, Owes Ecology, an Apology”; this saying suits aptly. Saving the Earth is the mantra that each one of us need to inculcate in our lives. Ujjwal is the platform through which Techfest aims to generate environment-friendly solutions to take care of fragility of the Earth and foster sustainable living.
+
+The bottom of the oil barrel is now visible. Take the onus upon yourself and save the planet Earth. "/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_ujjwal.xml -->

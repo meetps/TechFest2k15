@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Propeller clock is totally based on a moving LEDs row. This LEDs row is rotating at a rate
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        superior to human's eye remanence, making a dot matrix which seems to float in the air. A
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        motor spins the 'propeller' and a small microcontroller keeps track of time and changes
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        the pattern on LEDs with exact timing to simulate array of LEDs. It is an illusion, but it
+        "/>
+
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        works nicely.There are 2 main types of rotating displays, cylindrical and disk shaped. Whereas cylindrical displays are only capable of displaying text and digits disk shaped displays have the ability to display analog clock hands.
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_propeller_clock.xml -->

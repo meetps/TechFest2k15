@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Entertainment is a form of activity that holds the attention and interest of an audience, or gives pleasure and delight. It can be an idea or a task, but is more likely to be one of the activities or events that have developed over thousands of years specifically for the purpose of keeping an audience's attention. Over the ages, man’s progress in technology has helped the landline evolve into the smartphone and transformed the PC into the tablets we use today. Tell us, with technological advancement, what will the television become?"/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Let your thoughts proliferate, let your ideas consolidate, and let your actions initiate a new form of transformation."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_nextgen_tv.xml -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            style="@style/DetailsImage"
+            android:src="@drawable/international_challenge"/>
+    </LinearLayout>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Being Asia’s largest science and technology festival and patronized by UNESCO, UNICEF, CEE and SAYEN, Techfest has diversified into an organization that apart from showcasing the pinnacle of technical advancement, also strives for the betterment of society with unique initiatives which reach out not only to 2300 colleges of India but also 500 colleges abroad. "/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="With an aim to reach out to as many countries as possible, this time Techfest has launched a totally new segment containing vivid international events which will put your grey cells to work and give you an international platform for proving your skills and make your name."/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_international_challenge.xml -->

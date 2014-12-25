@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+    <TextView
+        style="@style/ParagraphText"
+        android:text="
+        Robotics has come long way. Especially for mobile robots in the past, they were controlled by heavy, large and expensive systems that would not be carried and had to be link via cables. Today, however we can build small robots with numerous actuators and sensors that are controlled by inexpensive, small and light embedded computer system that are carried on-board. Also with the invent of cheaper wireless modules it has now become possible for multiple robots to communicate with each other and do a particular task also known as Swarm Robotics. It is based on the use of local rules, and simple robots compared to the complexity of the task to achieve, and inspired by social insects that can perform tasks beyond the capacity of the individuals.This interactive art has its application from nanorobotics , microrobotics to challenging tasks of rescuing disaster hit zones.
+        "/>
+
+        
+    </LinearLayout>
+    <!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_swarm_robotics.xml -->

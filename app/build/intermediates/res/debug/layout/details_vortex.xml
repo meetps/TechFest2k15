@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/ParagraphText"
+        android:text="Once Neo is connected back to the real world, he comes outside Zion and accompanies Morpheus and Trinity in their mission to destroy the attacking sentinels."/>
+
+    <TextView
+        style="@style/ParagraphText"
+        android:text="They need to go through a secret pathway hiding themselves from the cyberpunk machines to reach the center of enemy zone and activate the EMP’s weapon for the destruction."/>
+    <TextView
+        style="@style/ParagraphText"
+        android:text="The task of the competition is to make an autonomous bot to assist the troop in reaching out to the enemies secretly in a constrained time. "/>
+</LinearLayout><!-- From: file:/home/tinchuk/Desktop/Android/TechFest2k15/app/src/main/res/layout/details_vortex.xml -->
