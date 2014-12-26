@@ -40,6 +40,7 @@ public class SplashActivity extends Activity {
 
         new ReadTask().execute("https://drive.google.com/uc?execute=download&id=0B_6rvZNWXShpMi03TkR1MWxwUGM");
     }
+
     private class ReadTask extends AsyncTask<String, Integer, List<String[]>> {
 
         @Override
