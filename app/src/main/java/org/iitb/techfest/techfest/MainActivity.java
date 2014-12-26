@@ -388,8 +388,30 @@ public class MainActivity extends ActionBarActivity
             return "19.1317237,72.9157796";
         else if (place.equals("Convocation Hall"))
             return "19.1319587,72.914763";
+        else if (place.equals("OAT"))
+            return "19.135369,72.913769";
+        else if (place.equals("Swimming Pool"))
+            return "19.1351579,72.9126434";
+        else if (place.equals("LT Back Lawns"))
+            return "19.1329083,72.9156243";
+        else if (place.equals("LA Foyer"))
+            return "19.1307588,72.9170093";
+        else if (place.equals("GG"))
+            return "19.1315482,72.9162513";
+        else if (place.equals("IC"))
+            return "19.13159,72.9157591";
+        else if (place.equals("MB Foyer"))
+            return "19.1324573,72.9153494";
+        else if (place.equals("ME"))
+            return "19.1333328,72.9164112";
+        else if (place.equals("LA"))
+            return "19.1307588,72.9170093";
+        else if (place.equals("LT"))
+            return "19.1323033,72.9156914";
         else
             return "19.1279852,72.914763";
+        //Done Till Here adding Geo-Coordinates
+        // To Add OAT, Swimming Pool, LT Back Lawns, LA Foyer, GG, IC, MB Foyer, ME, LA, LT
     }
 
     public LatLng getLatLng(String place){
