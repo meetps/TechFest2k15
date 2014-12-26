@@ -74,7 +74,7 @@ public class MainActivity extends ActionBarActivity
         tf_logo = new ImageView(this);
 
         Toast.makeText(getApplicationContext(),
-                "Enable GPS and Data for Best User Experience", Toast.LENGTH_LONG).show();
+                "Enable GPS and Data for Best UX", Toast.LENGTH_LONG).show();
 
         Picasso.with(this).load(R.drawable.tf_logo).fit().centerCrop().into((tf_logo));
 
