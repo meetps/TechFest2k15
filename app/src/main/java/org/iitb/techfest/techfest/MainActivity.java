@@ -14,6 +14,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -71,6 +72,9 @@ public class MainActivity extends ActionBarActivity
         ((DrawerLayout) findViewById(R.id.drawer_layout)).openDrawer(findViewById(R.id.navigation_drawer));
 
         tf_logo = new ImageView(this);
+
+        Toast.makeText(getApplicationContext(),
+                "Enable GPS and Data for Best Experience", Toast.LENGTH_LONG).show();
 
         Picasso.with(this).load(R.drawable.tf_logo).fit().centerCrop().into((tf_logo));
 
