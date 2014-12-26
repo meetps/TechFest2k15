@@ -74,7 +74,7 @@ public class MainActivity extends ActionBarActivity
         tf_logo = new ImageView(this);
 
         Toast.makeText(getApplicationContext(),
-                "Enable GPS and Data for Best Experience", Toast.LENGTH_LONG).show();
+                "Enable GPS and Data for Best User Experience", Toast.LENGTH_LONG).show();
 
         Picasso.with(this).load(R.drawable.tf_logo).fit().centerCrop().into((tf_logo));
 
@@ -402,7 +402,6 @@ public class MainActivity extends ActionBarActivity
         EventSummary es = events.get((Integer) v.getTag());
 
         String venue = es.venue;
-//        int radioButtonID = list.getCheckedRadioButtonId();
         String latlang = getLatLangString(venue.toString());
 
         Intent intentMap = new Intent(Intent.ACTION_VIEW,

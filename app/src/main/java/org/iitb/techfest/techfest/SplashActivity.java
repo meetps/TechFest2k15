@@ -38,7 +38,7 @@ public class SplashActivity extends Activity {
         loader.setLayoutParams(new LinearLayout.LayoutParams((int)getResources().getDimension(R.dimen.splash_logo_dimen),(int)getResources().getDimension(R.dimen.splash_logo_dimen)));
         text = (TextView)findViewById(R.id.percent_text);
 
-        new ReadTask().execute("https://drive.google.com/uc?execute=download&id=0B_6rvZNWXShpMi03TkR1MWxwUGM");
+        new ReadTask().execute("https://docs.google.com/uc?export=download&id=0B8hI9zBeOYFXU1VSRmNFRjJ0bkU");
     }
 
     private class ReadTask extends AsyncTask<String, Integer, List<String[]>> {

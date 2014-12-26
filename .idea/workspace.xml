@@ -81,7 +81,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Techfest.iws" />
@@ -110,33 +110,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81395346" vertical-offset="1053" max-vertical-offset="9594">
-              <caret line="76" column="76" selection-start-line="76" selection-start-column="76" selection-end-line="76" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6723" max-vertical-offset="9576">
+              <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1329#1343#0" expanded="true" />
                 <element signature="e#1388#1398#0" expanded="true" />
                 <element signature="e#1459#1478#0" expanded="true" />
-                <element signature="e#13786#13824#0" expanded="true" />
-                <element signature="e#13903#13941#0" expanded="true" />
-                <element signature="e#14075#14112#0" expanded="true" />
-                <element signature="e#14339#14376#0" expanded="true" />
-                <element signature="e#14453#14490#0" expanded="true" />
-                <element signature="e#14619#14653#0" expanded="true" />
-                <element signature="e#14722#14756#0" expanded="true" />
-                <element signature="e#14890#14927#0" expanded="true" />
-                <element signature="e#15154#15185#0" expanded="true" />
-                <element signature="e#15675#15707#0" expanded="true" />
-                <element signature="e#15773#15805#0" expanded="true" />
-                <element signature="e#15934#15969#0" expanded="true" />
-                <element signature="e#16041#16076#0" expanded="true" />
-                <element signature="e#16296#16332#0" expanded="true" />
-                <element signature="e#16532#16562#0" expanded="true" />
-                <element signature="e#17193#17207#0" expanded="true" />
+                <element signature="e#17198#17212#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplashActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44186047" vertical-offset="189" max-vertical-offset="3222">
+              <caret line="40" column="106" selection-start-line="40" selection-start-column="106" selection-end-line="40" selection-end-column="106" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1189,7 +1184,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/EventListFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/IconProgressBar.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/NavigationDrawerFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/assets/events.csv" />
@@ -1198,6 +1192,7 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" />
       </list>
     </option>
   </component>
@@ -2121,25 +2116,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/EventFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/EventSummary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.5384617" vertical-offset="383" max-vertical-offset="1224">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/HttpConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1377">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -2256,13 +2237,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.576923" vertical-offset="2381" max-vertical-offset="3222">
-          <caret line="169" column="24" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_tisc.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2375,14 +2349,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/EventListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
@@ -2412,32 +2378,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/EventFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="400">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/EventListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1350">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81395346" vertical-offset="1053" max-vertical-offset="9594">
-          <caret line="76" column="76" selection-start-line="76" selection-start-column="76" selection-end-line="76" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="6723" max-vertical-offset="9576">
+          <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1329#1343#0" expanded="true" />
             <element signature="e#1388#1398#0" expanded="true" />
             <element signature="e#1459#1478#0" expanded="true" />
-            <element signature="e#13786#13824#0" expanded="true" />
-            <element signature="e#13903#13941#0" expanded="true" />
-            <element signature="e#14075#14112#0" expanded="true" />
-            <element signature="e#14339#14376#0" expanded="true" />
-            <element signature="e#14453#14490#0" expanded="true" />
-            <element signature="e#14619#14653#0" expanded="true" />
-            <element signature="e#14722#14756#0" expanded="true" />
-            <element signature="e#14890#14927#0" expanded="true" />
-            <element signature="e#15154#15185#0" expanded="true" />
-            <element signature="e#15675#15707#0" expanded="true" />
-            <element signature="e#15773#15805#0" expanded="true" />
-            <element signature="e#15934#15969#0" expanded="true" />
-            <element signature="e#16041#16076#0" expanded="true" />
-            <element signature="e#16296#16332#0" expanded="true" />
-            <element signature="e#16532#16562#0" expanded="true" />
-            <element signature="e#17193#17207#0" expanded="true" />
+            <element signature="e#17198#17212#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/HttpConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1458">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44186047" vertical-offset="189" max-vertical-offset="3222">
+          <caret line="40" column="106" selection-start-line="40" selection-start-column="106" selection-end-line="40" selection-end-column="106" />
+          <folding />
         </state>
       </provider>
     </entry>
