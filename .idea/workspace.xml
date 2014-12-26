@@ -82,7 +82,6 @@
     <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apk/app-debug.apk" afterPath="$PROJECT_DIR$/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/events.csv" afterPath="$PROJECT_DIR$/app/src/main/assets/events.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Techfest.iws" />
@@ -130,8 +129,8 @@
       <file leaf-file-name="SplashActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4651163" vertical-offset="216" max-vertical-offset="3222">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.74418604" vertical-offset="198" max-vertical-offset="3222">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
               <folding>
                 <element signature="e#1104#1158#0" expanded="true" />
                 <element signature="e#1164#1218#0" expanded="true" />
@@ -2423,8 +2422,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4651163" vertical-offset="216" max-vertical-offset="3222">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.74418604" vertical-offset="198" max-vertical-offset="3222">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
           <folding>
             <element signature="e#1104#1158#0" expanded="true" />
             <element signature="e#1164#1218#0" expanded="true" />
