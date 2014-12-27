@@ -138,6 +138,45 @@
                 style="@style/SummaryText"/>
                 
         </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/HorizontalDivider"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text"
+        android:text="We Share Love | We Share Code"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/container"
+        android:onClick="ghlink"
+        android:tag="meetshah1995/TechFest2k15">
+
+        <ImageView
+            android:src="@drawable/github"
+            style="@style/SummaryImage"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View on Github"
+                style="@style/SummaryTitle"
+
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You're Welcome."
+                style="@style/SummaryText"/>
+
+        </LinearLayout>
 
     </LinearLayout>
     </LinearLayout>

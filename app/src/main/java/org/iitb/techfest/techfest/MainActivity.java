@@ -498,13 +498,13 @@ public class MainActivity extends ActionBarActivity
         // Convo-side
         map.addMarker(new MarkerOptions()
                 .position(getLatLng("19.1314256,72.9143114"))
-                .title("Food Court")
+                .title("Food Court Convo")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.fastfood_map)));
 
         // SAC-side
         map.addMarker(new MarkerOptions()
                 .position(getLatLng("19.1349975,72.9139439"))
-                .title("Food Court")
+                .title("Food Court SAC")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.fastfood_map)));
 
         //Restaurant
