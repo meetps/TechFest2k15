@@ -493,28 +493,51 @@ public class MainActivity extends ActionBarActivity
                     .title(es.title)
                     .icon(BitmapDescriptorFactory.fromResource(getSuperIcon(es.actionbar_color))));
         }
+        //Add Utility Icons Here
+        //Food
+        // Convo-side
+        map.addMarker(new MarkerOptions()
+                .position(getLatLng("19.1314256,72.9143114"))
+                .title("Food Court")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.fastfood_map)));
+
+        // SAC-side
+        map.addMarker(new MarkerOptions()
+                .position(getLatLng("19.1349975,72.9139439"))
+                .title("Food Court")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.fastfood_map)));
+
+        //Restaurant
+        map.addMarker(new MarkerOptions()
+                .position(getLatLng("19.1285848,72.9145769"))
+                .title("Restaurant")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_map)));
+
         map.setMyLocationEnabled(true);
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(19.133709, 72.913284),15));
     }
 
     public int getSuperIcon(int abcolor){
+        //28498a
         switch(abcolor){
             case R.color.actionbar_lectures:
-                return R.drawable.lecture;
+                return R.drawable.lectures_map;
             case R.color.actionbar_exhibitions:
-                return R.drawable.exhibition;
+                return R.drawable.exhibition_map ;
             case R.color.actionbar_technoholix:
-                return R.drawable.technoholixs;
+                return R.drawable.technoholix_map ;
             case R.color.actionbar_initiatives:
-                return R.drawable.initiative;
+                return R.drawable.initiative_map ;
+            case R.color.actionbar_conference:
+                return R.drawable.conference_map ;
             case R.color.actionbar_competitions:
-                return R.drawable.competition;
+                return R.drawable.competitions_map;
             case R.color.actionbar_ozone:
-                return R.drawable.ozones;
+                return R.drawable.ozone_map;
             case R.color.actionbar_workshops:
-                return R.drawable.workshop;
+                return R.drawable.workshops_map ;
             case R.color.actionbar_ideate:
-                return R.drawable.idea;
+                return R.drawable.ideate_map;
             default:
                 return R.drawable.icon_wo_bg_1;
         }
