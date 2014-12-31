@@ -90,9 +90,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apk/app-release.apk" afterPath="$PROJECT_DIR$/apk/app-release.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Techfest.iws" />
@@ -121,55 +121,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21901529" vertical-offset="2949" max-vertical-offset="10728">
-              <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="10157" max-vertical-offset="10746">
+              <caret line="575" column="53" selection-start-line="575" selection-start-column="20" selection-end-line="575" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#13836#13874#0" expanded="true" />
-                <element signature="e#13953#13991#0" expanded="true" />
-                <element signature="e#14125#14162#0" expanded="true" />
-                <element signature="e#14389#14426#0" expanded="true" />
-                <element signature="e#14503#14540#0" expanded="true" />
-                <element signature="e#14669#14703#0" expanded="true" />
-                <element signature="e#14772#14806#0" expanded="true" />
-                <element signature="e#14940#14977#0" expanded="true" />
-                <element signature="e#15204#15235#0" expanded="true" />
-                <element signature="e#15725#15757#0" expanded="true" />
-                <element signature="e#15823#15855#0" expanded="true" />
-                <element signature="e#15984#16019#0" expanded="true" />
-                <element signature="e#16091#16126#0" expanded="true" />
-                <element signature="e#16346#16382#0" expanded="true" />
-                <element signature="e#16582#16612#0" expanded="true" />
-                <element signature="e#29081#29099#0" expanded="true" />
+                <element signature="e#13860#13898#0" expanded="true" />
+                <element signature="e#13977#14015#0" expanded="true" />
+                <element signature="e#14149#14186#0" expanded="true" />
+                <element signature="e#14413#14450#0" expanded="true" />
+                <element signature="e#14527#14564#0" expanded="true" />
+                <element signature="e#14693#14727#0" expanded="true" />
+                <element signature="e#14796#14830#0" expanded="true" />
+                <element signature="e#14964#15001#0" expanded="true" />
+                <element signature="e#15228#15259#0" expanded="true" />
+                <element signature="e#15749#15781#0" expanded="true" />
+                <element signature="e#15847#15879#0" expanded="true" />
+                <element signature="e#16008#16043#0" expanded="true" />
+                <element signature="e#16115#16150#0" expanded="true" />
+                <element signature="e#16370#16406#0" expanded="true" />
+                <element signature="e#16606#16636#0" expanded="true" />
+                <element signature="e#29110#29128#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_developers.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3333334" vertical-offset="3150" max-vertical-offset="3906">
-              <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_main.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="fragment_main.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="540">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.5124555" vertical-offset="0" max-vertical-offset="562">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="522">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -1258,10 +1255,10 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
       </list>
     </option>
   </component>
@@ -1400,6 +1397,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest2k15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest2k15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2399,14 +2426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46793762" vertical-offset="0" max-vertical-offset="577">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2470,12 +2489,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10157" max-vertical-offset="10746">
+          <caret line="575" column="53" selection-start-line="575" selection-start-column="20" selection-end-line="575" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#13860#13898#0" expanded="true" />
+            <element signature="e#13977#14015#0" expanded="true" />
+            <element signature="e#14149#14186#0" expanded="true" />
+            <element signature="e#14413#14450#0" expanded="true" />
+            <element signature="e#14527#14564#0" expanded="true" />
+            <element signature="e#14693#14727#0" expanded="true" />
+            <element signature="e#14796#14830#0" expanded="true" />
+            <element signature="e#14964#15001#0" expanded="true" />
+            <element signature="e#15228#15259#0" expanded="true" />
+            <element signature="e#15749#15781#0" expanded="true" />
+            <element signature="e#15847#15879#0" expanded="true" />
+            <element signature="e#16008#16043#0" expanded="true" />
+            <element signature="e#16115#16150#0" expanded="true" />
+            <element signature="e#16370#16406#0" expanded="true" />
+            <element signature="e#16606#16636#0" expanded="true" />
+            <element signature="e#29110#29128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="522">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334" vertical-offset="3150" max-vertical-offset="3906">
+        <state vertical-scroll-proportion="0.6666667" vertical-offset="3204" max-vertical-offset="3906">
           <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding />
         </state>
@@ -2486,35 +2539,9 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="540">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.5124555" vertical-offset="0" max-vertical-offset="562">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21901529" vertical-offset="2949" max-vertical-offset="10728">
-          <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13836#13874#0" expanded="true" />
-            <element signature="e#13953#13991#0" expanded="true" />
-            <element signature="e#14125#14162#0" expanded="true" />
-            <element signature="e#14389#14426#0" expanded="true" />
-            <element signature="e#14503#14540#0" expanded="true" />
-            <element signature="e#14669#14703#0" expanded="true" />
-            <element signature="e#14772#14806#0" expanded="true" />
-            <element signature="e#14940#14977#0" expanded="true" />
-            <element signature="e#15204#15235#0" expanded="true" />
-            <element signature="e#15725#15757#0" expanded="true" />
-            <element signature="e#15823#15855#0" expanded="true" />
-            <element signature="e#15984#16019#0" expanded="true" />
-            <element signature="e#16091#16126#0" expanded="true" />
-            <element signature="e#16346#16382#0" expanded="true" />
-            <element signature="e#16582#16612#0" expanded="true" />
-            <element signature="e#29081#29099#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

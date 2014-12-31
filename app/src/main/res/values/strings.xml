@@ -3,6 +3,7 @@
 
     <string name="app_name">Techfest</string>
     <string name="title_home">Home</string>
+    <string name="registerlink"><a href="http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITBombay1">Get Your Techfest ID here</a></string>
     <string name="title_competitions">Competitions</string>
     <string name="title_technoholix">Technoholix</string>
     <string name="title_initiatives">Initiatives</string>

@@ -13,9 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="registerLink"
         android:textColor="#0099FF"
-        android:text="Get Your Techfest ID"/>
+        android:autoLink="web"
+        android:text="@string/registerlink"/>
     <TextView
         style="@style/ParagraphText"
         android:text="Techfest is the annual science and technology festival of IIT Bombay. Techfest is known for hosting a variety of events that include competitions, exhibitions, lectures as well as workshops."/>
