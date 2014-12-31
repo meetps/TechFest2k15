@@ -90,10 +90,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apk/app-release.apk" afterPath="$PROJECT_DIR$/apk/app-release.apk" />
     </list>
     <ignored path="Techfest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,8 +152,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5124555" vertical-offset="0" max-vertical-offset="562">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.48042706" vertical-offset="0" max-vertical-offset="562">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -2539,8 +2536,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5124555" vertical-offset="0" max-vertical-offset="562">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.48042706" vertical-offset="0" max-vertical-offset="562">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
