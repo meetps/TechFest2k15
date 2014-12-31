@@ -181,8 +181,7 @@
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/container"
-        android:onClick="launchMarket"
-        android:tag="meetshah1995/TechFest2k15">
+        android:onClick="launchMarket">
 
         <ImageView
             android:src="@drawable/market"

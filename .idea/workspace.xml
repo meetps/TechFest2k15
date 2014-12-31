@@ -92,6 +92,7 @@
     <list default="true" id="58eea4f6-320a-4505-ae89-682e2f841015" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apk/app-release.apk" afterPath="$PROJECT_DIR$/apk/app-release.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_developers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Techfest.iws" />
@@ -123,25 +124,26 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4804754" vertical-offset="9599" max-vertical-offset="10188">
-              <caret line="578" column="0" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.21901529" vertical-offset="2949" max-vertical-offset="10728">
+              <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
               <folding>
-                <element signature="e#13828#13866#0" expanded="true" />
-                <element signature="e#13945#13983#0" expanded="true" />
-                <element signature="e#14117#14154#0" expanded="true" />
-                <element signature="e#14381#14418#0" expanded="true" />
-                <element signature="e#14495#14532#0" expanded="true" />
-                <element signature="e#14661#14695#0" expanded="true" />
-                <element signature="e#14764#14798#0" expanded="true" />
-                <element signature="e#14932#14969#0" expanded="true" />
-                <element signature="e#15196#15227#0" expanded="true" />
-                <element signature="e#15717#15749#0" expanded="true" />
-                <element signature="e#15815#15847#0" expanded="true" />
-                <element signature="e#15976#16011#0" expanded="true" />
-                <element signature="e#16083#16118#0" expanded="true" />
-                <element signature="e#16338#16374#0" expanded="true" />
-                <element signature="e#16574#16604#0" expanded="true" />
-                <element signature="e#29060#29078#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#13836#13874#0" expanded="true" />
+                <element signature="e#13953#13991#0" expanded="true" />
+                <element signature="e#14125#14162#0" expanded="true" />
+                <element signature="e#14389#14426#0" expanded="true" />
+                <element signature="e#14503#14540#0" expanded="true" />
+                <element signature="e#14669#14703#0" expanded="true" />
+                <element signature="e#14772#14806#0" expanded="true" />
+                <element signature="e#14940#14977#0" expanded="true" />
+                <element signature="e#15204#15235#0" expanded="true" />
+                <element signature="e#15725#15757#0" expanded="true" />
+                <element signature="e#15823#15855#0" expanded="true" />
+                <element signature="e#15984#16019#0" expanded="true" />
+                <element signature="e#16091#16126#0" expanded="true" />
+                <element signature="e#16346#16382#0" expanded="true" />
+                <element signature="e#16582#16612#0" expanded="true" />
+                <element signature="e#29081#29099#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,8 +155,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.814815" vertical-offset="2714" max-vertical-offset="3924">
-              <caret line="167" column="35" selection-start-line="165" selection-start-column="16" selection-end-line="168" selection-end-column="43" />
+            <state vertical-scroll-proportion="-1.3333334" vertical-offset="3150" max-vertical-offset="3906">
+              <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,8 +168,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0" vertical-offset="108" max-vertical-offset="540">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="540">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -2024,26 +2026,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_gyrocopter.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58259326" vertical-offset="107" max-vertical-offset="1545">
-          <caret line="29" column="192" selection-start-line="29" selection-start-column="192" selection-end-line="29" selection-end-column="192" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_cloud_computing.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21314387" vertical-offset="0" max-vertical-offset="563">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ticc.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2280,16 +2262,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1547#1586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/EventFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="400">
@@ -2446,6 +2418,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/global.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.089701" vertical-offset="324" max-vertical-offset="936">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/NavigationDrawerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="5742">
@@ -2479,8 +2475,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.814815" vertical-offset="2714" max-vertical-offset="3924">
-          <caret line="167" column="35" selection-start-line="165" selection-start-column="16" selection-end-line="168" selection-end-column="43" />
+        <state vertical-scroll-proportion="-1.3333334" vertical-offset="3150" max-vertical-offset="3906">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2490,33 +2486,34 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="108" max-vertical-offset="540">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="540">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/iitb/techfest/techfest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4804754" vertical-offset="9599" max-vertical-offset="10188">
-          <caret line="578" column="0" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.21901529" vertical-offset="2949" max-vertical-offset="10728">
+          <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
           <folding>
-            <element signature="e#13828#13866#0" expanded="true" />
-            <element signature="e#13945#13983#0" expanded="true" />
-            <element signature="e#14117#14154#0" expanded="true" />
-            <element signature="e#14381#14418#0" expanded="true" />
-            <element signature="e#14495#14532#0" expanded="true" />
-            <element signature="e#14661#14695#0" expanded="true" />
-            <element signature="e#14764#14798#0" expanded="true" />
-            <element signature="e#14932#14969#0" expanded="true" />
-            <element signature="e#15196#15227#0" expanded="true" />
-            <element signature="e#15717#15749#0" expanded="true" />
-            <element signature="e#15815#15847#0" expanded="true" />
-            <element signature="e#15976#16011#0" expanded="true" />
-            <element signature="e#16083#16118#0" expanded="true" />
-            <element signature="e#16338#16374#0" expanded="true" />
-            <element signature="e#16574#16604#0" expanded="true" />
-            <element signature="e#29060#29078#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#13836#13874#0" expanded="true" />
+            <element signature="e#13953#13991#0" expanded="true" />
+            <element signature="e#14125#14162#0" expanded="true" />
+            <element signature="e#14389#14426#0" expanded="true" />
+            <element signature="e#14503#14540#0" expanded="true" />
+            <element signature="e#14669#14703#0" expanded="true" />
+            <element signature="e#14772#14806#0" expanded="true" />
+            <element signature="e#14940#14977#0" expanded="true" />
+            <element signature="e#15204#15235#0" expanded="true" />
+            <element signature="e#15725#15757#0" expanded="true" />
+            <element signature="e#15823#15855#0" expanded="true" />
+            <element signature="e#15984#16019#0" expanded="true" />
+            <element signature="e#16091#16126#0" expanded="true" />
+            <element signature="e#16346#16382#0" expanded="true" />
+            <element signature="e#16582#16612#0" expanded="true" />
+            <element signature="e#29081#29099#0" expanded="true" />
           </folding>
         </state>
       </provider>

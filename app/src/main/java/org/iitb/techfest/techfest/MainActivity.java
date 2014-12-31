@@ -169,7 +169,7 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("A.P.J. Abdul Kalam", new Integer[]{R.layout.details_lec,R.drawable.abdul_kalam,R.color.actionbar_lectures});
 
         addLayoutIDs();
-
+        
         restoreActionBar();
     }
 
@@ -313,6 +313,7 @@ public class MainActivity extends ActionBarActivity
             }
         }
     }
+
 
     private boolean haveNetworkConnection() {
         boolean haveConnectedWifi = false;
@@ -570,14 +571,14 @@ public class MainActivity extends ActionBarActivity
         startActivity(i);
     }
 
-    public void registerLink(){
+    public void registerLink(View v){
         String url="http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITBombay1";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
     }
 
-    public void launchMarket(){
+    public void launchMarket(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("market://details?id=org.iitb.techfest.techfest"));
         try {
