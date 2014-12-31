@@ -570,7 +570,7 @@ public class MainActivity extends ActionBarActivity
         startActivity(i);
     }
 
-    public void registerLink(View v){
+    public void registerLink(){
         String url="http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITBombay1";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
@@ -578,10 +578,10 @@ public class MainActivity extends ActionBarActivity
     }
 
     public void launchMarket(){
-        Uri uri = Uri.parse("market://details?id=" + getPackageName());
-        Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("market://details?id=org.iitb.techfest.techfest"));
         try {
-            startActivity(goToMarket);
+            startActivity(intent);
         } catch (ActivityNotFoundException e) {
             Toast.makeText(this, R.string.no_market, Toast.LENGTH_LONG).show();
         }
