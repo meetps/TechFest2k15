@@ -151,7 +151,7 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/container"
         android:onClick="ghlink"
-        android:tag="meetshah1995/GMap-Fest-Scheduler">
+        android:tag="meetshah1995/TechFest2k15">
 
         <ImageView
             android:src="@drawable/github"
@@ -174,6 +174,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="You're Welcome."
+                style="@style/SummaryText"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/container"
+        android:onClick="launchMarket"
+        android:tag="meetshah1995/TechFest2k15">
+
+        <ImageView
+            android:src="@drawable/market"
+            style="@style/SummaryImage"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate on Google Play"
+                style="@style/SummaryTitle"
+
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Reviews and Ratings."
                 style="@style/SummaryText"/>
 
         </LinearLayout>

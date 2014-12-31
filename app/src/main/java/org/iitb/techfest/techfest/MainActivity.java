@@ -1,5 +1,6 @@
 package org.iitb.techfest.techfest;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
@@ -567,5 +568,22 @@ public class MainActivity extends ActionBarActivity
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url+name));
         startActivity(i);
+    }
+
+    public void registerLink(View v){
+        String url="http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITBombay1";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void launchMarket(){
+        Uri uri = Uri.parse("market://details?id=" + getPackageName());
+        Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+        try {
+            startActivity(goToMarket);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this, R.string.no_market, Toast.LENGTH_LONG).show();
+        }
     }
 }
