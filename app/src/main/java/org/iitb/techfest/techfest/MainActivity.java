@@ -169,6 +169,13 @@ public class MainActivity extends ActionBarActivity
         layout_desc.put("Mathematics Panel", new Integer[]{R.layout.details_lec,R.drawable.lectures,R.color.actionbar_lectures});
         layout_desc.put("A.P.J. Abdul Kalam", new Integer[]{R.layout.details_lec,R.drawable.abdul_kalam,R.color.actionbar_lectures});
 
+        layout_desc.put("Khawater Aldalam (Thoughts Of Darkness)", new Integer[] {R.layout.details_technoholix, R.drawable.khawater_aldalam, R.color.actionbar_technoholix});
+        layout_desc.put("Modern Times", new Integer[] {R.layout.details_technoholix, R.drawable.moderntimes, R.color.actionbar_technoholix});
+        layout_desc.put("Inner Peace", new Integer[] {R.layout.details_technoholix, R.drawable.technoholix, R.color.actionbar_technoholix});
+        layout_desc.put("TRONi", new Integer[] {R.layout.details_technoholix, R.drawable.troni, R.color.actionbar_technoholix});
+        layout_desc.put("Adelaida", new Integer[] {R.layout.details_technoholix, R.drawable.adelaida1, R.color.actionbar_technoholix});
+        layout_desc.put("1st Project", new Integer[] {R.layout.details_technoholix, R.drawable.st_project1, R.color.actionbar_technoholix});
+
         addLayoutIDs();
 
         restoreActionBar();
@@ -189,10 +196,7 @@ public class MainActivity extends ActionBarActivity
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_competitions), R.color.actionbar_competitions, R.layout.fragment_competitions, filterEvents(getString(R.string.title_competitions)));
                 break;
             case 9:
-                for (EventSummary es : events)
-                    if (es.title.equals(getString(R.string.title_technoholix))) {
-                        frag = EventDetailsFragment.newInstance(es);
-                    }
+                frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST, getString(R.string.title_technoholix),R.color.actionbar_technoholix, R.layout.details_technoholix, filterEvents(getString(R.string.title_technoholix)));
                 break;
             case 2:
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_initiatives), R.color.actionbar_initiatives, R.layout.fragment_initiatives, filterEvents(getString(R.string.title_initiatives)));
@@ -391,7 +395,7 @@ public class MainActivity extends ActionBarActivity
             return "19.1317237,72.9157796";
         else if (place.equals("Convocation Hall"))
             return "19.1319587,72.914763";
-        else if (place.equals("OAT"))
+        else if (place.equals("Open Air Theatre"))
             return "19.135369,72.913769";
         else if (place.equals("Swimming Pool"))
             return "19.1351579,72.9126434";
