@@ -56,38 +56,42 @@ MERGED from com.android.support:support-v4:21.0.0:16:5
 		ADDED from AndroidManifest.xml:20:9
 activity#org.iitb.techfest.techfest.SplashActivity
 ADDED from AndroidManifest.xml:21:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:24:13
 	android:label
 		ADDED from AndroidManifest.xml:23:13
 	android:name
 		ADDED from AndroidManifest.xml:22:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:24:13
+ADDED from AndroidManifest.xml:25:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:25:17
+ADDED from AndroidManifest.xml:26:17
 	android:name
-		ADDED from AndroidManifest.xml:25:25
+		ADDED from AndroidManifest.xml:26:25
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:27:17
+ADDED from AndroidManifest.xml:28:17
 	android:name
-		ADDED from AndroidManifest.xml:27:27
+		ADDED from AndroidManifest.xml:28:27
 activity#org.iitb.techfest.techfest.MainActivity
-ADDED from AndroidManifest.xml:30:9
+ADDED from AndroidManifest.xml:31:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:34:13
 	android:label
+		ADDED from AndroidManifest.xml:33:13
+	android:name
 		ADDED from AndroidManifest.xml:32:13
-	android:name
-		ADDED from AndroidManifest.xml:31:13
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from AndroidManifest.xml:35:9
+ADDED from AndroidManifest.xml:37:9
 	android:value
-		ADDED from AndroidManifest.xml:37:13
+		ADDED from AndroidManifest.xml:39:13
 	android:name
-		ADDED from AndroidManifest.xml:36:13
+		ADDED from AndroidManifest.xml:38:13
 meta-data#com.google.android.gms.version
-ADDED from AndroidManifest.xml:41:5
+ADDED from AndroidManifest.xml:43:5
 	android:value
-		ADDED from AndroidManifest.xml:43:9
+		ADDED from AndroidManifest.xml:45:9
 	android:name
-		ADDED from AndroidManifest.xml:42:9
+		ADDED from AndroidManifest.xml:44:9
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:20.0.0:16:5
