@@ -52,6 +52,12 @@
         <item name="android:gravity">left</item>
     </style>
 
+    <style name="ListText" parent="Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingLeft">30dp</item>
+    </style>
+
     <!-- Layout styles -->
     <style name="Image">
         <item name="android:adjustViewBounds">true</item>

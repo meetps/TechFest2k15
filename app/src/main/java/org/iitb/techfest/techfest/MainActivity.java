@@ -232,6 +232,9 @@ public class MainActivity extends ActionBarActivity
                 frag = loadMapFragment();
                 break;
             case 12:
+                frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, "Jionet Free WiFi", R.color.actionbar_home, R.layout.fragment_jionet,null);
+                break;
+            case 13:
                 frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_developers), R.color.actionbar_developers, R.layout.fragment_developers,null);
                 break;
             default:
