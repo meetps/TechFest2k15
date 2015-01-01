@@ -1,5 +1,6 @@
 package org.iitb.techfest.techfest;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
@@ -14,6 +15,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -313,6 +315,7 @@ public class MainActivity extends ActionBarActivity
         }
     }
 
+
     private boolean haveNetworkConnection() {
         boolean haveConnectedWifi = false;
         boolean haveConnectedMobile = false;
@@ -493,28 +496,51 @@ public class MainActivity extends ActionBarActivity
                     .title(es.title)
                     .icon(BitmapDescriptorFactory.fromResource(getSuperIcon(es.actionbar_color))));
         }
+        //Add Utility Icons Here
+        //Food
+        // Convo-side
+        map.addMarker(new MarkerOptions()
+                .position(getLatLng("19.1314256,72.9143114"))
+                .title("Food Court Convo")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.fastfood_map)));
+
+        // SAC-side
+        map.addMarker(new MarkerOptions()
+                .position(getLatLng("19.1349975,72.9139439"))
+                .title("Food Court SAC")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.fastfood_map)));
+
+        //Restaurant
+        map.addMarker(new MarkerOptions()
+                .position(getLatLng("19.1285848,72.9145769"))
+                .title("Restaurant")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_map)));
+
         map.setMyLocationEnabled(true);
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(19.133709, 72.913284),15));
     }
 
     public int getSuperIcon(int abcolor){
+        //28498a
         switch(abcolor){
             case R.color.actionbar_lectures:
-                return R.drawable.lecture;
+                return R.drawable.lectures_map;
             case R.color.actionbar_exhibitions:
-                return R.drawable.exhibition;
+                return R.drawable.exhibition_map ;
             case R.color.actionbar_technoholix:
-                return R.drawable.technoholixs;
+                return R.drawable.technoholix_map ;
             case R.color.actionbar_initiatives:
-                return R.drawable.initiative;
+                return R.drawable.initiative_map ;
+            case R.color.actionbar_conference:
+                return R.drawable.conference_map ;
             case R.color.actionbar_competitions:
-                return R.drawable.competition;
+                return R.drawable.competitions_map;
             case R.color.actionbar_ozone:
-                return R.drawable.ozones;
+                return R.drawable.ozone_map;
             case R.color.actionbar_workshops:
-                return R.drawable.workshop;
+                return R.drawable.workshops_map ;
             case R.color.actionbar_ideate:
-                return R.drawable.idea;
+                return R.drawable.ideate_map;
             default:
                 return R.drawable.icon_wo_bg_1;
         }
@@ -544,5 +570,22 @@ public class MainActivity extends ActionBarActivity
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url+name));
         startActivity(i);
+    }
+
+    public void registerLink(TextView tv){
+        String url="http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITBombay1";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void launchMarket(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("market://details?id=org.iitb.techfest.techfest"));
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this, R.string.no_market, Toast.LENGTH_LONG).show();
+        }
     }
 }

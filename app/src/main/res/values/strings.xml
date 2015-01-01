@@ -3,6 +3,7 @@
 
     <string name="app_name">Techfest</string>
     <string name="title_home">Home</string>
+    <string name="registerlink"><a href="http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITBombay1">Get Your Techfest ID here</a></string>
     <string name="title_competitions">Competitions</string>
     <string name="title_technoholix">Technoholix</string>
     <string name="title_initiatives">Initiatives</string>
@@ -13,7 +14,7 @@
     <string name="title_ideate">Ideate</string>
     <string name="title_workshops">Workshops</string>
     <string name="title_developers">Developers</string>
-
+    <string name="no_market">No Google Play Found !.</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
