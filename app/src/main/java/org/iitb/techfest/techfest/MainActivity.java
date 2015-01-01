@@ -585,7 +585,8 @@ public class MainActivity extends ActionBarActivity
         try {
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(this, R.string.no_market, Toast.LENGTH_LONG).show();
+            intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=org.iitb.techfest.techfest"));
+            startActivity(intent);
         }
     }
 }
