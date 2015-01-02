@@ -118,6 +118,7 @@ public class NavigationDrawerFragment extends Fragment {
         itemList.add(new IconItem(R.drawable.ozones,getString(R.string.title_ozone)));
         itemList.add(new IconItem(R.drawable.marker,"Map"));
         itemList.add(new IconItem(R.drawable.jio_ico,"Jionet Free WiFi"));
+        itemList.add(new IconItem(R.drawable.ourpics_icon, "OurPics"));
         itemList.add(new IconItem(R.drawable.code_,getString(R.string.title_developers)));
 
         mDrawerListView.setAdapter(new IconAdapter(getActionBar().getThemedContext(),R.layout.menu_item,itemList));

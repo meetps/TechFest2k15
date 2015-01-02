@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ourpics_logo"
+        style="@style/DetailsImage"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get the most number of Wows on a photo uploaded by you !
+Win exciting prizes every day like a smartphone or a Digital camera.
+All you have to do is –"
+        style="@style/DetailsSmallTitle"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Download OurPics on your mobile"
+        style="@style/ListText"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:tag="com.ourpics.android"
+        android:onClick="launchMarket"
+        android:text="Download"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Upload techfest photos to IIT techfest event"
+        style="@style/ListText"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Get as many wows as you can from friends, family and strangers on any of your photos"
+        style="@style/ListText"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="4. The photo with the most number of wows will be the winner"
+        style="@style/ListText"/>
+</LinearLayout>

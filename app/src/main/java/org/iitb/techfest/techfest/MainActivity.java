@@ -235,6 +235,9 @@ public class MainActivity extends ActionBarActivity
                 frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, "Jionet Free WiFi", R.color.actionbar_home, R.layout.fragment_jionet,null);
                 break;
             case 13:
+                frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, "OurPics", R.color.actionbar_home, R.layout.fragment_ourpics,null);
+                break;
+            case 14:
                 frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_developers), R.color.actionbar_developers, R.layout.fragment_developers,null);
                 break;
             default:
@@ -588,11 +591,11 @@ public class MainActivity extends ActionBarActivity
 
     public void launchMarket(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("market://details?id=org.iitb.techfest.techfest"));
+        intent.setData(Uri.parse("market://details?id="+v.getTag()));
         try {
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=org.iitb.techfest.techfest"));
+            intent.setData(Uri.parse("https://play.google.com/store/apps/details?id="+v.getTag()));
             startActivity(intent);
         }
     }
