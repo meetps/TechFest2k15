@@ -8,8 +8,8 @@ android {
         applicationId "org.iitb.techfest.techfest"
         minSdkVersion 10
         targetSdkVersion 20
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "3.1"
     }
     buildTypes {
         /*release {
