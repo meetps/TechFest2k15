@@ -229,15 +229,20 @@ public class MainActivity extends ActionBarActivity
                 frag = EventListFragment.newInstance(EventListFragment.TYPE_LIST, getString(R.string.title_workshops), R.color.actionbar_workshops, R.layout.details_workshops, filterEvents(getString(R.string.title_workshops)));
                 break;
             case 11:
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.vmukti.com/techfest"));
+                startActivity(i);
+                return;
+            case 12:
                 frag = loadMapFragment();
                 break;
-            case 12:
+            case 13:
                 frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, "Jionet Free WiFi", R.color.actionbar_home, R.layout.fragment_jionet,null);
                 break;
-            case 13:
+            case 14:
                 frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, "OurPics", R.color.actionbar_home, R.layout.fragment_ourpics,null);
                 break;
-            case 14:
+            case 15:
                 frag=EventListFragment.newInstance(EventListFragment.TYPE_LIST_GROUP, getString(R.string.title_developers), R.color.actionbar_developers, R.layout.fragment_developers,null);
                 break;
             default:

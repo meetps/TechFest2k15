@@ -116,6 +116,7 @@ public class NavigationDrawerFragment extends Fragment {
         itemList.add(new IconItem(R.drawable.exhibition,getString(R.string.title_exhibitions)));
         itemList.add(new IconItem(R.drawable.technoholixs,getString(R.string.title_technoholix)));
         itemList.add(new IconItem(R.drawable.ozones,getString(R.string.title_ozone)));
+        itemList.add(new IconItem(R.drawable.play,"Live Stream"));
         itemList.add(new IconItem(R.drawable.marker,"Map"));
         itemList.add(new IconItem(R.drawable.jio_ico,"Jionet Free WiFi"));
         itemList.add(new IconItem(R.drawable.ourpics_icon, "OurPics"));
